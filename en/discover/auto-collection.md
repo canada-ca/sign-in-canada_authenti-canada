@@ -16,7 +16,7 @@ is to move the pairwise identifier mappings currently held by these older
 services to the Sign In Canada Platform, so that users' enrolments with relying
 parties are not impacted when relying parties move to Sign In Canada.
 
-The Sign In Canada Sign In Canada Platform implements a feature that is able to
+The Sign In Canada Platform implements a feature that is able to
 automatically copy a user's pairwise identifier mappings from a legacy
 credential service to the Sign In Canada Platform the first time they are used.
 These are then stored by the Sign In Canada Platform for future use, so that the
