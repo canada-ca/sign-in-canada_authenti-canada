@@ -6,4 +6,15 @@ lang: en
 ---
 # Upcoming Planned Maintenance
 
-The TBS Infrastructure team will be performing preventative maintenance activities on December 27th , 2022 between 7pm and 10pm. During this maintenance window, the SIC Production environment will be available intermittently.
+## Monday February 13, 2023 9:00PM ET
+
+### Environments Affected
+
+* Client Acceptance Test (CATE)
+
+### Description
+
+The Sign In Canada team will be deploying a new release of the Sign In Canada platform
+[Release 1.3.48](https://github.com/sign-in-canada/Acceptance-Platform/releases/tag/v1.3.48)
+to the to the client acceptance test environment. The installation is scheduled for 9PM
+and is expected to result in an outage of approximately 40 minutes.
