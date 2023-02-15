@@ -39,7 +39,7 @@ support some unique functionality that supports the coexistence with, and
 transition from, the older GCCF credential services, in particular:
 
 * It has been customized to support both the preservation and run-time migration
-  of user's existing PAIs from the CSP to the Acceptance Platform, so that the
+  of user's existing PAIs from the Credential Service Provider (CSP) to the Acceptance Platform, so that the
   transition has no impact on end users' enrolment with existing relying parties.
 * It has customized to support session coordination between the Acceptance
   Platform and the CSPs.
