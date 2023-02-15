@@ -1,7 +1,7 @@
 ---
 layout: default
 ref: discover
-title: What is the Sign In Canada Platform?
+title: What is the Sign In Canada (SIC) Platform?
 lang: en
 ---
 # What is the Sign In Canada Platform?
