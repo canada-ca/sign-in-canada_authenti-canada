@@ -1,5 +1,5 @@
 # Site settings
-baseurl: "/sign-in-canada_authenti-canada" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://canada-ca.github.io/sign-in-canada_authenti-canada" # the base hostname & protocol for your site
 github_username: canada-ca
 
