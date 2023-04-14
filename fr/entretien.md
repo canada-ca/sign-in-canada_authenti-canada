@@ -6,15 +6,11 @@ lang: fr
 ---
 # Entretien prévu à venir
 
-## Dimanche 19 mars 2023 04h00 HE
+## Mardi 18 avril 2023 07h00 HE
 
 ### Environnements concernés
 
 * Production
 
 ### La description
-L'équipe d'Authenti-Canada déploiera une nouvelle version de la 
-plateforme d'Authenti-Canada
-[version 1.3.56](https://github.com/sign-in-canada/acceptance-platform/releases/tag/v1.3.56)
-à l'environnement de **production**. L'installation est prévue pour 4h
-et devrait entraîner une panne d'environ 40 minutes.
+L'équipe de Sign In Canada effectuera des travaux de maintenance dans l'environnement de production. L'entretien est prévu pour 7h et devrait entraîner une panne d'environ 15 minutes.
