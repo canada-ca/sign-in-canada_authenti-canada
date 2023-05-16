@@ -1,0 +1,54 @@
+I"Q<h1 id="what-is-the-sign-in-canada-platform">What is the Sign In Canada Platform?</h1>
+
+<p><img src="images/sic-overview.png" alt="Sign In Canada Overview" title="Sign In Canada Overview" /></p>
+
+<p>The Sign In Canada platform provides an umbrella service that acts as a trusted intermediary between
+providers of credential services, and government programs who consume them to provide services to their
+external clients (e.g., individuals, businesses, and representatives).</p>
+
+<h2 id="key-features">Key Features</h2>
+
+<ul>
+  <li>First-factor (username &amp; password) authentication using:
+    <ul>
+      <li>The Government of Canada branded credential: <a href="https://clegc-gckey.gc.ca">“GCKey”</a></li>
+      <li>Online banking credentials, via a commercial credential broker service (CBS): <a href="https://verified.me/government-sign-in-by-verified-me/">“Government Login by Verified.Me”</a></li>
+    </ul>
+  </li>
+  <li>Second-factor authentication using mobile authenticator apps (e.g., <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">Google Authenticator</a>, <a href="https://www.microsoft.com/en-us/security/mobile-authenticator-app">Microsoft Authenticator</a>, <a href="https://authy.com/">Authy</a>)</li>
+  <li><a href="session-management.html#single-sign-on">Single Sign-On</a></li>
+  <li><a href="session-management.html#single-logout">Single (Global) Logout</a></li>
+  <li>Fully customizable user interface (support for “skins”)</li>
+  <li><a href="auto-collection.html">Seamless migration of existing GCKey and CBS users</a></li>
+</ul>
+
+<h2 id="compatibility">Compatibility</h2>
+
+<p>Applications integrate with the Sign In Canada platform using the industry standard <a href="https://openid.net">OpenID Connect</a> protocol. OpenID Connect is widely supported by most major:</p>
+
+<ul>
+  <li>Software-as-a-Service and Platform-as-a-Service cloud products, including
+    <ul>
+      <li><a href="https://powerapps.microsoft.com/en-ca/">Microsoft PowerApps</a> / <a href="https://dynamics.microsoft.com/en-ca/">Dynamics 365</a>, <a href="https://www.salesforce.com/ca/">SalesForce</a> and <a href="https://www.sap.com/canada/products/human-resources-hcm/hxm-suite.html">SAP SuccessFactors</a>, and more.</li>
+      <li><a href="https://aws.amazon.com/cognito/">Amazon Cognito</a> and <a href="../evaluate/b2c.html">Microsoft Azure Active Directory</a></li>
+    </ul>
+  </li>
+  <li>Application Development platforms, including
+    <ul>
+      <li><a href="https://dotnet.microsoft.com/en-us/apps/aspnet">ASP.Net</a> (<a href="https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.OpenIdConnect">Core</a> &amp; <a href="https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/">”Classic”</a>), <a href="https://www.npmjs.com/package/openid-client">Node.JS</a>, Python/Django, Java EE</li>
+    </ul>
+  </li>
+  <li>Web Servers, such as  <a href="https://github.com/zmartzone/mod_auth_openidc#readme">Apache HTTPD</a></li>
+</ul>
+
+<h2 id="learn-more">Learn more</h2>
+
+<p>Follow these links to learn more about…</p>
+
+<ul>
+  <li><a href="cate.html">The Client Acceptance Test Environment (CATE)</a></li>
+  <li><a href="prod.html">The Production Environment</a></li>
+  <li><a href="service.html">Service Management and Support</a></li>
+  <li><a href="technology.html">Technology and Architecture</a></li>
+</ul>
+:ET

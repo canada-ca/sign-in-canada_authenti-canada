@@ -1,0 +1,16 @@
+I"*<h1 id="client-acceptance-test-environment-cate">Client Acceptance Test Environment (CATE)</h1>
+
+<p>The Sign In Canada client acceptance test environment is available to anyone in
+the GC who wishes to:</p>
+
+<ul>
+  <li>Learn how to use OpenID Connect to integrate with Sign In Canada</li>
+  <li>Develop and test new digital service delivery applications</li>
+</ul>
+
+<p>Integrating a sandbox, development, or test environment to Sign In Canada is fast, and
+easy. Simply send an email to <a href="mailto:Signin-AuthentiCanada@tbs-sct.gc.ca">Signin-AuthentiCanada@tbs-sct.gc.ca</a> with some
+basic information about your application such as the cloud service or
+development platform are you using. The Sign In Canada team will help you get
+your application connected and working, often within one or two days.</p>
+:ET

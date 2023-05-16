@@ -1,0 +1,207 @@
+I"�9<h1 id="session-management">Session Management</h1>
+
+<p>The Sign in Canada Acceptance Platform functions as a session management
+authority that centrally coordinates users’ sessions across multiple RP
+applications. There are two key features of the platform that support this:
+single sign-on, and single logout.</p>
+
+<h2 id="single-sign-on">Single Sign-On</h2>
+
+<p>Once a user has successfully used a given credential or trusted digital identity
+service to authenticate to one RP, the Acceptance Platform can allow them to
+silently authenticate to other RPs subject to a 20 minute timeout period. The
+Acceptance Platform accomplishes this by creating its own session with the user
+when they first sign in to one RP, and then simply not prompting them when they
+sign in to other RPs within the timeout window.</p>
+
+<p>Relying parties who wish to force their users to authenticate every time can
+still do so, using a parameter in their authentication requests.</p>
+
+<p><em>Note that in order for single sign-on to work, a user must use the same
+credential or trusted digital identity to access all digital government
+services. At present, this not possible since not all Government of Canada
+services accept the same credentials. For example, accessing online tax services
+provided by CRA is currently not possible using a CKey credential, therefore
+users who chose to use a GCKey credential cannot single sign-on to CRA’s “My
+Account for Individuals”.</em></p>
+
+<h2 id="single-logout">Single Logout</h2>
+
+<p>When a user has used Sign in Canada to obtain multiple services provided by
+multiple web sites (RP applications), the Acceptance Platform has the ability to
+centrally coordinate single logout. With single logout, the user only has to
+click one logout button on the site they are currently visiting, and the
+Acceptance platform will then log them out of all the other sites they have
+visited during their session.</p>
+
+<p>The propagation of logout across all of these sites can use the <a href="https://openid.net/specs/openid-connect-frontchannel-1_0.html">OpenID Connect
+Front-Channel
+Logout</a>
+mechanism, the <a href="https://openid.net/specs/openid-connect-backchannel-1_0.html">OpenID Connect Back-Channel
+Logout</a> mechanism,
+or the <a href="https://www.oasis-open.org/committees/download.php/56782/sstc-saml-profiles-errata-2.0-wd-07.html">SAML Single Logout
+Profile</a>
+using front-channel (HTTP-Redirect) and/or back-channel (SOAP) <a href="https://www.oasis-open.org/committees/download.php/56779/sstc-saml-bindings-errata-2.0-wd-06.pdf">bindings</a>.
+The Sign In Canada Acceptance Platform supports all of these.</p>
+
+<p>Both the OpenID Connect and SAML protocols follow the same basic sequence of events:</p>
+
+<ol>
+  <li>As a user leverages Sign in Canada to visit multiple web sites (applications)
+within the same session, the Acceptance Platform keeps track of which sites
+they have visited.</li>
+  <li>When the user clicks a logout button on one of the the sites they are
+visiting, that site’s web application sends a logout request to the
+Acceptance Platform.</li>
+  <li>The Acceptance Platform then sends a logout request to all of the other sites
+the user has visited, so they can log the user out.</li>
+</ol>
+
+<p>For those sites that support the SAML profile, each site that receives a SAML
+logout request from the Acceptance Platform returns a SAML response to indicate
+whether the user was successfully logged out. For those sites that use OpenID
+Connect Front-Channel Logout, there is no similar response returned.</p>
+
+<h2 id="transition-and-coexistence">Transition and Coexistence</h2>
+
+<p>There will be an extended transition period as RP applications connect to the
+Acceptance Platform and disconnect from the legacy GCKey and Credential Broker
+services one at a time. During this transition period, the Acceptance Platform
+will serve as the session management authority for applications connected to it,
+while the GCKey and Credential Broker services serve as the session management
+authority for applications connected to them.</p>
+
+<p>This creates a requirement for the Acceptance Platform to coordinate single
+logout with GCKey and CBS, as well as with its own RPs. The Acceptance Platform
+accomplishes this by supporting the SAML Single Logout profile as part of its
+integration, as a relying party, with GCKey and CBS.</p>
+
+<p>The following example scenario illustrates how single logout is achieved in the
+case where the user clicks a logout button on a relying party site that is connected to the
+Acceptance Platform.</p>
+
+<p><img src="/index.html/fr/decouvrir/images/SP-initiated-logout.svg" alt="SP-Initiated-Logout" /></p>
+
+<p>The scenario begins when a user clicks a logout button on the relying party site
+they have been using. When this happens:</p>
+
+<ol>
+  <li>The relying party application logs the user out locally first, then it
+redirects the browser to either the Acceptance Platforms’s OpenID Connect end_session endpoint, or to its SAML Single Logout service.</li>
+  <li>If any relying parties participating in the session support back-channel
+logout, the Acceptance Platform first sends a logout token to all of them, via an HTTP POST to their registered back-channel logout URI(s) to trigger the logout actions by those RPs. If there are multiple relying parties then these requests are all sent simultaneously, in parallel.</li>
+  <li>Once back-channel logout has been completed, The Acceptance Platform then returns an
+<a href="https://html.spec.whatwg.org/multipage/">HTML</a> logout propagation page to the browser. This
+page contains a number of
+<a href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element">iframe</a>
+elements. The <code class="language-plaintext highlighter-rouge">src</code> (source) attribute of all but one of the <code class="language-plaintext highlighter-rouge">iframe</code>
+elements points to the front-channel logout <a href="https://openid.net/specs/openid-connect-frontchannel-1_0.html#RPLogout">URI</a> of another
+relying party site where the user has logged in during their current session.
+In the diagram, these other sites are identified as “Other OIDC RPs”. The
+<code class="language-plaintext highlighter-rouge">src</code> attribute of the final <code class="language-plaintext highlighter-rouge">iframe</code> points to a URI endpoint of the
+Acceptance Platform’s Acceptance Framework.</li>
+  <li>Upon receiving the propagation page, the browser begins to load all of the of
+the <code class="language-plaintext highlighter-rouge">iframe</code>s in parallel, by asynchronously sending an HTTP GET request to
+the <code class="language-plaintext highlighter-rouge">src</code> URI of each <code class="language-plaintext highlighter-rouge">iframe</code>.</li>
+  <li>As the other relying parties receive these requests, they log the user out
+locally, and then return an HTTP response to the browser.</li>
+  <li>When the Acceptance Platform’s Acceptance Framework receives its request, it
+creates a SAML <code class="language-plaintext highlighter-rouge">LogoutRequest</code> message and then redirects the browser with
+that message (within the <code class="language-plaintext highlighter-rouge">iframe</code>) to the legacy CSP (GCKey or CBS) that the
+user chose to log in with.</li>
+  <li>The CSP then logs the user out of their credential. If the user has visited
+any sites that are still connected directly to the CSP (instead of to Sign in
+Canada) it will also propagate the logout to all of those sites.</li>
+  <li>The CSP then redirects the browser (within the <code class="language-plaintext highlighter-rouge">iframe</code>) back to the
+Acceptance Platform’s Acceptance Framework with a SAML
+<code class="language-plaintext highlighter-rouge">LogoutResponse</code> message. The Acceptance Framework processes this
+message and then sends an HTTP response back to the browser.</li>
+  <li>While all of the <code class="language-plaintext highlighter-rouge">iframe</code>s are propagating the logout to various sites
+asynchronously, their progress is monitored by JavaScript code running in the
+browser. Once all of the <code class="language-plaintext highlighter-rouge">iframes</code> have completely loaded, this JavaScript
+code checks the success or failure status of each.</li>
+  <li>If any of the <code class="language-plaintext highlighter-rouge">iframes</code> fail or time-out, the JavaScript code will redirect
+   the browser to an error page, warning the user that they may not be
+   completely signed out and recommending that they close their browser.</li>
+  <li>If all of the <code class="language-plaintext highlighter-rouge">iframes</code> successfully propagate logout to their target site,
+then the browser is redirected to the logout landing page of the site where
+the user initially clicked “Logout”.</li>
+</ol>
+
+<p>The next example scenario illustrates how single logout is achieved in the case
+where the user clicks a logout button on a relying party site that is still
+connected one of the GCCF credential services (GCKey or CBS).</p>
+
+<p><img src="/index.html/fr/decouvrir/images/CSP-initiated-logout.svg" alt="CSP-Initiated-Logout" /></p>
+
+<p>The scenario begins when a user clicks a logout button on the relying party site
+they have been using. When this happens:</p>
+
+<ol>
+  <li>The relying party application logs the user out locally first, then it
+redirects the browser to the CSP’s SAML Single Logout endpoint with a SAML
+<code class="language-plaintext highlighter-rouge">LogoutRequest</code> message.</li>
+  <li>If the user has visited additional sites that are still connected directly to the
+CSP (instead of to the Acceptance Platform) it will first propagate the logout to all
+of those sites using SAML back-channel (SOAP) logout.</li>
+  <li>The CSP then redirects the browser to the Acceptance Platform’s Acceptance
+Framework with a SAML <code class="language-plaintext highlighter-rouge">LogoutRequest</code> message.</li>
+  <li>The Acceptance framework then redirects the browser to the Acceptance
+Platform’s OpenID Provider (OP)’s end_session endpoint.</li>
+  <li>If any relying parties participating in the Acceptance Platform’s session
+support back-channel logout, the Acceptance Platform sends a logout token to
+all of them first, via an HTTP POST to their registered back-channel logout
+URI(s). This triggers the logout actions by each of those RPs. If there are
+multiple relying parties then these requests are all sent simultaneously, in
+parallel.</li>
+  <li>Once back-channel logout has been completed, the Acceptance Platform returns an
+<a href="https://html.spec.whatwg.org/multipage/">HTML</a> logout propagation page. This
+page contains a number of
+<a href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element">iframe</a>
+elements. The <code class="language-plaintext highlighter-rouge">src</code> (source) attribute of each <code class="language-plaintext highlighter-rouge">iframe</code>
+element points to the front-channel logout <a href="https://openid.net/specs/openid-connect-frontchannel-1_0.html#RPLogout">URI</a> of one of the
+relying party sites where the user has logged in during their current session.
+In the diagram, these other sites are identified as “Other OIDC RPs”. The
+<code class="language-plaintext highlighter-rouge">src</code> attribute of the final <code class="language-plaintext highlighter-rouge">iframe</code> points to a URI endpoint of the
+Acceptance Platform’s Acceptance Framework.</li>
+  <li>Upon receiving the propagation page, the browser begins to load all of the of
+the <code class="language-plaintext highlighter-rouge">iframe</code>s in parallel, by asynchronously sending an HTTP GET request to
+the <code class="language-plaintext highlighter-rouge">src</code> URI of each <code class="language-plaintext highlighter-rouge">iframe</code>.</li>
+  <li>As the other relying parties receive these requests, they log the user out
+locally, and then return an HTTP response to the browser.</li>
+  <li>While all of the <code class="language-plaintext highlighter-rouge">iframe</code>s are propagating the logout to various sites
+asynchronously, their progress is monitored by JavaScript code running in the
+browser. Once all of the <code class="language-plaintext highlighter-rouge">iframes</code> have completely loaded, this JavaScript
+code checks the success or failure status of each.</li>
+  <li>If any of the <code class="language-plaintext highlighter-rouge">iframes</code> fail or time-out, the JavaScript code will redirect
+   the browser to the Acceptance Framework with an HTTP request that indicates a
+   logout problem.
+    <ol>
+      <li>The Acceptance Framework will then redirect the browser back
+to the CSP with a SAML <code class="language-plaintext highlighter-rouge">LogoutResponse</code> message bearing a status code of
+<code class="language-plaintext highlighter-rouge">urn:oasis:names:tc:SAML:2.0:status:Responder</code>.</li>
+      <li>The CSP will then in turn redirect the browser back to it’s own RP with a
+  <code class="language-plaintext highlighter-rouge">LogoutResponse</code> message bearing a top level status code of
+  <code class="language-plaintext highlighter-rouge">urn:oasis:names:tc:SAML:2.0:status:Success</code> and a second-level status
+  code of <code class="language-plaintext highlighter-rouge">urn:oasis:names:tc:SAML:2.0:status:PartialLogout</code>.</li>
+      <li>This will cause the SAML RP to display error page, warning the user that
+they may not be completely signed out and recommending that they close
+their browser.</li>
+    </ol>
+  </li>
+  <li>If all of the <code class="language-plaintext highlighter-rouge">iframes</code> successfully propagate logout to their target site,
+the JavaScript code will redirect the browser to the Acceptance Framework
+with an HTTP request that indicates a successful logout.
+    <ol>
+      <li>The Acceptance Framework will then redirect the browser back to the CSP
+with a SAML <code class="language-plaintext highlighter-rouge">LogoutResponse</code> message bearing a status code of
+<code class="language-plaintext highlighter-rouge">urn:oasis:names:tc:SAML:2.0:status:Success</code>.</li>
+      <li>The CSP will then in turn redirect the browser back to it’s own RP with a
+<code class="language-plaintext highlighter-rouge">LogoutResponse</code> message bearing a top level status code of
+<code class="language-plaintext highlighter-rouge">urn:oasis:names:tc:SAML:2.0:status:Success</code> and no  second-level status
+code.</li>
+      <li>This will cause the SAML RP to display their usual logout or landing page.</li>
+    </ol>
+  </li>
+</ol>
+:ET

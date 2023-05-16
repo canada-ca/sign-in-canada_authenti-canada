@@ -1,0 +1,96 @@
+I"z<h1 id="technologie-et-architecture">Technologie et architecture</h1>
+
+<h2 id="technologie">Technologie</h2>
+
+<p>La plateforme Authenti-Canada est construite sur le <a href="https://gluu.org">serveur Gluu (en anglais)</a>, une plateforme de gestion de l’identité et de l’accès en source libre.</p>
+
+<p>La plateforme tire également parti de plusieurs services infonuagiques:</p>
+
+<ul>
+  <li>Infrastructure en tant que service : Machines virtuelles Azure, réseaux virtuels Azure, Gestionnaire de trafic Azure</li>
+  <li>PaaS/SaaS : Azure Storage, Coffre de clés Azure, Azure Functions, Azure Surveillance (Perspectives sur l’application, analyse des journaux), Azure DevOps, Azure DevTest Labs, GitHub</li>
+</ul>
+
+<h2 id="architecture">Architecture</h2>
+
+<p><img src="/index.html/fr/decouvrir/images/Overview.svg" alt="Aperçu" /></p>
+
+<h2 id="composantes">Composantes</h2>
+
+<h3 id="cadre-dacceptation">Cadre d’acceptation</h3>
+
+<p>Product: Gluu Passport (passeport pour Gluu)</p>
+
+<p>Gluu Passport est une application Web <a href="https://nodejs.org/fr/about/">Node.JS</a> basée sur le cadre 
+d’application Web <a href="http://expressjs.com/fr/">Express</a> et le logiciel de configuration 
+d’authentification <a href="http://www.passportjs.org/">Passport.JS (en anglais)</a>.</p>
+
+<p>Comme le nom l’indique, il s’agit de la composante « Acceptation » de la plateforme d’acceptation. 
+Elle s’intègre avec les fournisseurs de justificatifs d’identité et les fournisseurs d’identité de 
+confiance afin d’accepter des garanties de justificatifs d’identité et de justificatifs d’identité 
+au nom des parties utilisatrices du gouvernement du Canada.</p>
+
+<p>Authenti-Canada utilise une version du Gluu Passport qui a été personnalisée pour prendre en charge 
+certaines fonctionnalités uniques qui appuient la coexistence avec les anciens services de justificatifs 
+d’identité de la fédération des justificatifs du gouvernement du Canada et leur transition, en particulier:</p>
+
+<ul>
+  <li>Elle a été adaptée pour appuyer à la fois la préservation et la migration en temps réel des 
+identificateurs anonymes persistants (IAP) existants de l’utilisateur du fournisseur de justificatifs 
+d’identité (FJI) vers la plateforme d’acceptation, de sorte que la transition n’ait aucune incidence sur 
+l’inscription des utilisateurs finaux auprès des parties utilisatrices actuelles.</li>
+  <li>Elle a été personnalisée pour appuyer la coordination des séances entre la plateforme d’acceptation et les FJI.</li>
+</ul>
+
+<p>Version: 5.3</p>
+
+<p>Site Web: https://www.gluu.org/ (en anglais)</p>
+
+<p>Code source: https://github.com/sign-in-canada/gluu-passport/ (en anglais)</p>
+
+<h3 id="fournisseur-openid">Fournisseur OpenID</h3>
+
+<p>Produit: oxAuth</p>
+
+<p>oxAuth est un fournisseur <a href="https://openid.net/connect/">OpenID Connect (en anglais)</a> en source libre et un serveur 
+d’autorisation <a href="https://kantarainitiative.org/confluence/display/uma/Home">UMA</a>.</p>
+
+<p>oxAuth est la composante principale de la plateforme d’acceptation, responsable de l’interface utilisateur et de la 
+logique opérationnelle. En tant que fournisseuse <a href="https://openid.net/connect/">OpenID Connect (en anglais)</a>, elle fournit 
+également l’interface de programmation d’applications utilisée par les parties utilisatrices du gouvernement du Canada qui 
+s’intègrent à l’aide d’<a href="https://openid.net/connect/">OpenID Connect (en anglais)</a>.</p>
+
+<p>Version: 4.2.3</p>
+
+<p>Site Web: https://www.gluu.org/ (en anglais)</p>
+
+<p>Code source: https://github.com/GluuFederation/oxAuth/ (en anglais)</p>
+
+<h3 id="fournisseur-didentité-saml">Fournisseur d’identité SAML</h3>
+
+<p>Produit: Shibboleth IDP</p>
+
+<p>Shibboleth est un fournisseur d’identité <a href="https://wiki.oasis-open.org/security/FrontPage">SAML (en anglais)</a> qui fournit 
+l’interface de programmation d’applications utilisée par les parties utilisatrices du gouvernement du Canada qui s’intègrent 
+à l’aide de <a href="https://wiki.oasis-open.org/security/FrontPage">SAML (en anglais)</a>.</p>
+
+<p>Version: 4.0.1</p>
+
+<p>Site Web: https://www.shibboleth.net/products/identity-provider/ (en anglais)</p>
+
+<p>Code source: https://wiki.shibboleth.net/confluence/display/DEV/Source+Code+Access/ (en anglais)</p>
+
+<h3 id="base-de-données-nosql">Base de données NoSQL</h3>
+
+<p>Produit: Couchbase Enterprise Server</p>
+
+<p>Couchbase Server est un logiciel de base de données NoSQL en source libre, distribuée et multimodèle axée sur les documents 
+qui est optimisé pour les applications interactives.</p>
+
+<p>La plateforme Authenti-Canada utilise Couchbase pour stocker les profils d’utilisateurs et les configurations des parties 
+utilisatrices, ainsi que pour la mise en cache répartie et à rendement élevé de séances.</p>
+
+<p>Version: 6.6.1</p>
+
+<p>Site Web: https://www.couchbase.com/ (en anglais)</p>
+:ET

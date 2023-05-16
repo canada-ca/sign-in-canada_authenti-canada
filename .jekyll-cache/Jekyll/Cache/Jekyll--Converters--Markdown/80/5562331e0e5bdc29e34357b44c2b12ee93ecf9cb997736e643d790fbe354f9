@@ -1,0 +1,156 @@
+I"<h1 id="integrating-azure-active-directory-b2c">Integrating Azure Active Directory B2C</h1>
+
+<p>Government of Canada digital services that leverage <a href="https://docs.microsoft.com/en-us/azure/active-directory-b2c/overview">Azure Active Directory
+B2C</a> to
+centrally manage user identity data, and/or to authorize access to their
+application programming interfaces can configure their B2C tenant to use
+Sign In Canada as its authentication service. This allows your users to benefit from
+being able to use the same trusted credential to access multiple government services,
+while your applications benefit from all of the features provided by Azure Active
+Directory B2C.</p>
+
+<h2 id="requesting-connectivity-to-cate-for-your-b2c-tenant">Requesting Connectivity to CATE for your B2C tenant</h2>
+
+<p>In order to integrate your non-production B2C tenant with the Sign In Canada
+<a href="../discover/cate.html">Client Acceptance Test Environment</a> (CATE), please send
+an email to <a href="mailto:Signin-AuthentiCanada@tbs-sct.gc.ca">Signin-AuthentiCanada@tbs-sct.gc.ca</a> with the following information:</p>
+
+<ol>
+  <li>The domain name of your B2C tenant. This can either be a default domain name
+such as <code class="language-plaintext highlighter-rouge">https://&lt;tenant-name&gt;.b2clogin.com</code> or a <a href="https://docs.microsoft.com/en-us/azure/active-directory-b2c/custom-domain?pivots=b2c-user-flow">custom
+domain</a>.</li>
+  <li>Your B2C <a href="https://docs.microsoft.com/en-us/azure/active-directory-b2c/tenant-management#get-your-tenant-id">Tenant ID</a></li>
+  <li>The name of your <a href="https://docs.microsoft.com/en-us/azure/active-directory-b2c/add-sign-up-and-sign-in-policy?pivots=b2c-user-flow">user flow or custom policy</a></li>
+</ol>
+
+<p>The Sign in Canada team will use this information to configure your B2C tenant
+as a client, and provide you with a client ID and client secret for your tenant.</p>
+
+<div class="alert alert-info">
+<p>
+You must have a valid myKey credential so that the Sign in Canada team can send you these client credentials via encrypted email.
+</p>
+</div>
+
+<h2 id="configuring-sign-in-canada-as-an-identity-provider">Configuring Sign In Canada as an Identity Provider</h2>
+
+<p>To configure the Sign In Canada CATE environment as your B2C tenant’s external
+identity provider you can follow <a href="https://docs.microsoft.com/en-us/azure/active-directory-b2c/identity-provider-generic-openid-connect?pivots=b2c-user-flow#add-the-identity-provider">these instructions</a>
+and use the following settings:</p>
+
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Setting</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td>Sign In Canada CATE</td>
+    </tr>
+    <tr>
+      <td>Metadata URL</td>
+      <td>https://te-auth.id.tbs-sct.gc.ca/oxauth/.well-known/openid-configuration</td>
+    </tr>
+    <tr>
+      <td>Client ID</td>
+      <td>[*as provided by the Sign In Canada team*]</td>
+    </tr>
+    <tr>
+      <td>Client secret</td>
+      <td>[*as provided by the Sign In Canada team*]</td>
+    </tr>
+    <tr>
+      <td>Scope</td>
+      <td>openid</td>
+    </tr>
+    <tr>
+      <td>Response type</td>
+      <td>code</td>
+    </tr>
+    <tr>
+      <td>Response mode</td>
+      <td>query</td>
+    </tr>
+    <tr>
+      <td>Domain hint</td>
+      <td>[*leave empty*]</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="identity-provider-claims-mappings">Identity provider claims mappings</h5>
+
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Claim to map</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>User ID</td>
+      <td>sub</td>
+    </tr>
+    <tr>
+      <td>Display name</td>
+      <td>sub</td>
+    </tr>
+    <tr>
+      <td>Given name</td>
+      <td>[*leave empty*]</td>
+    </tr>
+    <tr>
+      <td>Surname</td>
+      <td>[*leave empty*]</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>[*leave empty*]</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="known-issues">Known issues</h2>
+
+<p>This is a current list of known interoperability issues between Azure Active
+Directory and Sign In Canada, along with workarounds to address them.</p>
+
+<h3 id="issue-1-b2c-does-not-include-an-id_token_hint-in-logout-requests-sent-to-an-external-identity-provider">Issue 1: B2C does not include an <code class="language-plaintext highlighter-rouge">id_token_hint</code> in logout requests sent to an external identity provider</h3>
+
+<p><a href="https://docs.microsoft.com/en-us/azure/active-directory-b2c/session-behavior?pivots=b2c-custom-policy#sign-out">Documented here</a></p>
+
+<p>This forces Sign In Canada to rely on its session cookie, however that session
+cookie will be blocked by most browsers as a third party cookie if the the B2C
+tenant is hosted under a different top-level domain than Sign In Canada.</p>
+
+<p><strong>Workaround</strong></p>
+
+<p>The B2C tenant must be configured to use a custom domain that is in the same
+top-level domain as the external IDP. In the case of Sign In Canada production
+environment, that top level domain is canada.ca, so any production B2C tenant
+<strong>must</strong> use a custom domain that is a subdomain under canada.ca.</p>
+
+<h3 id="issue-2-b2c-does-not-provide-a-an-openid-logout-endpoint-that-accepts-single-logout-requests-coming-from-an-external-openid-provider">Issue 2: B2C does not provide a an OpenID logout endpoint that accepts single logout requests coming from an external OpenID provider</h3>
+
+<p><strong>Workaround</strong></p>
+
+<p>To log out the B2C session, The Sign In Canada platform can use the
+front-channel logout endpoint that B2C provides to its own clients. The B2C
+policy/user flow must be configured to not require the id_token_hint, since the
+Sign In Canada platform has no way to obtain a B2C client’s ID token.</p>
+
+<p>To log out the session at B2C’s clients, the Sign In Canada platform can send
+each of them a logout request directly.</p>
+
+<h3 id="issue-3-b2cs-logout-endpoint-sets-an-x-frame-options-header-to-deny-which-blocks-logout-requests-from-sign-in-canada">Issue 3: B2C’s logout endpoint sets an X-Frame-Options header to “deny” which blocks logout requests from Sign In Canada</h3>
+
+<p><strong>Workaround</strong></p>
+
+<p>A “Modify Response Header” rule can be configured on Azure Front Door to remove
+the offending header.</p>
+
+:ET
