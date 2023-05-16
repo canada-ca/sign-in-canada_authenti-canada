@@ -43,15 +43,15 @@ We use analytics software to collect and store information about your visit to o
 
 This data is used to:
 
-- help us make our site more useful, and for statistical purposes"
-- assess what services are of most and least interest to our clients, determine technical design specifications, and identify system performance or problem areas;
+- help us make our site more useful using statistics to assess what services are of most and least interest to our clients and determine technical design specifications;
+- identify system performance or problem areas;
 - protect the security of our website, identify unauthorized attempts to upload or change information, or to otherwise cause damage;
 - identify and resolve any problems or difficulties you encounter in attempting to sign into our sites.
 
 ## We share some information 
 
 In the event of suspected security or privacy breaches, personal information may be shared with departmental security and access to information and privacy officials, as well as the federal government department or agency which collects and uses the personal information considered to have been compromised. The information may be shared with law enforcement authorities if we suspect criminal activities or other services that perform electronic network monitoring. This information is used for no other purposes and is scheduled for regular destruction in accordance with the Library and Archives of Canada Act and the Privacy Act.  
-
+ 
 We do not:
 - Authorize other services to use your information for anything unrelated to Sign in Canada
 - Sell or rent your personal information.
@@ -67,12 +67,16 @@ We also follow Appendix E: Standard on Privacy in Web Analytics of the [Directi
 
 The law requires that we protect your privacy. You have the right to access and review your personal information. Use your SIC MFA service to check, correct, or update your information. 
 
-If you have any questions, concerns and complaints regarding this notice, or the administration of the Privacy Act in connection with your SIC MFA service please contact the Access to Information and Privacy Protection Division by email at atip-aiprp@ssc-spc.gc.ca or by writing to the following address:
-
+If you have any questions, concerns and complaints regarding this notice, or the administration of the Privacy Act in connection with your SIC MFA service please contact the Access to Information and Privacy Protection Division by email at atip-aiprp@ssc-spc.gc.ca or by writing to the following address:  
+<br/>
 **Director, Access to Information and Privacy**
-Shared Services Canada PO Box 9808, STN T, CSC
-Ottawa ON K1G 4A8
 
+Shared Services Canada 
+
+PO Box 9808, STN T, CSC
+
+Ottawa ON K1G 4A8  
+<br/>
 You also have the right to raise concerns about how we handle your personal information. To learn more or to make a formal complaint, contact the [Privacy Commissioner of Canada](https://www.priv.gc.ca/en/for-individuals/).
 
 Each relying party also has their own Privacy Policy. For more information, please refer to the corresponding Terms and Conditions and Privacy Notices on each relying party's web page.

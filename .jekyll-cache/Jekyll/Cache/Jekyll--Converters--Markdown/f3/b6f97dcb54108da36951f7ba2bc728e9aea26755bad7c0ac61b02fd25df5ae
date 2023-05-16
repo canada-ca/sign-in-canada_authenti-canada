@@ -1,34 +1,31 @@
----
-layout: default
-ref: help
-title: Sign in support
-lang: en
----
+I"�<h1 id="sign-in-support">Sign in support</h1>
 
-# Sign in support
+<h2 id="on-this-page">On this page</h2>
 
-## On this page
+<ul>
+  <li><a href="#gckey-username-and-password">GCKey user name and password</a></li>
+  <li><a href="#financial-partner-sign-in">Financial partner sign in</a></li>
+  <li><a href="#two-step-verification">Two step verification</a></li>
+</ul>
 
-- [GCKey user name and password](#gckey-username-and-password)
-- [Financial partner sign in](#financial-partner-sign-in)
-- [Two step verification](#two-step-verification)
+<h2 id="gckey-username-and-password">GCKey username and password</h2>
 
-## GCKey username and password
+<p>If you want to</p>
 
-If you want to
+<ul>
+  <li>Recover your username or password</li>
+  <li>Change your password, recovery questions &amp; answers, and email address</li>
+  <li>Set up a username, password or recovery questions but are having problems</li>
+</ul>
 
-- Recover your username or password
-- Change your password, recovery questions & answers, and email address
-- Set up a username, password or recovery questions but are having problems
+<p>Visit this page to learn more: <a href="https://www.canada.ca/en/government/sign-in-online-account/gckey.html">GCKey help</a></p>
 
-Visit this page to learn more: [GCKey help](https://www.canada.ca/en/government/sign-in-online-account/gckey.html)
+<h2 id="financial-partner-sign-in">Financial partner sign in</h2>
 
-## Financial partner sign in
+<p>If you cannot sign in to your bank, please contact them for support.</p>
 
-If you cannot sign in to your bank, please contact them for support. 
+<h2 id="two-step-verification">Two step verification</h2>
 
-## Two step verification
-<br/>
 <details>
 
 <summary>Why am I being asked to set up a ‘second step’?</summary>
@@ -78,20 +75,16 @@ If you set up a phone number as your two step verification and did not add a sec
 <details>
 <summary>How do I update a registered phone number?</summary>
 
-<p>If you need to make a change to a phone number you have registered you will have to **add** the new phone number and **delete** the one that is no longer needed:</p>
+If you need to make a change to a phone number you have registered you will have to **add** the new phone number and **delete** the one that is no longer needed:
 
-<ul>
-<li>Sign in as you normally would with your username, password and two step verification step</li>
-<li>When you arrive on the <strong>You have successfully signed in</strong> screen, select the button **Sign in settings</strong></li> 
-<li>When you arrive on the <strong>Sign in settings</strong> screen, select the <strong>Add</strong> a mobile phone number option and follow the steps to add your new or updated phone number</li>
-</ul>
+- Sign in as you normally would with your username, password and two step verification step
+- When you arrive on the **You have successfully signed in** screen, select the button **Sign in settings** 
+- When you arrive on the **Sign in settings** screen, select the **Add** a mobile phone number option and follow the steps to add your new or updated phone number
 
-<p>To delete the old phone number:</p>
-
-<ul>
-<li>From the main <strong>Sign in settings</strong> screen, select the <strong>Edit</strong> option next to the phone number you want to remove</li>
-<li>On the <strong>Edit</strong> screen, select the <strong>Delete</strong> option</li> 
-<li>For security, you will need to enter the full phone number to confirm the delete</li>
-</ul>
+To delete the old phone number
+- From the main **Sign in settings** screen, select the **Edit** option next to the phone number you want to remove
+- on the **Edit** screen, select the **Delete** option 
+- For security, you will need to enter the full phone number to confirm the delete
 
 </details>
+:ET
