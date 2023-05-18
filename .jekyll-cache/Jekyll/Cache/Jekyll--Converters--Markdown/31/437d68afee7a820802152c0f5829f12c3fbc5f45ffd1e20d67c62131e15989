@@ -1,4 +1,4 @@
-I"É9<h1 id="session-management">Session Management</h1>
+I"´9<h1 id="session-management">Session Management</h1>
 
 <p>The Sign in Canada Acceptance Platform functions as a session management
 authority that centrally coordinates users‚Äô sessions across multiple RP
@@ -80,7 +80,7 @@ integration, as a relying party, with GCKey and CBS.</p>
 case where the user clicks a logout button on a relying party site that is connected to the
 Acceptance Platform.</p>
 
-<p><img src="/index.html/fr/decouvrir/images/SP-initiated-logout.svg" alt="SP-Initiated-Logout" /></p>
+<p><img src="/sign-in-canada_authenti-canada/fr/decouvrir/images/SP-initiated-logout.svg" alt="SP-Initiated-Logout" /></p>
 
 <p>The scenario begins when a user clicks a logout button on the relying party site
 they have been using. When this happens:</p>
@@ -132,7 +132,7 @@ the user initially clicked ‚ÄúLogout‚Äù.</li>
 where the user clicks a logout button on a relying party site that is still
 connected one of the GCCF credential services (GCKey or CBS).</p>
 
-<p><img src="/index.html/fr/decouvrir/images/CSP-initiated-logout.svg" alt="CSP-Initiated-Logout" /></p>
+<p><img src="/sign-in-canada_authenti-canada/fr/decouvrir/images/CSP-initiated-logout.svg" alt="CSP-Initiated-Logout" /></p>
 
 <p>The scenario begins when a user clicks a logout button on the relying party site
 they have been using. When this happens:</p>
