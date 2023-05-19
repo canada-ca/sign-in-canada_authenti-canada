@@ -1,23 +1,20 @@
 ---
 layout: default
 ref: maintenance
-title: Maintenance planifiée à venir
+title: Entretien prévu à venir
 lang: fr
 ---
-# Maintenance planifiée à venir
+# Entretien prévu à venir
 
-## Mardi 2 février 2022 19 h 00 à 19 h 10 HNE
+## Dimanche 23 avril 2023 04h00 HE
 
-### Environnements concernés :
+### Environnements concernés
 
-* Test d'acceptation client
 * Production
 
 ### La description
+L'équipe d'Authenti-Canada déploiera une nouvelle version de la plateforme d'Authenti-Canada
+[version 1.3.63](https://github.com/sign-in-canada/Acceptance-Platform/releases/tag/v1.3.63)
+à l'environnement de **production**. L'installation est prévue pour 04h00
+et devrait entraîner une panne d'environ 30 minutes.
 
-L'équipe d'architecture d'entreprise et d'infrastructure du SCT effectuera
-maintenance corrective sur l'infrastructure de sécurité réseau utilisée par Sign In
-Canada. Pendant ce temps, le test d'acceptation client et la production
-les environnements ne seront pas accessibles.
-
-La panne devrait durer environ 10 minutes.

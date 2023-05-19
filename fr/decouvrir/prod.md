@@ -28,7 +28,7 @@ La cible de rendement pour l’environnement de production est de répondre à 9
 
 ## Capacité
 
-L’environnement de production dispose actuellement d’une capacité suffisante pour authentifier jusqu’à cinq utilisateurs par seconde (18 000 par heure).
+L’environnement de production dispose actuellement d’une capacité suffisante pour authentifier jusqu’à 12 utilisateurs par seconde (43 200 par heure).
 
 ## Sauvegarde et récupération des données
 

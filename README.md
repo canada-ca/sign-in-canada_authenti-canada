@@ -4,7 +4,7 @@
 
 The Sign In Canada platform provides an umbrella service that acts as a trusted intermediary between providers of credential services, and government programs who consume them to provide services to their external clients (e.g., individuals, businesses and representatives).
 
-This repository hosts the [public documentation for Sign In Canada](https://canada-ca.github.io/sign-in-canada_authenti-canada/en/index.html).
+This repository hosts the [public documentation for Sign In Canada](https://connect.canada.ca/en/index.html).
 
 Configuration artifacts and source code are managed separately in the [Acceptance-Platform](https://github.com/sign-in-canada/Acceptance-Platform) repository.
 
@@ -24,7 +24,7 @@ ______________________
 
 La plateforme Authenti-Canada fournit un service parapluie qui agit comme un intermédiaire de confiance entre les fournisseurs de services d'identification et les programmes gouvernementaux qui les utilisent pour fournir des services à leurs clients externes (par exemple, des particuliers, des entreprises et des représentants).
 
-Ce référentiel héberge la [documentation publique de Authenti-Canada](https://canada-ca.github.io/sign-in-canada_authenti-canada/fr/index.html).
+Ce référentiel héberge la [documentation publique de Authenti-Canada](https://connect.canada.ca/fr/index.html).
 
 Les artefacts de configuration et le code source sont gérés dans le référentiel [Acceptance-Platform](https://github.com/sign-in-canada/Acceptance-Platform).
 

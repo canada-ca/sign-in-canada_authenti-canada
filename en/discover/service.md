@@ -25,7 +25,7 @@ times listed are eastern time):
 ### Software Maintenance
 
 The Sign in Canada software requires regularly scheduled maintenance to meet the
-established service levels and to introduce new features. To minimize the affect
+established service levels and to introduce new features. To minimize the effect
 on relying parties, maintenance activities that require taking the service
 off-line are normally scheduled during a defined software maintenance window,
 from 4am to 5am eastern time on Sunday mornings. Relying parties are not

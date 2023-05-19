@@ -8,6 +8,13 @@ on:
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+
+    services:
+      plantuml:
+        image: plantuml/plantuml-server:jetty
+        ports:
+          - 8080:8080
+
     steps:
       - uses: actions/checkout@v2
 
@@ -30,6 +37,6 @@ jobs:
           jekyll_cfg: '_config.yml'  # Default is _config.yml
           jekyll_baseurl: ''         # Default is according to _config.yml
           bundler_ver: '>=0'         # Default is latest bundler version
-          cname: ''                  # Default is to not use a cname
+          cname: 'connect.canada.ca' # Default is to not use a cname
           actor: ''                  # Default is the GITHUB_ACTOR
           pre_build_commands: ''     # Installing additional dependencies (Arch Linux)

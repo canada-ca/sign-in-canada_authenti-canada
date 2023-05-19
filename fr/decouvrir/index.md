@@ -17,9 +17,9 @@ des services à leurs clients externes (par exemple, des particuliers, des entre
 * Premier facteur d’authentification (nom d’utilisateur et mot de passe) au moyen:
   * du justificatif portant la marque du gouvernement du Canada: [“CléGC”](https://clegc-gckey.gc.ca)
   * des justificatifs d’identité des services bancaires en ligne, par l’entremise d’un service de courtier de justificatifs d’identité (SCJ): [“Gouvernement Connecté par Vérifiez.Moi”](https://verifiez.moi/gouvernement-connecte-par-verifiez-moi/)
-* Deuxième facteur d’authentification à l’aide d’applications d’authentification mobile (par exemple, [Google Authenticator [en anglais]](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2), [Microsoft Authenticator [en anglais]](https://www.microsoft.com/fr-ca/security/mobile-authenticator-app), [Authy [en anglais]](https://authy.com/))
-* [Authentification unique](session-management.html#single-sign-on)
-* [Déconnexion unique (globale)](session-management.html#single-logout)
+* Deuxième facteur d’authentification à l’aide d’applications d’authentification mobile (par exemple, [Google Authenticator [en anglais]](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2), [Microsoft Authenticator [en anglais]](https://www.microsoft.com/fr-ca/security/mobile-authenticator-app))
+* [Authentification unique](gestion-des-sessions.html#authentification-unique)
+* [Déconnexion unique (globale)](gestion-des-sessions.html#déconnexion-unique)
 * Interface utilisateur entièrement personnalisable (prise en charge des "apparences")
 * [Migration intégrée des utilisateurs actuels de CléGC et du SCJ](auto-collection.html)
 

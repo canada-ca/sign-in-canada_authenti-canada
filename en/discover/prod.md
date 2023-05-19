@@ -27,7 +27,7 @@ The performance target for the production environment is to respond to 95% of HT
 
 ## Capacity
 
-The production environment currently has sufficient capacity to authenticate up to 5 users per second (18,000 per hour).
+The production environment currently has sufficient capacity to authenticate up to 12 users per second (43,200 per hour).
 
 ## Data Backup and Recovery
 

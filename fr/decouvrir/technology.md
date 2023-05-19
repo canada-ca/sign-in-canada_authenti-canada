@@ -62,7 +62,7 @@ logique opérationnelle. En tant que fournisseuse [OpenID Connect (en anglais)](
 également l’interface de programmation d’applications utilisée par les parties utilisatrices du gouvernement du Canada qui 
 s’intègrent à l’aide d'[OpenID Connect (en anglais)](https://openid.net/connect/).
 
-Version: 4.2.3
+Version: 4.4.0
 
 Site Web: https://www.gluu.org/ (en anglais)
 
@@ -76,7 +76,7 @@ Shibboleth est un fournisseur d’identité [SAML (en anglais)](https://wiki.oas
 l’interface de programmation d’applications utilisée par les parties utilisatrices du gouvernement du Canada qui s’intègrent 
 à l’aide de [SAML (en anglais)](https://wiki.oasis-open.org/security/FrontPage).
 
-Version: 4.0.1
+Version: 4.4.0
 
 Site Web: https://www.shibboleth.net/products/identity-provider/ (en anglais)
 
@@ -92,6 +92,6 @@ qui est optimisé pour les applications interactives.
 La plateforme Authenti-Canada utilise Couchbase pour stocker les profils d’utilisateurs et les configurations des parties 
 utilisatrices, ainsi que pour la mise en cache répartie et à rendement élevé de séances.
 
-Version: 6.6.1
+Version: 6.6.5
 
 Site Web: https://www.couchbase.com/ (en anglais)

@@ -135,7 +135,7 @@ group Par
    note right of IDP : GCCF logout complete
    Browser <<-- IDP : SAML Logout Response
 end
-alt an error occured
+alt an error occurred
    Browser -> OP : Load logout warning page
    Browser <-- RP : Logout warning page
 else no errors
@@ -289,15 +289,15 @@ they have been using. When this happens:
    multiple relying parties then these requests are all sent simultaneously, in
    parallel.
 6. Once back-channel logout has been completed, the Acceptance Platform returns
-   an [HTML](https://html.spec.whatwg.org/multipage/){:target="_blank"} logout
+   an [HTML](https://html.spec.whatwg.org/multipage/) logout
    propagation page. This page contains a number of
-   [iframe](https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element){:target="_blank"}
+   [iframe](https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element)
    elements. The `src` (source) attribute of each _iframe_ element points to the
    front-channel logout
    [URI](https://openid.net/specs/openid-connect-frontchannel-1_0.html#RPLogout)
    of one of the relying party sites where the user has logged in during their
    current session. In the diagram, these other sites are identified as "Other
-   OIDC RPs". The `src` attribute of the final _iframe_ points to a URI endpoint
+   SIC RPs". The `src` attribute of the final _iframe_ points to a URI endpoint
    of the Acceptance Platform's Acceptance Framework.
 7. Upon receiving the propagation page, the browser begins to load all of the of
    the _iframe_s in parallel, by asynchronously sending an HTTP GET request to

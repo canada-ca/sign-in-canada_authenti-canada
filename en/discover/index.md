@@ -1,7 +1,7 @@
 ---
 layout: default
 ref: discover
-title: What is the Sign In Canada Platform?
+title: What is the Sign In Canada (SIC) Platform?
 lang: en
 ---
 # What is the Sign In Canada Platform?
@@ -17,7 +17,7 @@ external clients (e.g., individuals, businesses, and representatives).
 * First-factor (username & password) authentication using:
   * The Government of Canada branded credential: [“GCKey”](https://clegc-gckey.gc.ca)
   * Online banking credentials, via a commercial credential broker service (CBS): [“Government Login by Verified.Me”](https://verified.me/government-sign-in-by-verified-me/)
-* Second-factor authentication using mobile authenticator apps (e.g., [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2), [Microsoft Authenticator](https://www.microsoft.com/en-us/security/mobile-authenticator-app), [Authy](https://authy.com/))
+* Second-factor authentication using mobile authenticator apps (e.g., [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2), [Microsoft Authenticator](https://www.microsoft.com/en-us/security/mobile-authenticator-app))
 * [Single Sign-On](session-management.html#single-sign-on)
 * [Single (Global) Logout](session-management.html#single-logout)
 * Fully customizable user interface (support for "skins")
