@@ -48,7 +48,7 @@ Your phone number will be used to:
 
 Your phone number will be stored securely.
 
-For more information, see the full [privacy notice statement]().
+For more information, see the full [privacy notice statement](privacy/index.html).
 
 </details>
 
