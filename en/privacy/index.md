@@ -1,7 +1,7 @@
 ---
 layout: default
 ref: privacy
-title: Privacy
+title: Privacy notice for Sign in Canada users
 lang: en
 ---
 
@@ -12,6 +12,7 @@ lang: en
 - [General Service Definition](#general-service-definition)
 - [We collect your personal information](#we-collect-your-personal-information)
 - [We use web analytics](#we-use-web-analytics)
+- [We share some information](#we-share-some-information)
 - [We protect your privacy](#we-protect-your-privacy)
 - [You have privacy rights](#you-have-privacy-rights)
 
