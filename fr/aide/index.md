@@ -1,6 +1,6 @@
 ---
-layout: default
-ref: aide
+layout: platform
+ref: help
 title: Soutien de connexion
 lang: fr
 ---

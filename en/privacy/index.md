@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: platform
 ref: privacy
 title: Privacy notice for Sign in Canada users
 lang: en
