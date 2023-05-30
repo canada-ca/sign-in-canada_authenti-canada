@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: platform
 ref: help
 title: Sign in support
 lang: en

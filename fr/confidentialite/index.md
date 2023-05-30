@@ -1,6 +1,6 @@
 ---
-layout: default
-ref: confidentialite
+layout: platform
+ref: privacy
 title: Avis de confidentialité pour les utilisateurs d’Authenti-Canada
 lang: fr
 ---
@@ -75,8 +75,7 @@ Si vous avez des questions, des préoccupations ou des plaintes concernant cet a
 
 Services partagés Canada 
 
-PO Box 9808, STN T, CSC
-CP 8784 Succursale T CSC
+CP 9808, Station T, CSC
 
 Ottawa (Ontario)  K1G 4A8
 <br/>
