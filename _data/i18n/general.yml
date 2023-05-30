@@ -119,6 +119,18 @@ nav:
     link:
       en: /en/maintenance.html
       fr: /fr/entretien.html
+  privacy:
+    en: Privacy notice for Sign in Canada users
+    fr: Avis de confidentialité pour les utilisateurs d'Authenti-Canada
+    link:
+      en: /en/privacy/
+      fr: /fr/confidentialite/
+  help:
+    en: Sign in support
+    fr: Soutien de connexion
+    link:
+      en: /en/help/
+      fr: /fr/aide/
 
 footer:
   AboutGovernment:
