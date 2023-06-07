@@ -9,12 +9,16 @@ lang: fr
 
 ## Sur cette page
 
-- [Définition générale du service](#définition-générale-du-service)
-- [Nous recueillons vos renseignements personnels](#nous-recueillons-vos-renseignements-personnels)
-- [Nous avons recours à l’analyse du Web](#nous-avons-recours-à-lanalyse-du-web)
-- [Nous partageons certains renseignements](#nous-partageons-certains-renseignements)
-- [Nous protégeons votre vie privée](#we-protect-your-privacy)
-- [Vous avez des droits à la vie privée](#you-have-privacy-rights)
+<nav title="Sur cette page" aria-label="Sur cette page">
+    <ul>
+        <li><a href="#définition-générale-du-service">Définition générale du service</a></li>
+        <li><a href="#nous-recueillons-vos-renseignements-personnels">Nous recueillons vos renseignements personnels</a></li>
+        <li><a href="#nous-avons-recours-à-lanalyse-du-web">Nous avons recours à l’analyse du Web</a></li>
+        <li><a href="#nous-partageons-certains-renseignements">Nous partageons certains renseignements</a></li>
+        <li><a href="#nous-protégeons-votre-vie-privée">Nous protégeons votre vie privée</a></li>
+        <li><a href="#vous-avez-des-droits-à-la-vie-privée">Vous avez des droits à la vie privée</a></li>
+    </ul>
+</nav>
 
 ## Définition générale du service
 
