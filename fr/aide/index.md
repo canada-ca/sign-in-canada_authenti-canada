@@ -39,14 +39,14 @@ Si vous ne parvenez pas à ouvrir une session à votre banque, veuillez communiq
 
 <p>La vérification en deux étapes est une couche de sécurité supplémentaire qui exige un code en plus de votre mot de passe pour accéder à votre compte. Ce code peut être envoyé à votre téléphone ou être généré par l’application d’authentification.</p>
 
-<p>Imaginez que c’est une porte verrouillée et qu’il faut une clef et un code secret pour l’ouvrir. Quelqu’un qui essaie de se faire passer pour vous dans Internet n’arrivera probablement jamais à obtenir votre clef et votre code.</p>
+<p>Imaginez que c’est une porte verrouillée et qu’il faut une clef et un code secret pour l’ouvrir. Quelqu'un qui se fait passer pour vous sur l'internet ne devrait jamais être en mesure d'obtenir à la fois la clé et le code.</p>
 
 </details>
 
 <details>
 <summary>Que faites-vous avec mes renseignements?</summary>
 
-<p>Votre numéro sera utilisé pour :</p>
+<p>Votre numéro de téléphone sera utilisé pour :</p>
 <ul>
     <li>Vous envoyer des codes afin de vérifier votre identité à chaque ouverture de session</li>
     <li>Vous aviser des changements apportés à vos paramètres de connexion</li>
@@ -72,7 +72,7 @@ Si vous ne parvenez pas à ouvrir une session à votre banque, veuillez communiq
 
 <p>Si vous n’avez pas de deuxième numéro de téléphone, nous vous recommandons de choisir l’application d’authentification comme méthode de vérification en deux étapes. Cette méthode ne nécessite qu’un seul téléphone intelligent et une application d’authentification de votre choix.</p> 
 
-<p>Par ailleurs, si vous avez déjà choisi la messagerie et vérifié votre numéro de téléphone, vous pouvez choisir de sauter l’ajout d’un numéro de téléphone de secours; toutefois, si vous n’avez plus accès à votre téléphone par défaut, vous ne pourrez plus accéder au service auquel vous vous connectez. Vous devrez alors créer un nouveau compte.</p>
+<p>Par ailleurs, si vous avez déjà choisi la messagerie et vérifié votre numéro de téléphone, vous pouvez choisir de sauter l’ajout d’un numéro de téléphone de secours; toutefois, si vous n’avez plus accès à votre téléphone par défaut, <strong>vous ne pourrez plus accéder</strong> au service auquel vous vous connectez. Vous devrez alors créer un nouveau compte.</p>
 
 </details>
 
@@ -88,7 +88,7 @@ Si vous ne parvenez pas à ouvrir une session à votre banque, veuillez communiq
     <li> Entrer le code envoyé à votre autre téléphone;</li>
     <li> Vous connecter</li>
 </ul>
-<p>Si vous choisissez un numéro de téléphone pour la vérification en deux étapes et que vous n’en ajoutez pas un second, et que vous avez perdu l’accès à votre numéro de téléphone, malheureusement, vous ne pouvez pas récupérer votre compte. Vous devrez créer un nouveau compte.</p>
+<p>Si vous choisissez un numéro de téléphone pour la vérification en deux étapes et que vous <strong>n’en ajoutez pas</strong> un deuxième, et que vous avez perdu l’accès à votre numéro de téléphone, malheureusement, vous ne pouvez pas récupérer votre compte. Vous devrez créer un nouveau compte.</p>
 
 </details>
 
@@ -107,7 +107,7 @@ Si vous ne parvenez pas à ouvrir une session à votre banque, veuillez communiq
 
 <ul>
     <li>À l’écran principal <strong>Paramètres de connexion</strong>, sélectionnez l’option <strong>Modifier</strong> à côté du numéro de téléphone que vous voulez supprimer</li>
-    <li>À l’écran, sélectionnez l’option <strong>Supprimer</strong>.</li> 
+    <li>À l’écran <strong>Modifier le numéro de téléphone</strong>, sélectionnez l’option <strong>Supprimer</strong></li> 
     <li>Pour des raisons de sécurité, vous devrez saisir le numéro de téléphone au complet pour confirmer la suppression</li>
 </ul>
 

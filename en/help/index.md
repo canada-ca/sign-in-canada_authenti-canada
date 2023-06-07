@@ -68,6 +68,15 @@ If you cannot sign in to your bank, please contact them for support.
 </details>
 
 <details>
+<summary>What if I don’t have a second phone number?</summary>
+
+<p>If you don't have a second phone number, we recommend choosing the authenticator app as your two step verification method instead. This method only requires one smartphone device and an authenticator app of your choice.</p> 
+
+<p>Alternatively, if you have already chosen SMS and verified your phone number, you can choose to skip adding a second, backup phone number but if you lose access to your default phone you will be <strong>permanently locked out of</strong> the service you are signing in to. You will have to create a new account.</p>
+
+</details>
+
+<details>
 <summary>What if I lose my phone or phone number?</summary>
 
 <p>If you set up a phone number as your two-step verification and have added a second, backup phone number, you can:</p>
@@ -78,7 +87,7 @@ If you cannot sign in to your bank, please contact them for support.
     <li> Enter the code sent to your other phone</li>
     <li> Sign in</li>
 </ul>
-<p>If you set up a phone number as your two step verification and did not add a second, backup phone number and you have lost access to your phone number, unfortunately there is no way to recover your account. You will have to create a new account.</p>
+<p>If you set up a phone number as your two step verification and <strong>did not</strong> add a second, backup phone number and you have lost access to your phone number, unfortunately there is no way to recover your account. You will have to create a new account.</p>
 
 </details>
 
@@ -97,7 +106,7 @@ If you cannot sign in to your bank, please contact them for support.
 
 <ul>
 <li>From the main <strong>Sign in settings</strong> screen, select the <strong>Edit</strong> option next to the phone number you want to remove</li>
-<li>On the <strong>Edit</strong> screen, select the <strong>Delete</strong> option</li> 
+<li>On the <strong>Edit phone number</strong> screen, select the <strong>Delete</strong> option</li> 
 <li>For security, you will need to enter the full phone number to confirm the deletion</li>
 </ul>
 
