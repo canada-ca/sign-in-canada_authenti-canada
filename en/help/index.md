@@ -9,9 +9,13 @@ lang: en
 
 ## On this page
 
-- [GCKey user name and password](#gckey-username-and-password)
-- [Financial partner sign in](#financial-partner-sign-in)
-- [Two step verification](#two-step-verification)
+<nav title="On this page" aria-label="On this page">
+    <ul>
+        <li><a href="#gckey-username-and-password">GCKey user name and password</a></li>
+        <li><a href="#financial-partner-sign-in">Financial partner sign in</a></li>
+        <li><a href="#two-step-verification">Two step verification</a></li>
+    </ul>
+</nav>
 
 ## GCKey username and password
 

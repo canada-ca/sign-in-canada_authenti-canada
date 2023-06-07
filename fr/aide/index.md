@@ -9,9 +9,13 @@ lang: fr
 
 ## Sur cette page
 
-- [Nom d’utilisateur et mot de passe CléGC](#nom-dutilisateur-et-mot-de-passe-clégc)
-- [Ouverture de session à l’aide d’un partenaire financier](#ouverture-de-session-à-laide-dun-partenaire-financier)
-- [Vérification en deux étapes](#vérification-en-deux-étapes)
+<nav title="Sur cette page" aria-label="Sur cette page">
+    <ul>
+        <li><a href="#nom-dutilisateur-et-mot-de-passe-clégc">Nom d’utilisateur et mot de passe CléGC</a></li>
+        <li><a href="#ouverture-de-session-à-laide-dun-partenaire-financier">Ouverture de session à l’aide d’un partenaire financier</a></li>
+        <li><a href="#vérification-en-deux-étapes">Vérification en deux étapes</a></li>
+    </ul>
+</nav>
 
 ## Nom d’utilisateur et mot de passe CléGC
 

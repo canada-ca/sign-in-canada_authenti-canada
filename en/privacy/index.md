@@ -9,12 +9,16 @@ lang: en
 
 ## On this page
 
-- [General Service Definition](#general-service-definition)
-- [We collect your personal information](#we-collect-your-personal-information)
-- [We use web analytics](#we-use-web-analytics)
-- [We share some information](#we-share-some-information)
-- [We protect your privacy](#we-protect-your-privacy)
-- [You have privacy rights](#you-have-privacy-rights)
+<nav title="On this page" aria-label="On this page">
+    <ul>
+        <li><a href="#general-service-definition">General Service Definition</a></li>
+        <li><a href="#we-collect-your-personal-information">We collect your personal information</a></li>
+        <li><a href="#we-use-web-analytics">We use web analytics</a></li>
+        <li><a href="#we-share-some-information">We share some information</a></li>
+        <li><a href="#we-protect-your-privacy">We protect your privacy</a></li>
+        <li><a href="#you-have-privacy-rights">You have privacy rights</a></li>
+    </ul>
+</nav>
 
 ## General Service Definition
 
