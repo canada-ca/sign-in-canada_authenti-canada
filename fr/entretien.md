@@ -6,7 +6,7 @@ lang: fr
 ---
 # Entretien prévu à venir
 
-## Mercredi 7 juin 2023 20h00 HE
+## Mercredi 14 juin 2023 20h00 HE
 
 ### Environnements concernés
 
@@ -14,7 +14,7 @@ lang: fr
 
 ### La description
 L'équipe d'Authenti-Canada déploiera une nouvelle version de la plateforme d'Authenti-Canada
-[version 1.4.44](https://github.com/sign-in-canada/Acceptance-Platform/releases/tag/v1.4.44)
+[version 1.4.48](https://github.com/sign-in-canada/Acceptance-Platform/releases/tag/v1.4.48)
 à l'environnement de **EEAC**. L'installation est prévue pour 20h00
 et devrait entraîner une panne d'environ 30 minutes.
 
