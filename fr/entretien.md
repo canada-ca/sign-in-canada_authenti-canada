@@ -6,18 +6,15 @@ lang: fr
 ---
 # Entretien prévu à venir
 
-## Samedi 15 juillet 2023 06h00 HE
+## Jeudi 20 juillet 2023 21h00 HE
 
 ### Environnements concernés
 
 * EEAC
 
 ### La description
-L'équipe d'Authenti-Canada déploiera une nouvelle version de la plateforme d'Authenti-Canada
-[version 1.4.62](https://github.com/sign-in-canada/Acceptance-Platform/releases/tag/v1.4.62)
-à l'environnement de **EEAC**. L'installation est prévue pour 06h00
-et devrait entraîner une panne d'environ 3 heures.
 
+L'équipe d'Authenti-Canada effectuera des tests internes de notre pipeline de livraison continue dans l'environnement **EEAC** à 21h00, ce qui entraînera une panne de 30 minutes.
 
 ## Dimanche 23 juillet 2023 04h00 HE
 
