@@ -1,10 +1,10 @@
 ---
 layout: default
 ref: announcement
-title: Annouces
+title: Annonces
 lang: fr
 ---
-# Annouces
+# Annonces
 
 ## 31 juillet 2023
 
