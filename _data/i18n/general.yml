@@ -131,6 +131,12 @@ nav:
     link:
       en: /en/help/
       fr: /fr/aide/
+  announcement:
+    en: Announcement
+    fr: Annonce
+    link:
+      en: /en/announcement.html
+      fr: /fr/annonce.html
 
 footer:
   AboutGovernment:
