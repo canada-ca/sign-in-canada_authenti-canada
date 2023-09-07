@@ -6,7 +6,7 @@ lang: fr
 ---
 # Entretien prévu à venir
 
-## Jeudi 20 juillet 2023 21h00 HE
+## Samedi 9 septembre 2023 04h00 HE
 
 ### Environnements concernés
 
@@ -14,9 +14,12 @@ lang: fr
 
 ### La description
 
-L'équipe d'Authenti-Canada effectuera des tests internes de notre pipeline de livraison continue dans l'environnement **EEAC** à 21h00, ce qui entraînera une panne de 30 minutes.
+L'équipe d'Authenti-Canada déploiera une nouvelle version de la plateforme d'Authenti-Canada
+[version 1.4.93](https://github.com/sign-in-canada/Acceptance-Platform/releases/tag/v1.4.93)
+à l'environnement de **EEAC**. L'installation est prévue pour 04h00
+et devrait entraîner une panne d'environ 5 minutes.
 
-## Dimanche 23 juillet 2023 04h00 HE
+## Dimanche 10 septembre 2023 04h00 HE
 
 ### Environnements concernés
 
@@ -24,6 +27,6 @@ L'équipe d'Authenti-Canada effectuera des tests internes de notre pipeline de l
 
 ### La description
 L'équipe d'Authenti-Canada déploiera une nouvelle version de la plateforme d'Authenti-Canada
-[version 1.4.62](https://github.com/sign-in-canada/Acceptance-Platform/releases/tag/v1.4.62)
+[version 1.4.93](https://github.com/sign-in-canada/Acceptance-Platform/releases/tag/v1.4.93)
 à l'environnement de **Production**. L'installation est prévue pour 04h00
-et devrait entraîner une panne d'environ 30 minutes.
+et devrait entraîner une panne d'environ 5 minutes.
