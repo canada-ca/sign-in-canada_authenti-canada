@@ -6,7 +6,7 @@ lang: en
 ---
 # Upcoming Planned Maintenance
 
-## Thursday July 20, 2023 9:00PM ET
+## Saturday September 9, 2023 4:00AM ET
 
 ### Environments Affected
 
@@ -14,10 +14,12 @@ lang: en
 
 ### Description
 
-The Sign In Canada team will be performing internal testing of our continuous delivery pipeline in the 
-**CATE** environment at 9PM resulting in an outage of 30 minutes.
+The Sign In Canada team will be deploying a new release of the Sign In Canada platform
+[Release 1.4.93](https://github.com/sign-in-canada/Acceptance-Platform/releases/tag/v1.4.93)
+to the **CATE** environment. The installation is scheduled for 4AM
+and is expected to result in an outage of approximately 5 minutes.
 
-## Sunday July 23, 2023 4:00AM ET
+## Sunday September 10, 2023 4:00AM ET
 
 ### Environments Affected
 
@@ -26,6 +28,6 @@ The Sign In Canada team will be performing internal testing of our continuous de
 ### Description
 
 The Sign In Canada team will be deploying a new release of the Sign In Canada platform
-[Release 1.4.62](https://github.com/sign-in-canada/Acceptance-Platform/releases/tag/v1.4.62)
+[Release 1.4.93](https://github.com/sign-in-canada/Acceptance-Platform/releases/tag/v1.4.93)
 to the **Production** environment. The installation is scheduled for 4AM
-and is expected to result in an outage of approximately 30 minutes.
+and is expected to result in an outage of approximately 5 minutes.
