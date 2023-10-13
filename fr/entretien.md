@@ -6,27 +6,13 @@ lang: fr
 ---
 # Entretien prévu à venir
 
-## Samedi 9 septembre 2023 04h00 HE
+## Samedi 14 octobre 2023 14h00 - 19h00 HE
 
 ### Environnements concernés
 
+* PRODUCTION
 * EEAC
 
 ### La description
 
-L'équipe d'Authenti-Canada déploiera une nouvelle version de la plateforme d'Authenti-Canada
-[version 1.4.93](https://github.com/sign-in-canada/Acceptance-Platform/releases/tag/v1.4.93)
-à l'environnement de **EEAC**. L'installation est prévue pour 04h00
-et devrait entraîner une panne d'environ 5 minutes.
-
-## Dimanche 10 septembre 2023 04h00 HE
-
-### Environnements concernés
-
-* Production
-
-### La description
-L'équipe d'Authenti-Canada déploiera une nouvelle version de la plateforme d'Authenti-Canada
-[version 1.4.93](https://github.com/sign-in-canada/Acceptance-Platform/releases/tag/v1.4.93)
-à l'environnement de **Production**. L'installation est prévue pour 04h00
-et devrait entraîner une panne d'environ 5 minutes.
+L'équipe d'infrastructure du SCT effectuera un entretien du réseau qui pourrait entraîner une instabilité du service Authenti-Canada et une expérience incohérente pour l'utilisateur pendant une période de 10 minutes au cours de cette période.
