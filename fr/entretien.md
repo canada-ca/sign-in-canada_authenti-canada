@@ -6,11 +6,11 @@ lang: fr
 ---
 # Entretien prévu à venir
 
-## Samedi 14 octobre 2023 14h00 - 19h00 HE
+## Mercredi 25 octobre 2023 21h00 HE
 
 ### Environnements concernés
 
-* PRODUCTION
+* Production
 * EEAC
 
 ### La description
