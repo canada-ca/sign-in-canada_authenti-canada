@@ -6,11 +6,11 @@ lang: en
 ---
 # Upcoming Planned Maintenance
 
-## Saturday October 14, 2023 2:00PM - 7:00PM ET
+## Wednesday October 25, 2023 9:00PM ET
 
 ### Environments Affected
 
-* PRODUCTION
+* Production
 * CATE
 
 ### Description
