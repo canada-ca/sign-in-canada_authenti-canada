@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+  <title>Production Environment</title>
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <!-- Meta data -->
+  <meta name="description" content="Sign In Canada.">
+  <!-- Meta data-->
+  <!--[if gte IE 9 | !IE ]><!-->
+  <link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/css/theme.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/style.css">
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+  <link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/css/ie8-theme.min.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/ie8-wet-boew.min.js"></script>
+	<![endif]-->
+  <!--[if lte IE 9]> <![endif]-->
+  <noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/css/noscript.min.css"></noscript>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage" class="page-discover-prod">
+<ul id="wb-tphp">
+  <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
+  <li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to "About this site"</a></li>
+</ul>
+
+<header>
+  <div id="wb-bnr" class="container">
+    <section id="wb-lng" class="visible-md visible-lg text-right">
+      <h2 class="wb-inv">Language selection</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-inline margin-bottom-none">
+            <li><a lang="fr" hreflang="fr" href="/fr/decouvrir/prod.html">Français</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="row">
+      <div class="brand col-xs-8 col-sm-9 col-md-6">
+        <a href="https://www.canada.ca/en.html">
+          <img src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/sig-blk-en.svg" alt="Government of Canada / Gouvernement du Canada">
+          <span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span>
+        </a>
+      </div>
+
+      <section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
+        <h2>Menus</h2>
+        <ul class="list-inline text-right chvrn">
+          <li><a href="#mb-pnl" title="Menus" aria-controls="mb-pnl" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Menus</span></span></a></li>
+        </ul>
+        <div id="mb-pnl"></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="gcweb-menu" typeof="SiteNavigationElement">
+    <div class="container nvbar">
+      <h2 class="wb-inv">Menu</h2>
+      <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+      <ul role="menu" aria-orientation="vertical">
+        <li role="presentation"><a role="menuitem" href="/en/discover/index.html">Discover</a></li>
+        <li role="presentation"><a role="menuitem" href="/en/evaluate/index.html">Evaluate</a></li>
+        <li role="presentation"><a role="menuitem" href="/en/join/index.html">Join</a></li>
+        <li role="presentation"><a role="menuitem" href="/en/contribute/index.html">Contribute</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="wb-bc" property="breadcrumb">
+    <h2>You are here:</h2>
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="/en/index.html">Sign In Canada</a></li>
+<li><a href="/en/discover/index.html">Discover</a></li>
+          <li><a href="/en/discover/prod.html">Production Environment</a></li>
+</ol>
+    </div>
+  </nav>
+</header>
+
+<main property="mainContentOfPage" class="container">
+
+<h1 id="production-environment">Production Environment</h1>
+
+<p>The Sign In Canada production environment has been live since March 2021.</p>
+
+<h2 id="security-authorization">Security Authorization</h2>
+
+<p>The security of the Sign In Canada production environment has been assessed and authorized to authenticate users on behalf of relying party applications:</p>
+
+<ul>
+  <li>that require a credential assurance level of 2 (LoA 2) or lower, in compliance with the <a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=16577">Directive on Identity Management</a> ; and</li>
+  <li>for which the sensitivity (confidentiality, integrity, and availability) of any data to be processed, stored, transmitted on or by the Relying Parties does not exceed Protected B, Medium Integrity, Medium Availability (PM/M/M).</li>
+</ul>
+
+<h2 id="availability">Availability</h2>
+
+<p>The production environment operates 24 hours a day, 365 days a year, with a target availability of 99.8% calculated monthly and inclusive of scheduled maintenance activities.</p>
+
+<h2 id="performance">Performance</h2>
+
+<p>The performance of the production environment is calculated by measuring the response time for every HTTP request received by the service. These HTTP requests include all those received from users’ browsers for web pages and related web content, and all requests to the Sign In Canada application programming interfaces (APIs) from relying party applications.</p>
+
+<p>The performance target for the production environment is to respond to 95% of HTTP requests within 200 milliseconds or less, and to respond to 99 % of HTTP requests within 500 milliseconds or less.</p>
+
+<h2 id="capacity">Capacity</h2>
+
+<p>The production environment currently has sufficient capacity to authenticate up to 12 users per second (43,200 per hour).</p>
+
+<h2 id="data-backup-and-recovery">Data Backup and Recovery</h2>
+
+<p>All user data and all relying party configuration data stored in the production environment is backed up once per hour, every hour to geographically redundant storage, with a durability of at least 99.99999999999999% over a given year.</p>
+
+<h2 id="monitoring">Monitoring</h2>
+
+<p>The availability and performance of the production environment is monitored 24 hours a day, 365 days a year. This monitoring is fully automated.
+Whenever an availability interruption or performance degradation is detected, members of the Sign In Canada support team are automatically alerted by email and by text message.</p>
+
+</main>
+
+
+<footer role="contentinfo" id="wb-info">
+  <nav role="navigation" class="container wb-navcurr">
+    <h2 class="wb-inv">About government</h2>
+    <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+      <li><a href="mailto:SignIn-AuthentiCanada@tbs-sct.gc.ca">Contact us</a></li>
+      <li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
+      <li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
+      <li><a href="https://www.canada.ca/en/news.html">News</a></li>
+      <li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
+      <li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
+      <li><a href="http://pm.gc.ca/eng">Prime Minister</a></li>
+      <li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
+      <li><a href="http://open.canada.ca/en/">Open government</a></li>
+    </ul>
+  </nav>
+  <div class="brand">
+    <div class="container">
+      <div class="row">
+        <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+          <h2 class="wb-inv">About this site</h2>
+          <ul>
+            <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+            <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+            <li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
+            <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+            <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+          </ul>
+        </nav>
+        <div class="col-xs-6 visible-sm visible-xs tofpg">
+          <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 text-right">
+          <object type="image/svg+xml" tabindex="-1" role="img" data="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/wmms-blk.svg" aria-label="Symbol of the Government of Canada"></object>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/theme.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr" dir="ltr">
+  
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+  <title>Gestion des séances</title>
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <!-- Meta data -->
+  <meta name="description" content="Authenti-Canada.">
+  <!-- Meta data-->
+  <!--[if gte IE 9 | !IE ]><!-->
+  <link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/css/theme.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/style.css">
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+  <link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/css/ie8-theme.min.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/ie8-wet-boew.min.js"></script>
+	<![endif]-->
+  <!--[if lte IE 9]> <![endif]-->
+  <noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/css/noscript.min.css"></noscript>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage" class="page-discover-session">
+<ul id="wb-tphp">
+  <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Passer au contenu principal</a></li>
+  <li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Passer à « À propos de ce site »</a></li>
+</ul>
+
+<header>
+  <div id="wb-bnr" class="container">
+    <section id="wb-lng" class="visible-md visible-lg text-right">
+      <h2 class="wb-inv">Sélection de la langue</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-inline margin-bottom-none">
+            <li><a lang="en" hreflang="en" href="/en/discover/session-management.html">English</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="row">
+      <div class="brand col-xs-8 col-sm-9 col-md-6">
+        <a href="https://www.canada.ca/fr.html">
+          <img src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/sig-blk-fr.svg" alt="Government of Canada / Gouvernement du Canada">
+          <span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span>
+        </a>
+      </div>
+
+      <section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
+        <h2>Menus</h2>
+        <ul class="list-inline text-right chvrn">
+          <li><a href="#mb-pnl" title="Menus" aria-controls="mb-pnl" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Menus</span></span></a></li>
+        </ul>
+        <div id="mb-pnl"></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="gcweb-menu" typeof="SiteNavigationElement">
+    <div class="container nvbar">
+      <h2 class="wb-inv">Menu</h2>
+      <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+      <ul role="menu" aria-orientation="vertical">
+        <li role="presentation"><a role="menuitem" href="/fr/decouvrir/index.html">Découvrir</a></li>
+        <li role="presentation"><a role="menuitem" href="/fr/evaluer/index.html">Évaluer</a></li>
+        <li role="presentation"><a role="menuitem" href="/fr/rejoindre/index.html">Rejoindre</a></li>
+        <li role="presentation"><a role="menuitem" href="/fr/contribuer/index.html">Contribuer</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="wb-bc" property="breadcrumb">
+    <h2>Vous êtes ici:</h2>
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="/fr/index.html">Authenti-Canada</a></li>
+<li><a href="/fr/decouvrir/index.html">Découvrir</a></li>
+          <li><a href="/fr/decouvrir/gestion-des-sessions.html">Gestion des sessions</a></li>
+</ol>
+    </div>
+  </nav>
+</header>
+
+<main property="mainContentOfPage" class="container">
+
+<h1 id="gestion-des-séances">Gestion des séances</h1>
+
+<p>La plateforme Authenti-Canada fonctionne comme une autorité de gestion de
+session qui coordonne de façon centralisée les sessions des utilisateurs dans
+plusieurs applications de parties de confiance (PC). La plateforme comporte deux
+caractéristiques clés qui la soutiennent : authentification unique et
+déconnexion unique.</p>
+
+<h2 id="authentification-unique">Authentification unique</h2>
+
+<p>Une fois qu’un utilisateur a utilisé avec succès un justificatif quelconque ou
+un service d’identité numérique de confiance pour s’authentifier auprès d’une
+PC, Authenti-Canada peut lui permettre de s’authentifier en silence auprès
+d’autres PC, sous réserve d’une période d’attente d’authentification unique. La
+plateforme y parvient en créant sa propre session avec l’utilisateur lors de sa
+première connexion, puis en ne les invitant pas à se réauthentifier lorsqu’ils
+se connectent à d’autres PC pendant un délai d’inactivité spécifiée.</p>
+
+<p>La fenêtre d’attente de l’authentification unique démarre chaque fois qu’un
+utilisateur saisit son mot de passe correct à un fournisseur de justificatif
+d’identité (FJI) et se termine après une période spécifiée. Par défaut, il
+s’agit de 20 minutes, mais les parties qui se connectent au Canada peuvent
+modifier ce délai si elles le souhaitent. Il est toutefois important de noter
+que la fenêtre d’authentification unique des services d’authentifiant CléGC et
+le service de courtier de justificatifs d’identité, qui est également de 20
+minutes, ne peut pas être modifié, elle ne peut être désactivée (appelée
+authentification forcée). Dans toute situation où le délai d’attente « codé en
+dur » pourrait entrer en conflit avec le délai d’attente préféré d’une partie de
+confiance, la plateforme Authenti-Canada synchronisera automatiquement les deux
+et résoudra le conflit.</p>
+
+<p><em>Notez que pour que l’authentification unique fonctionne, l’utilisateur doit
+utiliser les mêmes informations d’identification ou la même identité numérique
+de confiance pour accéder à tous les services gouvernementaux numériques. À
+l’heure actuelle, cela n’est pas possible puisque tous les services du
+gouvernement du Canada n’acceptent pas les mêmes justificatifs. Par exemple,
+l’accès aux services fiscaux en ligne fournis par l’Agenge du revenu du Canada
+n’est actuellement pas possible à l’aide d’un justificatif d’identité de CléGC.
+Par conséquent, les utilisateurs qui ont choisi d’utiliser un justificatif de
+CléGC ne peuvent pas s’inscrire à <a href="https://www.canada.ca/fr/agence-revenu/services/services-electroniques/services-electroniques-particuliers/dossier-particuliers.html">Mon dossier pour les particuliers de
+l’ARC</a>.</em></p>
+
+<h2 id="déconnexion-unique">Déconnexion unique</h2>
+
+<p>Lorsqu’un utilisateur a visité plusieurs sites Web (applications de partie de
+confiance) au cours de la même session, la plateforme Authenti-Canada a la
+capacité de coordonner de manière centralisée une déconnexion unique. Avec une
+déconnexion unique, l’utilisateur n’a qu’à cliquer sur un bouton de déconnexion
+sur le site qu’il visite actuellement, et Authenti-Canada les déconnectera
+ensuite de tous les autres sites qu’il a visités pendant sa session.</p>
+
+<p>La propagation de la déconnexion sur tous ces sites peut utiliser le mécanisme
+de déconnexion <a href="https://openid.net/specs/openid-connect-frontchannel-1_0.html">OpenID Connect
+Front-Channel</a>,
+le mécanisme de déconnexion <a href="https://openid.net/specs/openid-connect-backchannel-1_0.html">OpenID Connect
+Back-Channel</a> ou
+le profil de déconnexion SAML à l’aide de
+<a href="https://www.oasis-open.org/committees/download.php/56779/sstc-saml-bindings-errata-2.0-wd-06.pdf">liaisons</a>
+de canal frontal (HTTP-Redirect) ou de canal secondaire (SOAP). La plateforme
+Authenti-Canada appuie tous ces éléments.</p>
+
+<p>Les protocoles OpenID Connect (OIDC) et SAML suivent la même séquence d’événements de base :</p>
+
+<ol>
+  <li>Comme un utilisateur visite plusieurs sites Web (applications) au cours de la
+même session, la plateforme Authenti-Canada permet de suivre les sites qu’il
+a visités.</li>
+  <li>Lorsque l’utilisateur clique sur un bouton de déconnexion sur l’un des sites
+qu’il visite, l’application Web de ce site envoie une demande de déconnexion
+à la plateforme Authenti-Canada.</li>
+  <li>Authenti-Canada envoie ensuite une demande de déconnexion à tous les autres
+sites que l’utilisateur a visités, afin qu’il puisse déconnecter
+l’utilisateur.</li>
+</ol>
+
+<h2 id="transition-et-coexistence">Transition et coexistence</h2>
+
+<p>Il y aura une période de transition prolongée à mesure que les applications PC
+se connecteront à Authenti-Canada et se déconnecteront progressivement un à un
+de la fédération des justificatifs du gouvernement du Canada (FJGC) CléGC et
+Services de courtier de justificatifs d’identité. Pendant cette période de
+transition, la plateforme Authenti-Canada servira d’autorité de gestion de
+session pour les applications qui y sont connectées, tandis que les services
+CléGC et services de courtier de justificatifs d’identité serviront d’autorité
+de gestion de session pour les applications qui y sont connectées.</p>
+
+<p>Cela crée une obligation pour Authenti-Canada de coordonner une déconnexion
+unique avec CléGC et les services de courtier de justificatifs d’identité
+(SCJI), ainsi qu’avec ses propres PC. La plateforme y parvient en appuyant le
+profil de déconnexion unique SAML dans le cadre de son intégration, en tant que
+fournisseur de justificatifs d’identité proxy SAML, avec CléGC et services de
+courtier de justificatif d’identité. La plateforme Authenti-Canada est en mesure
+de coordonner une déconnexion unique avec la fédération des justificatifs du
+gouvernement du Canada (FJGC) dans les deux sens. C’est-à-dire, peu importe si
+l’utilisateur se déconnecte d’abord d’Authenti-Canada ou s’il se déconnecte
+d’abord de la FJGC.</p>
+
+<h3 id="scénario-1--un-utilisateur-se-déconnecte-dabord-dauthenti-canada">Scénario 1 : Un utilisateur se déconnecte d’abord d’Authenti-Canada</h3>
+
+<p>L’exemple suivant illustre comment une déconnexion unique est réalisée dans le
+cas où l’utilisateur clique sur un bouton de déconnexion sur un site de la
+partie de confiance qui est connecté à Authenti-Canada.</p>
+
+<svg class="plantuml" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentstyletype="text/css" height="1141px" preserveaspectratio="none" style="width:1371px;height:1141px;background:#FFFFFF;" version="1.1" viewbox="0 0 1371 1141" width="1371px" zoomandpan="magnify"><defs><lineargradient id="gmfunxum8o7mc0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#00FFFF"></stop><stop offset="100%" stop-color="#5F9EA0"></stop></lineargradient></defs><g><rect fill="url(#gmfunxum8o7mc0)" height="26.2969" id="_title" rx="7.5" ry="7.5" style="stroke:#FF0000;stroke-width:2.0;" width="531" x="421.5" y="10"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="521" x="426.5" y="27.9951">Déconnexion initiée par une partie utilisatrice de Authenti-Canada</text><rect fill="#DDDDDD" height="1092.25" style="stroke:#181818;stroke-width:0.5;" width="322" x="498.5" y="43.2969"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthadjust="spacing" textlength="123" x="598" y="55.3638">Authenti-Canada</text><rect fill="none" height="117.5313" style="stroke:#000000;stroke-width:1.5;" width="714.5" x="492.5" y="265.125"></rect><rect fill="none" height="400.7266" style="stroke:#000000;stroke-width:1.5;" width="1355" x="10" y="425.7891"></rect><rect fill="none" height="117.5313" style="stroke:#000000;stroke-width:1.5;" width="538.5" x="816.5" y="637.7188"></rect><rect fill="none" height="148.4688" style="stroke:#000000;stroke-width:1.5;" width="654.5" x="10" y="840.5156"></rect><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="59" x2="59" y1="118.5938" y2="1056.25"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="419.5" x2="419.5" y1="118.5938" y2="1056.25"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="578.5" x2="578.5" y1="118.5938" y2="1056.25"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="740.5" x2="740.5" y1="118.5938" y2="1056.25"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="899.5" x2="899.5" y1="118.5938" y2="1056.25"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1053.5" x2="1053.5" y1="118.5938" y2="1056.25"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1202" x2="1202" y1="118.5938" y2="1056.25"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="73" x="20" y="115.292">Navigateur</text><ellipse cx="59.5" cy="50.7969" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"></ellipse><path d="M59.5,58.7969 L59.5,85.7969 M46.5,66.7969 L72.5,66.7969 M59.5,85.7969 L46.5,100.7969 M59.5,85.7969 L72.5,100.7969 " fill="none" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="73" x="20" y="1068.2451">Navigateur</text><ellipse cx="59.5" cy="1080.0469" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"></ellipse><path d="M59.5,1088.0469 L59.5,1115.0469 M46.5,1096.0469 L72.5,1096.0469 M59.5,1115.0469 L46.5,1130.0469 M59.5,1115.0469 L72.5,1130.0469 " fill="none" style="stroke:#181818;stroke-width:0.5;"></path><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="146" x="346.5" y="87.2969"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="132" x="353.5" y="107.292">Partie de confiance</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="146" x="346.5" y="1055.25"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="132" x="353.5" y="1075.2451">Partie de confiance</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="152" x="502.5" y="87.2969"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="138" x="509.5" y="107.292">Fournisseur OpenID</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="152" x="502.5" y="1055.25"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="138" x="509.5" y="1075.2451">Fournisseur OpenID</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="152" x="664.5" y="87.2969"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="138" x="671.5" y="107.292">Cadre d'acceptation</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="152" x="664.5" y="1055.25"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="138" x="671.5" y="1075.2451">Cadre d'acceptation</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147" x="826.5" y="71"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="123" x="838.5" y="90.9951">SAML Fournisseur</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="133" x="833.5" y="107.292">d'identité SAML (FJI)</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147" x="826.5" y="1055.25"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="123" x="838.5" y="1075.2451">SAML Fournisseur</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="133" x="833.5" y="1091.542">d'identité SAML (FJI)</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="141" x="983.5" y="71"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="78" x="1015" y="90.9951">Autre(s) PR</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="127" x="990.5" y="107.292">d'Authenti-Canada</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="141" x="983.5" y="1055.25"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="78" x="1015" y="1075.2451">Autre(s) PR</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="127" x="990.5" y="1091.542">d'Authenti-Canada</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="92" x="1156" y="71"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="78" x="1163" y="90.9951">Autre(s) PR</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="54" x="1175" y="107.292">du FJGC</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="92" x="1156" y="1055.25"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="78" x="1163" y="1075.2451">Autre(s) PR</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="54" x="1175" y="1091.542">du FJGC</text><polygon fill="#181818" points="407.5,145.7266,417.5,149.7266,407.5,153.7266,411.5,149.7266" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="59.5" x2="413.5" y1="149.7266" y2="149.7266"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="101" x="66.5" y="144.6606">Se déconnecter</text><line style="stroke:#181818;stroke-width:1.0;" x1="419.5" x2="461.5" y1="178.8594" y2="178.8594"></line><line style="stroke:#181818;stroke-width:1.0;" x1="461.5" x2="461.5" y1="178.8594" y2="191.8594"></line><line style="stroke:#181818;stroke-width:1.0;" x1="420.5" x2="461.5" y1="191.8594" y2="191.8594"></line><polygon fill="#181818" points="430.5,187.8594,420.5,191.8594,430.5,195.8594,426.5,191.8594" style="stroke:#181818;stroke-width:1.0;"></polygon><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="134" x="426.5" y="173.7935">local Se déconnecter</text><polygon fill="#181818" points="70.5,216.9922,60.5,220.9922,70.5,224.9922,66.5,220.9922" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64.5" x2="418.5" y1="220.9922" y2="220.9922"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="336" x="76.5" y="215.9263">Redirection vers le point de terminaison end_session</text><polygon fill="#181818" points="566.5,246.125,576.5,250.125,566.5,254.125,570.5,250.125" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="59.5" x2="572.5" y1="250.125" y2="250.125"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="443" x="66.5" y="245.0591">Demande de déconnexion OIDC au point de terminaison end_session</text><path d="M492.5,265.125 L562.5,265.125 L562.5,272.2578 L552.5,282.2578 L492.5,282.2578 L492.5,265.125 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"></path><rect fill="none" height="117.5313" style="stroke:#000000;stroke-width:1.5;" width="714.5" x="492.5" y="265.125"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthadjust="spacing" textlength="25" x="507.5" y="278.1919">Par</text><line style="stroke:#181818;stroke-width:1.0;" x1="1052" x2="1042" y1="303.3906" y2="299.3906"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1052" x2="1042" y1="303.3906" y2="307.3906"></line><line style="stroke:#181818;stroke-width:1.0;" x1="578.5" x2="1053" y1="303.3906" y2="303.3906"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="342" x="585.5" y="298.3247">Demande(s) de déconnexion du canal de retour OIDC</text><line style="stroke:#181818;stroke-width:1.0;" x1="1054" x2="1096" y1="332.5234" y2="332.5234"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1096" x2="1096" y1="332.5234" y2="345.5234"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1055" x2="1096" y1="345.5234" y2="345.5234"></line><polygon fill="#181818" points="1065,341.5234,1055,345.5234,1065,349.5234,1061,345.5234" style="stroke:#181818;stroke-width:1.0;"></polygon><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="134" x="1061" y="327.4575">local Se déconnecter</text><line style="stroke:#181818;stroke-width:1.0;" x1="579.5" x2="589.5" y1="357.5234" y2="353.5234"></line><line style="stroke:#181818;stroke-width:1.0;" x1="579.5" x2="589.5" y1="357.5234" y2="361.5234"></line><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="578.5" x2="1053" y1="357.5234" y2="357.5234"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="164" x="883" y="370.5903">réponses de déconnexion</text><polygon fill="#181818" points="70.5,389.6563,60.5,393.6563,70.5,397.6563,66.5,393.6563" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64.5" x2="577.5" y1="393.6563" y2="393.6563"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="324" x="247.5" y="406.7231">Page de propagation de déconnexion avec iframes</text><path d="M10,425.7891 L80,425.7891 L80,432.9219 L70,442.9219 L10,442.9219 L10,425.7891 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"></path><rect fill="none" height="400.7266" style="stroke:#000000;stroke-width:1.5;" width="1355" x="10" y="425.7891"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthadjust="spacing" textlength="25" x="25" y="438.856">Par</text><line style="stroke:#181818;stroke-width:1.0;" x1="1052" x2="1042" y1="464.0547" y2="460.0547"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1052" x2="1042" y1="464.0547" y2="468.0547"></line><line style="stroke:#181818;stroke-width:1.0;" x1="59.5" x2="1053" y1="464.0547" y2="464.0547"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="324" x="66.5" y="458.9888">Demande(s) de déconnexion du canal frontal OIDC</text><line style="stroke:#181818;stroke-width:1.0;" x1="1054" x2="1096" y1="493.1875" y2="493.1875"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1096" x2="1096" y1="493.1875" y2="506.1875"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1055" x2="1096" y1="506.1875" y2="506.1875"></line><polygon fill="#181818" points="1065,502.1875,1055,506.1875,1065,510.1875,1061,506.1875" style="stroke:#181818;stroke-width:1.0;"></polygon><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="134" x="1061" y="488.1216">local Se déconnecter</text><line style="stroke:#181818;stroke-width:1.0;" x1="60.5" x2="70.5" y1="518.1875" y2="514.1875"></line><line style="stroke:#181818;stroke-width:1.0;" x1="60.5" x2="70.5" y1="518.1875" y2="522.1875"></line><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="59.5" x2="1053" y1="518.1875" y2="518.1875"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="108" x="939" y="531.2544">Réponse(s) HTTP</text><line style="stroke:#181818;stroke-width:1.0;" x1="738.5" x2="728.5" y1="564.4531" y2="560.4531"></line><line style="stroke:#181818;stroke-width:1.0;" x1="738.5" x2="728.5" y1="564.4531" y2="568.4531"></line><line style="stroke:#181818;stroke-width:1.0;" x1="59.5" x2="739.5" y1="564.4531" y2="564.4531"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="168" x="66.5" y="559.3872">Demande de déconnexion</text><line style="stroke:#181818;stroke-width:1.0;" x1="60.5" x2="70.5" y1="576.4531" y2="572.4531"></line><line style="stroke:#181818;stroke-width:1.0;" x1="60.5" x2="70.5" y1="576.4531" y2="580.4531"></line><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="59.5" x2="739.5" y1="576.4531" y2="576.4531"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="208" x="525.5" y="589.52">Demande de déconnexion SAML</text><line style="stroke:#181818;stroke-width:1.0;" x1="898" x2="888" y1="622.7188" y2="618.7188"></line><line style="stroke:#181818;stroke-width:1.0;" x1="898" x2="888" y1="622.7188" y2="626.7188"></line><line style="stroke:#181818;stroke-width:1.0;" x1="59.5" x2="899" y1="622.7188" y2="622.7188"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="213" x="66.5" y="617.6528">Demande de déconnexion SAMLt</text><path d="M816.5,637.7188 L893.5,637.7188 L893.5,644.8516 L883.5,654.8516 L816.5,654.8516 L816.5,637.7188 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"></path><rect fill="none" height="117.5313" style="stroke:#000000;stroke-width:1.5;" width="538.5" x="816.5" y="637.7188"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthadjust="spacing" textlength="32" x="831.5" y="650.7856">loop</text><polygon fill="#181818" points="1190,671.9844,1200,675.9844,1190,679.9844,1194,675.9844" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="900" x2="1196" y1="675.9844" y2="675.9844"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="208" x="907" y="670.9185">Demande de déconnexion SAML</text><line style="stroke:#181818;stroke-width:1.0;" x1="1202" x2="1244" y1="705.1172" y2="705.1172"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1244" x2="1244" y1="705.1172" y2="718.1172"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1203" x2="1244" y1="718.1172" y2="718.1172"></line><polygon fill="#181818" points="1213,714.1172,1203,718.1172,1213,722.1172,1209,718.1172" style="stroke:#181818;stroke-width:1.0;"></polygon><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="134" x="1209" y="700.0513">local Se déconnecter</text><polygon fill="#181818" points="911,743.25,901,747.25,911,751.25,907,747.25" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="905" x2="1201" y1="747.25" y2="747.25"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="200" x="995" y="742.1841">Réponse de déconnexion SAML</text><path d="M905,767.25 L905,792.25 L1124,792.25 L1124,777.25 L1114,767.25 L905,767.25 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><path d="M1114,767.25 L1114,777.25 L1124,777.25 L1114,767.25 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="198" x="911" y="784.3169">Déconnexion du FJGC terminée</text><line style="stroke:#181818;stroke-width:1.0;" x1="60.5" x2="70.5" y1="801.3828" y2="797.3828"></line><line style="stroke:#181818;stroke-width:1.0;" x1="60.5" x2="70.5" y1="801.3828" y2="805.3828"></line><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="59.5" x2="899" y1="801.3828" y2="801.3828"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="200" x="693" y="814.4497">Réponse de déconnexion SAML</text><path d="M10,840.5156 L74,840.5156 L74,847.6484 L64,857.6484 L10,857.6484 L10,840.5156 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"></path><rect fill="none" height="148.4688" style="stroke:#000000;stroke-width:1.5;" width="654.5" x="10" y="840.5156"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthadjust="spacing" textlength="19" x="25" y="853.5825">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthadjust="spacing" textlength="169" x="89" y="852.7261">[une erreur s'est produite]</text><polygon fill="#181818" points="566.5,874.7813,576.5,878.7813,566.5,882.7813,570.5,878.7813" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="59.5" x2="572.5" y1="878.7813" y2="878.7813"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="314" x="66.5" y="873.7153">Charger la page d'avertissement de déconnexion</text><polygon fill="#181818" points="70.5,886.7813,60.5,890.7813,70.5,894.7813,66.5,890.7813" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64.5" x2="418.5" y1="890.7813" y2="890.7813"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="244" x="168.5" y="903.8481">Page d'avertissement de déconnexion</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="10" x2="664.5" y1="916.9141" y2="916.9141"></line><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthadjust="spacing" textlength="198" x="15" y="927.1245">[aucune erreur n'est survenue]</text><polygon fill="#181818" points="407.5,947.8516,417.5,951.8516,407.5,955.8516,411.5,951.8516" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="59.5" x2="413.5" y1="951.8516" y2="951.8516"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="269" x="66.5" y="946.7856">Charger la page de déconnexion terminée</text><polygon fill="#181818" points="70.5,959.8516,60.5,963.8516,70.5,967.8516,66.5,963.8516" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64.5" x2="418.5" y1="963.8516" y2="963.8516"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="199" x="213.5" y="976.9185">Page de déconnexion terminée</text><path d="M64,1000.9844 L64,1040.9844 L228,1040.9844 L228,1010.9844 L218,1000.9844 L64,1000.9844 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><path d="M218,1000.9844 L218,1010.9844 L228,1010.9844 L218,1000.9844 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="108" x="70" y="1018.0513">Authenti-Canada</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="143" x="70" y="1033.1841">déconnexion terminée</text></g></svg>
+
+<p>Le scénario commence lorsqu’un utilisateur clique sur un bouton de déconnexion
+sur le site de la partie de confiance qu’il utilise. Lorsque cela se produit :</p>
+
+<ol>
+  <li>L’application de la partie de confiance déconnecte l’utilisateur localement
+d’abord, puis redirige le navigateur vers le point de terminaison OpenID
+Connect de session des plateformes d’acceptation.</li>
+  <li>Si des parties de confiance qui participent à la session appuient la
+déconnexion en mode canal arrière de Connexion OpenID, la plateforme
+d’acceptation envoie d’abord un jeton de déconnexion à tous, à travers un
+POST HTTP à leurs URI de déconnexion en mode canal arrière enregistré pour
+déclencher les actions de déconnexion de ces PC. S’il y a plusieurs parties
+de confiance, ces demandes sont toutes envoyées simultanément, en parallèle.</li>
+  <li>Une fois la déconnexion canal arrière terminée, la plateforme d’acceptation
+retourne une page de propagation de déconnexion
+<a href="https://html.spec.whatwg.org/multipage/">HTML</a> au navigateur. Cette page
+contient un certain nombre d’éléments
+<a href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element">iframe</a>.
+L’attribut src (source) de tous les éléments, sauf un, pointe vers l’URI de
+déconnexion du canal avant de l’un des sites de partie de confiance
+d’Authenti-Canada où l’utilisateur s’est connecté pendant sa session en
+cours. Dans le diagramme, ces autres sites sont désignés comme « autres PC de
+l’OIDC ». L’attribut <code class="language-plaintext highlighter-rouge">src</code> de l’<em>iframe</em> final pointe vers un point terminal URI
+du Cadre d’acceptation de la plateforme d’acceptation.</li>
+  <li>Dès réception de la page de propagation, le navigateur commence à charger en
+parallèle l’intégralité de la valeur des <em>_iframe_s, en envoyant de manière
+asynchrone une requête HTTP GET à l’URI <code class="language-plaintext highlighter-rouge">src</code> de chaque _iframe</em>.</li>
+  <li>Lorsque les autres parties de confiance reçoivent ces demandes, elles
+déconnectent l’utilisateur localement, puis retournent une réponse HTTP au
+navigateur.</li>
+  <li>Lorsque le cadre d’acceptation de la plateforme d’acceptation reçoit sa
+demande, il crée un message SAML de demande de déconnexion, puis redirige le
+navigateur avec ce message (dans le cadre <em>iframe</em>) vers l’ancien PSC (CléGC ou
+FJI) avec lequel l’utilisateur a choisi de se connecter.</li>
+  <li>Le FSI déconnecte ensuite l’utilisateur de ses informations d’identification.
+Si l’utilisateur a visité des sites qui sont encore reliés directement au FSI
+(au lieu d’Authenti-Canada), il propagera également la déconnexion à tous ces
+sites, progressivement, une à une.</li>
+  <li>Le FSI redirige ensuite le navigateur (dans l’<em>iframe</em>) vers le Cadre
+d’acceptation de la plateforme d’acceptation avec un message SAML
+<code class="language-plaintext highlighter-rouge">LogoutResponse</code>. Le Cadre d’acceptation traite ce message, puis envoie une
+réponse HTTP au navigateur.</li>
+  <li>La page de propagation de déconnexion comporte un gestionnaire d’événements
+d’erreur global qui sera déclenché si un type d’erreur se produit alors que
+tous les <em>iframes</em> propagent la déconnexion vers divers sites de manière
+asynchrone.</li>
+  <li>Si l’une des <em>iframes</em> échoue ou s’interrompt, si la réponse de déconnexion
+SAML du FSI indique une erreur, alors le gestionnaire onerrorevent redirige
+le navigateur vers une page d’erreur, avertissant l’utilisateur qu’il ne
+peut pas être complètement déconnecté et lui recommandant de fermer son
+navigateur.</li>
+  <li>Si toutes les <em>iframes</em> propagent avec succès la déconnexion vers leur site
+cible, le navigateur est redirigé vers la page d’accueil de déconnexion du
+site où l’utilisateur a initialement cliqué sur « Déconnexion » (l’URI
+post_déconnexion_redirect_uri de la partie de confiance).</li>
+</ol>
+
+<h3 id="scénario-2--un-utilisateur-se-déconnecte-dabord-du-fjgc">Scénario 2 : Un utilisateur se déconnecte d’abord du FJGC</h3>
+
+<p>L’exemple suivant illustre comment une déconnexion unique est réalisée dans le
+cas où l’utilisateur clique sur un bouton de déconnexion sur un site de la
+partie de confiance qui est toujours connecté à l’un des services de
+justificatif d’identification de la FJGC (CléGC ou service de courtier de
+justificatif d’identité).</p>
+
+<svg class="plantuml" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentstyletype="text/css" height="1302px" preserveaspectratio="none" style="width:1412px;height:1302px;background:#FFFFFF;" version="1.1" viewbox="0 0 1412 1302" width="1412px" zoomandpan="magnify"><defs><lineargradient id="g1t43mmph76hov0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#00FFFF"></stop><stop offset="100%" stop-color="#5F9EA0"></stop></lineargradient></defs><g><rect fill="url(#g1t43mmph76hov0)" height="26.2969" id="_title" rx="7.5" ry="7.5" style="stroke:#FF0000;stroke-width:2.0;" width="431" x="492.25" y="10"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="421" x="497.25" y="27.9951">Déconnexion initiée par une partie de confiance FJGC</text><rect fill="#DDDDDD" height="1253.0469" style="stroke:#181818;stroke-width:0.5;" width="322" x="804.5" y="43.2969"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthadjust="spacing" textlength="123" x="904" y="55.3638">Authenti-Canada</text><rect fill="none" height="117.5313" style="stroke:#000000;stroke-width:1.5;" width="468.5" x="421" y="280.2578"></rect><rect fill="none" height="117.5313" style="stroke:#000000;stroke-width:1.5;" width="446" x="960.5" y="563.4531"></rect><rect fill="none" height="117.5313" style="stroke:#000000;stroke-width:1.5;" width="1396.5" x="10" y="724.1172"></rect><rect fill="none" height="206.7344" style="stroke:#000000;stroke-width:1.5;" width="578" x="10" y="993.3125"></rect><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="59" x2="59" y1="118.5938" y2="1217.0469"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="327" x2="327" y1="118.5938" y2="1217.0469"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="504" x2="504" y1="118.5938" y2="1217.0469"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="736.5" x2="736.5" y1="118.5938" y2="1217.0469"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="884.5" x2="884.5" y1="118.5938" y2="1217.0469"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1046.5" x2="1046.5" y1="118.5938" y2="1217.0469"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1253" x2="1253" y1="118.5938" y2="1217.0469"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="73" x="20" y="115.292">Navigateur</text><ellipse cx="59.5" cy="50.7969" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"></ellipse><path d="M59.5,58.7969 L59.5,85.7969 M46.5,66.7969 L72.5,66.7969 M59.5,85.7969 L46.5,100.7969 M59.5,85.7969 L72.5,100.7969 " fill="none" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="73" x="20" y="1229.042">Navigateur</text><ellipse cx="59.5" cy="1240.8438" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"></ellipse><path d="M59.5,1248.8438 L59.5,1275.8438 M46.5,1256.8438 L72.5,1256.8438 M59.5,1275.8438 L46.5,1290.8438 M59.5,1275.8438 L72.5,1290.8438 " fill="none" style="stroke:#181818;stroke-width:0.5;"></path><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="187" x="234" y="87.2969"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="173" x="241" y="107.292">Partie de confiance SAML</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="187" x="234" y="1216.0469"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="173" x="241" y="1236.042">Partie de confiance SAML</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147" x="431" y="71"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="123" x="443" y="90.9951">SAML Fournisseur</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="133" x="438" y="107.292">d'identité SAML (FJI)</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147" x="431" y="1216.0469"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="123" x="443" y="1236.042">SAML Fournisseur</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="133" x="438" y="1252.3389">d'identité SAML (FJI)</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="92" x="690.5" y="71"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="78" x="697.5" y="90.9951">Autre(s) PR</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="54" x="709.5" y="107.292">du FJGC</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="92" x="690.5" y="1216.0469"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="78" x="697.5" y="1236.042">Autre(s) PR</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="54" x="709.5" y="1252.3389">du FJGC</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="152" x="808.5" y="87.2969"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="138" x="815.5" y="107.292">Cadre d'acceptation</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="152" x="808.5" y="1216.0469"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="138" x="815.5" y="1236.042">Cadre d'acceptation</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="152" x="970.5" y="87.2969"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="138" x="977.5" y="107.292">Fournisseur OpenID</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="152" x="970.5" y="1216.0469"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="138" x="977.5" y="1236.042">Fournisseur OpenID</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="141" x="1183" y="71"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="78" x="1214.5" y="90.9951">Autre(s) PR</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="127" x="1190" y="107.292">d'Authenti-Canada</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="141" x="1183" y="1216.0469"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="78" x="1214.5" y="1236.042">Autre(s) PR</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="127" x="1190" y="1252.3389">d'Authenti-Canada</text><polygon fill="#181818" points="315.5,145.7266,325.5,149.7266,315.5,153.7266,319.5,149.7266" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="59.5" x2="321.5" y1="149.7266" y2="149.7266"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="101" x="66.5" y="144.6606">Se déconnecter</text><line style="stroke:#181818;stroke-width:1.0;" x1="327.5" x2="369.5" y1="178.8594" y2="178.8594"></line><line style="stroke:#181818;stroke-width:1.0;" x1="369.5" x2="369.5" y1="178.8594" y2="191.8594"></line><line style="stroke:#181818;stroke-width:1.0;" x1="328.5" x2="369.5" y1="191.8594" y2="191.8594"></line><polygon fill="#181818" points="338.5,187.8594,328.5,191.8594,338.5,195.8594,334.5,191.8594" style="stroke:#181818;stroke-width:1.0;"></polygon><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="134" x="334.5" y="173.7935">local Se déconnecter</text><polygon fill="#181818" points="70.5,199.8594,60.5,203.8594,70.5,207.8594,66.5,203.8594" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64.5" x2="326.5" y1="203.8594" y2="203.8594"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="107" x="80.5" y="216.9263">Redirection HTTP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="240" x="80.5" y="232.0591">avec demande de déconnexion SAML</text><polygon fill="#181818" points="492.5,261.2578,502.5,265.2578,492.5,269.2578,496.5,265.2578" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="59.5" x2="498.5" y1="265.2578" y2="265.2578"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="208" x="66.5" y="260.1919">Demande de déconnexion SAML</text><path d="M421,280.2578 L498,280.2578 L498,287.3906 L488,297.3906 L421,297.3906 L421,280.2578 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"></path><rect fill="none" height="117.5313" style="stroke:#000000;stroke-width:1.5;" width="468.5" x="421" y="280.2578"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthadjust="spacing" textlength="32" x="436" y="293.3247">loop</text><polygon fill="#181818" points="724.5,314.5234,734.5,318.5234,724.5,322.5234,728.5,318.5234" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="504.5" x2="730.5" y1="318.5234" y2="318.5234"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="208" x="511.5" y="313.4575">Demande de déconnexion SAML</text><line style="stroke:#181818;stroke-width:1.0;" x1="736.5" x2="778.5" y1="347.6563" y2="347.6563"></line><line style="stroke:#181818;stroke-width:1.0;" x1="778.5" x2="778.5" y1="347.6563" y2="360.6563"></line><line style="stroke:#181818;stroke-width:1.0;" x1="737.5" x2="778.5" y1="360.6563" y2="360.6563"></line><polygon fill="#181818" points="747.5,356.6563,737.5,360.6563,747.5,364.6563,743.5,360.6563" style="stroke:#181818;stroke-width:1.0;"></polygon><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="134" x="743.5" y="342.5903">local Se déconnecter</text><polygon fill="#181818" points="515.5,385.7891,505.5,389.7891,515.5,393.7891,511.5,389.7891" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="509.5" x2="735.5" y1="389.7891" y2="389.7891"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="200" x="529.5" y="384.7231">SAML Réponse de déconnexion</text><path d="M509,409.7891 L509,434.7891 L708,434.7891 L708,419.7891 L698,409.7891 L509,409.7891 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><path d="M698,409.7891 L698,419.7891 L708,419.7891 L698,409.7891 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="178" x="515" y="426.856">Déconnexion FJGC terminée</text><polygon fill="#181818" points="70.5,439.9219,60.5,443.9219,70.5,447.9219,66.5,443.9219" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64.5" x2="503.5" y1="443.9219" y2="443.9219"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="250" x="247.5" y="456.9888">Redirection HTTP vers Authenti-Canada</text><polygon fill="#181818" points="872.5,486.1875,882.5,490.1875,872.5,494.1875,876.5,490.1875" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="59.5" x2="878.5" y1="490.1875" y2="490.1875"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="208" x="66.5" y="485.1216">Demande de déconnexion SAML</text><polygon fill="#181818" points="70.5,498.1875,60.5,502.1875,70.5,506.1875,66.5,502.1875" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64.5" x2="883.5" y1="502.1875" y2="502.1875"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="372" x="505.5" y="515.2544">Redirection HTTP vers le point de terminaison end_session</text><polygon fill="#181818" points="1034.5,544.4531,1044.5,548.4531,1034.5,552.4531,1038.5,548.4531" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="59.5" x2="1040.5" y1="548.4531" y2="548.4531"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="443" x="66.5" y="543.3872">Demande de déconnexion OIDC au point de terminaison end_session</text><path d="M960.5,563.4531 L1030.5,563.4531 L1030.5,570.5859 L1020.5,580.5859 L960.5,580.5859 L960.5,563.4531 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"></path><rect fill="none" height="117.5313" style="stroke:#000000;stroke-width:1.5;" width="446" x="960.5" y="563.4531"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthadjust="spacing" textlength="25" x="975.5" y="576.52">Par</text><line style="stroke:#181818;stroke-width:1.0;" x1="1251.5" x2="1241.5" y1="601.7188" y2="597.7188"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1251.5" x2="1241.5" y1="601.7188" y2="605.7188"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1046.5" x2="1252.5" y1="601.7188" y2="601.7188"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="183" x="1053.5" y="596.6528">demande(s) de déconnexion</text><line style="stroke:#181818;stroke-width:1.0;" x1="1253.5" x2="1295.5" y1="630.8516" y2="630.8516"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1295.5" x2="1295.5" y1="630.8516" y2="643.8516"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1254.5" x2="1295.5" y1="643.8516" y2="643.8516"></line><polygon fill="#181818" points="1264.5,639.8516,1254.5,643.8516,1264.5,647.8516,1260.5,643.8516" style="stroke:#181818;stroke-width:1.0;"></polygon><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="134" x="1260.5" y="625.7856">local Se déconnecter</text><line style="stroke:#181818;stroke-width:1.0;" x1="1047.5" x2="1057.5" y1="655.8516" y2="651.8516"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1047.5" x2="1057.5" y1="655.8516" y2="659.8516"></line><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="1046.5" x2="1252.5" y1="655.8516" y2="655.8516"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="174" x="1072.5" y="668.9185">réponse(s) de déconnexion</text><polygon fill="#181818" points="70.5,687.9844,60.5,691.9844,70.5,695.9844,66.5,691.9844" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64.5" x2="1045.5" y1="691.9844" y2="691.9844"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="324" x="715.5" y="705.0513">Page de propagation de déconnexion avec iframes</text><path d="M10,724.1172 L80,724.1172 L80,731.25 L70,741.25 L10,741.25 L10,724.1172 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"></path><rect fill="none" height="117.5313" style="stroke:#000000;stroke-width:1.5;" width="1396.5" x="10" y="724.1172"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthadjust="spacing" textlength="25" x="25" y="737.1841">Par</text><line style="stroke:#181818;stroke-width:1.0;" x1="1251.5" x2="1241.5" y1="762.3828" y2="758.3828"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1251.5" x2="1241.5" y1="762.3828" y2="766.3828"></line><line style="stroke:#181818;stroke-width:1.0;" x1="59.5" x2="1252.5" y1="762.3828" y2="762.3828"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="324" x="66.5" y="757.3169">Demande(s) de déconnexion du canal frontal OIDC</text><line style="stroke:#181818;stroke-width:1.0;" x1="1253.5" x2="1295.5" y1="791.5156" y2="791.5156"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1295.5" x2="1295.5" y1="791.5156" y2="804.5156"></line><line style="stroke:#181818;stroke-width:1.0;" x1="1254.5" x2="1295.5" y1="804.5156" y2="804.5156"></line><polygon fill="#181818" points="1264.5,800.5156,1254.5,804.5156,1264.5,808.5156,1260.5,804.5156" style="stroke:#181818;stroke-width:1.0;"></polygon><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="134" x="1260.5" y="786.4497">local Se déconnecter</text><line style="stroke:#181818;stroke-width:1.0;" x1="60.5" x2="70.5" y1="816.5156" y2="812.5156"></line><line style="stroke:#181818;stroke-width:1.0;" x1="60.5" x2="70.5" y1="816.5156" y2="820.5156"></line><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="59.5" x2="1252.5" y1="816.5156" y2="816.5156"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="108" x="1138.5" y="829.5825">Réponse(s) HTTP</text><polygon fill="#181818" points="872.5,865.7813,882.5,869.7813,872.5,873.7813,876.5,869.7813" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="59.5" x2="878.5" y1="869.7813" y2="869.7813"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="267" x="66.5" y="864.7153">Résultat de déconnexion (Succès / Échec)</text><polygon fill="#181818" points="70.5,877.7813,60.5,881.7813,70.5,885.7813,66.5,881.7813" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64.5" x2="883.5" y1="881.7813" y2="881.7813"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="200" x="677.5" y="894.8481">Réponse de déconnexion SAML</text><path d="M64,911.9141 L64,951.9141 L230,951.9141 L230,921.9141 L220,911.9141 L64,911.9141 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><path d="M220,911.9141 L220,921.9141 L230,921.9141 L220,911.9141 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="108" x="70" y="928.981">Authenti-Canada</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="145" x="70" y="944.1138">Déconnexion terminée</text><polygon fill="#181818" points="492.5,974.3125,502.5,978.3125,492.5,982.3125,496.5,978.3125" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="59.5" x2="498.5" y1="978.3125" y2="978.3125"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="200" x="66.5" y="973.2466">Réponse de déconnexion SAML</text><path d="M10,993.3125 L74,993.3125 L74,1000.4453 L64,1010.4453 L10,1010.4453 L10,993.3125 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"></path><rect fill="none" height="206.7344" style="stroke:#000000;stroke-width:1.5;" width="578" x="10" y="993.3125"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthadjust="spacing" textlength="19" x="25" y="1006.3794">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthadjust="spacing" textlength="154" x="89" y="1005.5229">[échec de déconnexion]</text><polygon fill="#181818" points="70.5,1010.4453,60.5,1014.4453,70.5,1018.4453,66.5,1014.4453" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64.5" x2="503.5" y1="1014.4453" y2="1014.4453"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="421" x="76.5" y="1027.5122">Réponse de déconnexion SAML avec code "Déconnexion partielle"</text><polygon fill="#181818" points="315.5,1056.7109,325.5,1060.7109,315.5,1064.7109,319.5,1060.7109" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="59.5" x2="321.5" y1="1060.7109" y2="1060.7109"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="200" x="66.5" y="1055.645">Réponse de déconnexion SAML</text><polygon fill="#181818" points="70.5,1068.7109,60.5,1072.7109,70.5,1076.7109,66.5,1072.7109" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64.5" x2="326.5" y1="1072.7109" y2="1072.7109"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="244" x="76.5" y="1085.7778">Page d'avertissement de déconnexion</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="10" x2="588" y1="1098.8438" y2="1098.8438"></line><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthadjust="spacing" textlength="143" x="15" y="1109.0542">[déconnexion réussie]</text><polygon fill="#181818" points="70.5,1112.6484,60.5,1116.6484,70.5,1120.6484,66.5,1116.6484" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64.5" x2="503.5" y1="1116.6484" y2="1116.6484"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="327" x="170.5" y="1129.7153">Réponse de déconnexion SAML avec code "succès"</text><polygon fill="#181818" points="315.5,1158.9141,325.5,1162.9141,315.5,1166.9141,319.5,1162.9141" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="59.5" x2="321.5" y1="1162.9141" y2="1162.9141"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="200" x="66.5" y="1157.8481">Réponse de déconnexion SAML</text><polygon fill="#181818" points="70.5,1170.9141,60.5,1174.9141,70.5,1178.9141,66.5,1174.9141" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64.5" x2="326.5" y1="1174.9141" y2="1174.9141"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="199" x="121.5" y="1187.981">Page de déconnexion terminée</text></g></svg>
+
+<p>Le scénario commence lorsqu’un utilisateur clique sur un bouton de déconnexion
+sur le site de la partie de confiance qu’il utilise. Lorsque cela se produit :</p>
+
+<ol>
+  <li>L’application de la partie de confiance déconnecte l’utilisateur localement
+d’abord, puis redirige le navigateur vers le point terminal de déconnexion
+unique SAML du FSI avec un message SAML <code class="language-plaintext highlighter-rouge">LogoutRequest</code>.</li>
+  <li>Si l’utilisateur a visité d’autres sites qui sont toujours connectés
+directement au FSI (au lieu de l’Authenti-Canada), il propagera d’abord la
+déconnexion de tous ces sites à l’aide de la déconnexion SAML dans le canal
+arrière (SOAP). Cela se fait un à un, pendant que l’utilisateur attend,
+ensuite il sera alors <em>complètement déconnecté de la FJGC</em>.</li>
+  <li>Pour déconnecter l’utilisateur de l’Authenti-Canada, le FSI de la FJGC
+redirige ensuite le navigateur vers le Cadre d’acceptation de
+l’Authenti-Canada avec un message SAML <code class="language-plaintext highlighter-rouge">LogoutRequest</code>.</li>
+  <li>Le cadre d’acceptation crée ensuite une demande de déconnexion OpenID Connect
+et redirige le navigateur vers le point terminal de session du fournisseur
+d’OpenID de la plateforme d’acceptation.</li>
+  <li>Si des parties de confiance qui participer à la session de la plateforme
+d’acceptation prennent en charge la déconnexion, la plateforme d’acceptation
+envoie d’abord un jeton de déconnexion à tous, via un POST HTTP à son URI de
+déconnexion en mode canal arrière enregistré. Cela déclenche les actions de
+déconnexion de chacun de ces PC. S’il y a plusieurs parties de confiance, ces
+demandes sont toutes envoyées simultanément, en parallèle.</li>
+  <li>Une fois l’ouverture de session dans le canal arrière terminée, la plateforme
+d’acceptation retourne une page de propagation de déconnexion
+<a href="https://html.spec.whatwg.org/multipage/">HTML</a>. Cette page contient un
+certain nombre d’éléments
+<a href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element">iframe</a>.
+L’attribut <code class="language-plaintext highlighter-rouge">src</code> (source) de chaque élément iframe pointe vers l’URI de
+déconnexion du canal avant de l’un des sites de la partie de confiance où
+l’utilisateur s’est connecté pendant sa session en cours. Dans le diagramme,
+ces autres sites sont désignés comme « autres PC de l’OIDC ». L’attribut src
+de l’iframe final pointe vers un point terminal URI du Cadre d’acceptation de
+la plateforme d’acceptation.</li>
+  <li>Dès réception de la page de propagation, le navigateur commence à charger en
+parallèle l’intégralité de la valeur de _iframe_s, en envoyant de manière
+asynchrone une requête HTTP GET à l’URI src de chaque iframe.</li>
+  <li>Lorsque les autres parties de confiance reçoivent ces demandes, elles
+déconnectent l’utilisateur localement, puis retournent une réponse HTTP au
+navigateur.</li>
+  <li>La page de propagation de déconnexion comporte un gestionnaire d’événements
+d’erreur global qui sera déclenché si un type d’erreur se produit alors que
+tous les _iframe_s propagent la déconnexion vers divers sites de manière
+asynchrone.</li>
+  <li>Si l’une des iframes échoue ou s’interrompt, le gestionnaire onerrorevent
+redirige le navigateur vers le Cadre d’acceptation avec une requête HTTP
+indiquant un problème de déconnexion.
+    <ol>
+      <li>Le Cadre d’acceptation redirigera ensuite le navigateur vers le FSI avec
+  un message SAML LogoutResponse portant un code de statut urn : oasis :
+  names : tc : SAML : 2,0 : status : Responder.</li>
+      <li>La FSI redirigera ensuite le navigateur vers sa propre PC avec un message
+  LogoutResponse portant un code de statut de haut niveau
+  <code class="language-plaintext highlighter-rouge">urn:oasis:names:tc:SAML:2.0:status:Success</code> et un code de statut de
+  second niveau <code class="language-plaintext highlighter-rouge">urn:oasis:names:tc:SAML:2.0:status:PartialLogout</code>.</li>
+      <li>Cela entraînera l’affichage de la page d’erreur PC du SAML, avertissant
+  l’utilisateur qu’il n’est peut-être pas complètement déconnecté et lui
+  recommandant de fermer son navigateur.</li>
+    </ol>
+  </li>
+  <li>Si toutes les <em>iframes</em> propagent correctement la déconnexion vers leur site
+cible, le code JavaScript redirige le navigateur vers le Cadre d’acceptation
+avec une demande HTTP indiquant une déconnexion réussie.
+    <ol>
+      <li>Le Cadre d’acceptation redirigera ensuite le navigateur vers le FSI
+avec un message SAML <code class="language-plaintext highlighter-rouge">LogoutResponse</code> portant un code de statut
+<code class="language-plaintext highlighter-rouge">urn:oasis:names:tc:SAML:2.0:status:Success</code>.</li>
+      <li>Le FJI redirigera ensuite le navigateur vers sa propre PC avec un message
+<code class="language-plaintext highlighter-rouge">LogoutResponse</code> portant un code de statut de haut niveau
+<code class="language-plaintext highlighter-rouge">urn:oasis:names:tc:SAML:2.0:status:Success</code> et aucun code de statut de
+niveau supérieur.</li>
+      <li>Cela entraînera l’affichage de la page de déconnexion ou d’accueil
+habituelle de SAML PC.</li>
+    </ol>
+  </li>
+</ol>
+
+</main>
+
+
+<footer role="contentinfo" id="wb-info">
+  <nav role="navigation" class="container wb-navcurr">
+    <h2 class="wb-inv">Au sujet du gouvernement</h2>
+    <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+      <li><a href="mailto:SignIn-AuthentiCanada@tbs-sct.gc.ca">Contactez-nous</a></li>
+      <li><a href="https://www.canada.ca/fr/gouvernement/min.html">Ministères et organismes</a></li>
+      <li><a href="https://www.canada.ca/fr/gouvernement/fonctionpublique.html">Fonction publique et force militaire</a></li>
+      <li><a href="https://www.canada.ca/fr/nouvelles.html">Nouvelles</a></li>
+      <li><a href="https://www.canada.ca/fr/gouvernement/systeme/lois.html">Traités, lois et règlements</a></li>
+      <li><a href="https://www.canada.ca/fr/transparence/rapports.html">Rapports à l'échelle du gouvernement</a></li>
+      <li><a href="http://pm.gc.ca/fra">Premier ministre</a></li>
+      <li><a href="https://www.canada.ca/fr/gouvernement/systeme.html">Comment le gouvernement fonctionne</a></li>
+      <li><a href="http://ouvert.canada.ca/">Gouvernement ouvert</a></li>
+    </ul>
+  </nav>
+  <div class="brand">
+    <div class="container">
+      <div class="row">
+        <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+          <h2 class="wb-inv">À propos du site</h2>
+          <ul>
+            <li><a href="https://www.canada.ca/fr/sociaux.html">Médias sociaux</a></li>
+            <li><a href="https://www.canada.ca/fr/mobile.html">Applications mobiles</a></li>
+            <li><a href="https://www1.canada.ca/fr/nouveausite.html">À propos de Canada.ca</a></li>
+            <li><a href="https://www.canada.ca/fr/transparence/avis.html">Avis</a></li>
+            <li><a href="https://www.canada.ca/fr/transparence/confidentialite.html">Confidentialité</a></li>
+          </ul>
+        </nav>
+        <div class="col-xs-6 visible-sm visible-xs tofpg">
+          <a href="#wb-cont">Haut de la page <span class="glyphicon glyphicon-chevron-up"></span></a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 text-right">
+          <object type="image/svg+xml" tabindex="-1" role="img" data="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/wmms-blk.svg" aria-label="Symbole du gouvernement du Canada"></object>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/theme.min.js"></script>
+
+</body>
+
+</html>

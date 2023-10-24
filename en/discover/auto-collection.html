@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+  <title>Pairwise Identifier Auto-Collection</title>
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <!-- Meta data -->
+  <meta name="description" content="Sign In Canada.">
+  <!-- Meta data-->
+  <!--[if gte IE 9 | !IE ]><!-->
+  <link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/css/theme.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/style.css">
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+  <link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/css/ie8-theme.min.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/ie8-wet-boew.min.js"></script>
+	<![endif]-->
+  <!--[if lte IE 9]> <![endif]-->
+  <noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/css/noscript.min.css"></noscript>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage" class="page-discover-auto-collection">
+<ul id="wb-tphp">
+  <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
+  <li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to "About this site"</a></li>
+</ul>
+
+<header>
+  <div id="wb-bnr" class="container">
+    <section id="wb-lng" class="visible-md visible-lg text-right">
+      <h2 class="wb-inv">Language selection</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-inline margin-bottom-none">
+            <li><a lang="fr" hreflang="fr" href="/fr/decouvrir/auto-collection.html">Français</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="row">
+      <div class="brand col-xs-8 col-sm-9 col-md-6">
+        <a href="https://www.canada.ca/en.html">
+          <img src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/sig-blk-en.svg" alt="Government of Canada / Gouvernement du Canada">
+          <span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span>
+        </a>
+      </div>
+
+      <section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
+        <h2>Menus</h2>
+        <ul class="list-inline text-right chvrn">
+          <li><a href="#mb-pnl" title="Menus" aria-controls="mb-pnl" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Menus</span></span></a></li>
+        </ul>
+        <div id="mb-pnl"></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="gcweb-menu" typeof="SiteNavigationElement">
+    <div class="container nvbar">
+      <h2 class="wb-inv">Menu</h2>
+      <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+      <ul role="menu" aria-orientation="vertical">
+        <li role="presentation"><a role="menuitem" href="/en/discover/index.html">Discover</a></li>
+        <li role="presentation"><a role="menuitem" href="/en/evaluate/index.html">Evaluate</a></li>
+        <li role="presentation"><a role="menuitem" href="/en/join/index.html">Join</a></li>
+        <li role="presentation"><a role="menuitem" href="/en/contribute/index.html">Contribute</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="wb-bc" property="breadcrumb">
+    <h2>You are here:</h2>
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="/en/index.html">Sign In Canada</a></li>
+<li><a href="/en/discover/index.html">Discover</a></li>
+          <li><a href="/en/discover/auto-collection.html">Pairwise Identifier Auto-Collection</a></li>
+</ol>
+    </div>
+  </nav>
+</header>
+
+<main property="mainContentOfPage" class="container">
+
+<h1 id="pairwise-identifier-auto-collection">Pairwise Identifier Auto-Collection</h1>
+
+<p>One of the primary goals of the Sign In Canada Platform is to facilitate the
+replacement of old credential service provider systems, in particular, the
+outsourced legacy GCKey and Credential Broker Service systems that have been in
+use since 2011.</p>
+
+<p>One of the key prerequisites for decommissioning or replacing these old systems
+is to move the pairwise identifier mappings currently held by these older
+services to the Sign In Canada Platform, so that users’ enrolments with relying
+parties are not impacted when relying parties move to Sign In Canada.</p>
+
+<p>The Sign In Canada Platform implements a feature that is able to
+automatically copy a user’s pairwise identifier mappings from a legacy
+credential service to the Sign In Canada Platform the first time they are used.
+These are then stored by the Sign In Canada Platform for future use, so that the
+mapping stored by the credential service is no longer required. This reduces the
+risk and effort required to move this data. Over time the mapping data of active
+users is gradually “collected” by the Sign In Canada Platform, reducing the need to
+regularly copy the data manually via some kind of “bulk transfer”.</p>
+
+<h2 id="how-it-works">How it works</h2>
+
+<svg class="plantuml" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentstyletype="text/css" height="519px" preserveaspectratio="none" style="width:674px;height:519px;background:#FFFFFF;" version="1.1" viewbox="0 0 674 519" width="674px" zoomandpan="magnify"><defs><lineargradient id="g639jm0w4mfz40" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#00FFFF"></stop><stop offset="100%" stop-color="#5F9EA0"></stop></lineargradient></defs><g><rect fill="url(#g639jm0w4mfz40)" height="26.2969" id="_title" rx="7.5" ry="7.5" style="stroke:#FF0000;stroke-width:2.0;" width="312" x="182.5" y="10"></rect><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthadjust="spacing" textlength="302" x="187.5" y="27.9951">Auto-collection of a pairwise identifier</text><rect fill="none" height="211.6016" style="stroke:#000000;stroke-width:1.5;" width="511" x="157" y="220.125"></rect><rect fill="none" height="116.2031" style="stroke:#000000;stroke-width:1.5;" width="326" x="167" y="308.5234"></rect><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="56" x2="56" y1="73.5938" y2="483.8594"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="235" x2="235" y1="73.5938" y2="483.8594"></line><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="456.5" x2="456.5" y1="73.5938" y2="483.8594"></line><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="102" x="5" y="42.2969"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="88" x="12" y="62.292">Relying Party</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="102" x="5" y="482.8594"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="88" x="12" y="502.8545">Relying Party</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="116" x="177" y="42.2969"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="102" x="184" y="62.292">Sign In Canada</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="116" x="177" y="482.8594"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="102" x="184" y="502.8545">Sign In Canada</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="163" x="375.5" y="42.2969"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="149" x="382.5" y="62.292">SAML IDP (GCCF CSP)</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="163" x="375.5" y="482.8594"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthadjust="spacing" textlength="149" x="382.5" y="502.8545">SAML IDP (GCCF CSP)</text><polygon fill="#181818" points="223,100.7266,233,104.7266,223,108.7266,227,104.7266" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="56" x2="229" y1="104.7266" y2="104.7266"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="145" x="63" y="99.6606">authentication request</text><polygon fill="#181818" points="445,129.8594,455,133.8594,445,137.8594,449,133.8594" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="235" x2="451" y1="133.8594" y2="133.8594"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="185" x="242" y="128.7935">SAML authentication request</text><polygon fill="#181818" points="246,141.8594,236,145.8594,246,149.8594,242,145.8594" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="240" x2="456" y1="145.8594" y2="145.8594"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="191" x="259" y="158.9263">SAML response with assertion</text><line style="stroke:#181818;stroke-width:1.0;" x1="235" x2="277" y1="192.125" y2="192.125"></line><line style="stroke:#181818;stroke-width:1.0;" x1="277" x2="277" y1="192.125" y2="205.125"></line><line style="stroke:#181818;stroke-width:1.0;" x1="236" x2="277" y1="205.125" y2="205.125"></line><polygon fill="#181818" points="246,201.125,236,205.125,246,209.125,242,205.125" style="stroke:#181818;stroke-width:1.0;"></polygon><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="78" x="242" y="187.0591">Lookup user</text><path d="M157,220.125 L221,220.125 L221,227.2578 L211,237.2578 L157,237.2578 L157,220.125 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"></path><rect fill="none" height="211.6016" style="stroke:#000000;stroke-width:1.5;" width="511" x="157" y="220.125"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthadjust="spacing" textlength="19" x="172" y="233.1919">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthadjust="spacing" textlength="263" x="236" y="232.3354">[requested pairwise identifier not found]</text><polygon fill="#181818" points="445,257.3906,455,261.3906,445,265.3906,449,261.3906" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;" x1="235" x2="451" y1="261.3906" y2="261.3906"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="185" x="242" y="256.3247">SAML authentication request</text><path d="M462,242.2578 L462,267.2578 L653,267.2578 L653,252.2578 L643,242.2578 L462,242.2578 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><path d="M643,242.2578 L643,252.2578 L653,252.2578 L643,242.2578 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="170" x="468" y="259.3247">for the requested identifier</text><polygon fill="#181818" points="246,272.3906,236,276.3906,246,280.3906,242,276.3906" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="240" x2="456" y1="276.3906" y2="276.3906"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="155" x="295" y="289.4575">authentication response</text><path d="M167,308.5234 L231,308.5234 L231,315.6563 L221,325.6563 L167,325.6563 L167,308.5234 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"></path><rect fill="none" height="116.2031" style="stroke:#000000;stroke-width:1.5;" width="326" x="167" y="308.5234"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthadjust="spacing" textlength="19" x="182" y="321.5903">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthadjust="spacing" textlength="242" x="246" y="320.7339">[response contains a SAML assertion]</text><line style="stroke:#181818;stroke-width:1.0;" x1="235" x2="277" y1="346.7891" y2="346.7891"></line><line style="stroke:#181818;stroke-width:1.0;" x1="277" x2="277" y1="346.7891" y2="359.7891"></line><line style="stroke:#181818;stroke-width:1.0;" x1="236" x2="277" y1="359.7891" y2="359.7891"></line><polygon fill="#181818" points="246,355.7891,236,359.7891,246,363.7891,242,359.7891" style="stroke:#181818;stroke-width:1.0;"></polygon><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="208" x="242" y="341.7231">store collected pairwise identifier</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="167" x2="493" y1="368.7891" y2="368.7891"></line><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthadjust="spacing" textlength="295" x="172" y="378.9995">[response does not contain a SAML assertion]</text><line style="stroke:#181818;stroke-width:1.0;" x1="235" x2="277" y1="403.7266" y2="403.7266"></line><line style="stroke:#181818;stroke-width:1.0;" x1="277" x2="277" y1="403.7266" y2="416.7266"></line><line style="stroke:#181818;stroke-width:1.0;" x1="236" x2="277" y1="416.7266" y2="416.7266"></line><polygon fill="#181818" points="246,412.7266,236,416.7266,246,420.7266,242,416.7266" style="stroke:#181818;stroke-width:1.0;"></polygon><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="184" x="242" y="398.6606">create new pairwise identifier</text><polygon fill="#181818" points="67,441.7266,57,445.7266,67,449.7266,63,445.7266" style="stroke:#181818;stroke-width:1.0;"></polygon><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="61" x2="234" y1="445.7266" y2="445.7266"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="155" x="73" y="458.7935">authentication response</text><path d="M240,443.7266 L240,468.7266 L400,468.7266 L400,453.7266 L390,443.7266 L240,443.7266 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><path d="M390,443.7266 L390,453.7266 L400,453.7266 L390,443.7266 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthadjust="spacing" textlength="139" x="246" y="460.7935">with pairwise identifier</text></g></svg>
+
+<p>The Sign In Canada Platform accomplishes the automatic collection of pairwise
+identifier mappings as part of the normal user login process, by sending a second
+SAML authentication request to the legacy credential service providers when
+required.</p>
+
+<ol>
+  <li>The process begins when a relying party sends an authentication request to
+the Sign In Canada Platform, using either OpenID Connect or SAML.</li>
+  <li>The Sign In Canada Platform then sends an authentication request to the CSP on
+its own behalf. Requesting the pairwise identifier that the CSP has created
+for Sign In Canada.</li>
+  <li>Upon receiving the SAML Assertion from the CSP, the Sign In Canada Platform looks
+the user up in its own user profile repository.</li>
+  <li>The Sign In Canada Platform then checks to see if it already has a pairwise
+identifier mapping for the authenticated user with the requesting relying
+party. If so, then collection is not required, the login flow completes
+normally, and the Sign In Canada Platform returns the appropriate pairwise
+identifier to the relying party (RP).</li>
+  <li>If however, the Sign In Canada Platform does not have a pairwise identifier
+mapping for the authenticated user with the requesting relying party, then it
+sends a second authentication request to the CSP on the relying party’s
+behalf.</li>
+  <li>If the CSP has an existing pairwise identifier for the user with the
+requesting RP, it returns that identifier in an Assertion and the Acceptance
+platform adds it to its own user repository. At this point, the identifier
+has been “collected” by the Sign In Canada Platform, and will be used whenever
+the user logs into that RP in the future (as per step 4 above).</li>
+  <li>If the CSP does not have an existing pairwise identifier for the user with
+the requesting RP then there is nothing to “collect”, so the Acceptance
+Platform creates a new identifier for the user with the requesting RP, and
+that identifier is used for all future logins.</li>
+</ol>
+
+<h2 id="technical-details">Technical Details</h2>
+
+<p>When sending a second authentication request to the CSP on behalf or the relying
+party, the Sign In Canada Platform makes use of the <code class="language-plaintext highlighter-rouge">&lt;NameIDPolicy&gt;</code> element of the
+SAML <code class="language-plaintext highlighter-rouge">&lt;AuthnRequest&gt;</code> message. Specifically, it uses the following two
+attributes of the <code class="language-plaintext highlighter-rouge">&lt;NameIDPolicy&gt;</code> element:</p>
+
+<ul>
+  <li>The value of the <code class="language-plaintext highlighter-rouge">SPNameQualifier</code> attribute is populated with the old SAML
+Entity Id of the requesting relying party, to indicate that the Acceptance
+Platform is requesting the RP’s pairwise identifier instead of its own.</li>
+  <li>The value of the <code class="language-plaintext highlighter-rouge">AllowCreate</code> attribute is set to <code class="language-plaintext highlighter-rouge">"false"</code>, to indicate to
+the CSP that it should not create a new pairwise identifier for the RP if is
+does not already have one.</li>
+</ul>
+
+<p>Here is an example of an authentication request issued by the Acceptance
+Platform on behalf of itself:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;samlp:AuthnRequest</span> <span class="na">xmlns:samlp=</span><span class="s">"urn:oasis:names:tc:SAML:2.0:protocol"</span> <span class="na">ID=</span><span class="s">"_f8e30829f6f60061c46e"</span>
+                    <span class="na">Version=</span><span class="s">"2.0"</span> <span class="na">IssueInstant=</span><span class="s">"2021-05-05T17:17:02.583Z"</span>
+                    <span class="na">ProtocolBinding=</span><span class="s">"urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"</span>
+                    <span class="na">Destination=</span><span class="s">"https://clegc-gckey.gc.ca/j/SSORedirect/metaAlias/GCKey/idp"</span>
+                    <span class="na">AssertionConsumerServiceURL=</span><span class="s">"https://auth.id.canada.ca/passport/auth/saml/gckey/callback"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;saml:Issuer</span> <span class="na">xmlns:saml=</span><span class="s">"urn:oasis:names:tc:SAML:2.0:assertion"</span><span class="nt">&gt;</span>
+      https://auth.id.canada.ca
+   <span class="nt">&lt;/saml:Issuer&gt;</span>
+   <span class="nt">&lt;samlp:NameIDPolicy</span> <span class="na">xmlns:samlp=</span><span class="s">"urn:oasis:names:tc:SAML:2.0:protocol"</span>
+                       <span class="na">Format=</span><span class="s">"urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"</span>
+                       <span class="na">AllowCreate=</span><span class="s">"true"</span>
+                       <span class="na">SPNameQualifier=</span><span class="s">"https://auth.id.canada.ca"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;samlp:RequestedAuthnContext</span> <span class="na">xmlns:samlp=</span><span class="s">"urn:oasis:names:tc:SAML:2.0:protocol"</span> <span class="na">Comparison=</span><span class="s">"exact"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;saml:AuthnContextClassRef</span> <span class="na">xmlns:saml=</span><span class="s">"urn:oasis:names:tc:SAML:2.0:assertion"</span><span class="nt">&gt;</span>
+         urn:gc-ca:cyber-auth:assurance:loa2
+      <span class="nt">&lt;/saml:AuthnContextClassRef&gt;</span>
+   <span class="nt">&lt;/samlp:RequestedAuthnContext&gt;</span>
+<span class="nt">&lt;/samlp:AuthnRequest&gt;</span>
+</code></pre></div></div>
+
+<p>Here is an example of an authentication request issued by the Acceptance
+Platform on behalf of a relying party:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;samlp:AuthnRequest</span> <span class="na">xmlns:samlp=</span><span class="s">"urn:oasis:names:tc:SAML:2.0:protocol"</span> <span class="na">ID=</span><span class="s">"_f8e30829f6f60061c46f"</span>
+                    <span class="na">Version=</span><span class="s">"2.0"</span> <span class="na">IssueInstant=</span><span class="s">"2021-05-05T17:20:02.583Z"</span>
+                    <span class="na">ProtocolBinding=</span><span class="s">"urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"</span>
+                    <span class="na">Destination=</span><span class="s">"https://clegc-gckey.gc.ca/j/SSORedirect/metaAlias/GCKey/idp"</span>
+                    <span class="na">AssertionConsumerServiceURL=</span><span class="s">"https://auth.id.canada.ca/passport/auth/saml/gckey/callback"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;saml:Issuer</span> <span class="na">xmlns:saml=</span><span class="s">"urn:oasis:names:tc:SAML:2.0:assertion"</span><span class="nt">&gt;</span>
+      https://auth.id.canada.ca
+   <span class="nt">&lt;/saml:Issuer&gt;</span>
+   <span class="nt">&lt;samlp:NameIDPolicy</span> <span class="na">xmlns:samlp=</span><span class="s">"urn:oasis:names:tc:SAML:2.0:protocol"</span>
+                       <span class="na">Format=</span><span class="s">"urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"</span>
+                       <span class="na">AllowCreate=</span><span class="s">"false"</span>
+                       <span class="na">SPNameQualifier=</span><span class="s">"https://relyingparty.department.gc.ca"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;samlp:RequestedAuthnContext</span> <span class="na">xmlns:samlp=</span><span class="s">"urn:oasis:names:tc:SAML:2.0:protocol"</span> <span class="na">Comparison=</span><span class="s">"exact"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;saml:AuthnContextClassRef</span> <span class="na">xmlns:saml=</span><span class="s">"urn:oasis:names:tc:SAML:2.0:assertion"</span><span class="nt">&gt;</span>
+         urn:gc-ca:cyber-auth:assurance:loa2
+      <span class="nt">&lt;/saml:AuthnContextClassRef&gt;</span>
+   <span class="nt">&lt;/samlp:RequestedAuthnContext&gt;</span>
+<span class="nt">&lt;/samlp:AuthnRequest&gt;</span>
+</code></pre></div></div>
+
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+
+<h3 id="what-does-the-user-experience-do-they-need-to-enter-their-password-twice">What does the user experience? Do they need to enter their password twice?</h3>
+
+<p>This process takes advantage of the Single Sign On features inherent in SAML, so
+that the user will not have to authenticate more than once, if at all:</p>
+
+<ul>
+  <li>If the user is not already logged in to the CSP, or if they are logged in
+but the single sign-on (SSO) window (20 minutes with the GCCF CSPs) has
+expired, they will be prompted to authenticate after the first SAML
+authentication request. After they successfully log in to the CSP, the the
+Sign In Canada Platform then sends the second authentication request a fraction of
+a second later, well within the SSO window, so they will not be prompted to
+login a second time.</li>
+  <li>In the unlikely case where the user is already logged in to the CSP, but the
+SSO window expires within the fraction of a second between the two
+authentication requests, then SSO will apply to the first request, but not to
+the second. Again, the user only needs to provide their credentials once.</li>
+  <li>If the user is already logged in to the CSP, and both authentication requests
+are processed within the SSO window, then the CSP will not prompt the user to
+re-enter their credentials at all. The relying party can override this
+behaviour by specifying <code class="language-plaintext highlighter-rouge">prompt="login"</code> (for OpenID Connect) or
+<code class="language-plaintext highlighter-rouge">forceAuthn="true"</code> (in SAML) in their authentication request to Sign In
+Canada, in which case the Sign In Canada Platform will specify
+<code class="language-plaintext highlighter-rouge">forceAuthn="true"</code> on it’s first request to the CSP, but not the second.</li>
+</ul>
+
+<h3 id="what-if-the-user-at-the-keyboard-changes-is-there-a-risk-that-the-sign-in-canada-platform-could-collect-the-wrong-identifier-belonging-to-the-wrong-person">What if the user at the keyboard changes? Is there a risk that the Sign In Canada Platform could collect the wrong identifier belonging to the wrong person?</h3>
+
+<p>This possible scenario can arise in cases where multiple people are sharing the
+same device, and one of them has left the device unattended while they were
+still logged in to the CSP. For example:</p>
+
+<p>Consider two users, Alice and Bob, who both have access to the same shared computer:</p>
+
+<ol>
+  <li>Alice logs into a GCCF relying party using her GCKey, but then walks away from
+  the computer without logging off.</li>
+  <li>Bob then sits down at the same computer and attempts to log in to a Sign In
+  Canada relying party, just a few seconds before Alice’s 20 minute single-sign
+  on window expires.</li>
+  <li>The Sign In Canada Platform sends the first authentication request to GCKey, and
+  receives Alice’s pairwise identifier in return.</li>
+  <li>Alice’s SSO window then expires in the fraction of a second before the
+  Sign In Canada Platform sends the second authentication request. GCKey prompts Bob
+  to enter his GCKey credentials and then returns Bob’s pairwise identifier to
+  the Sign In Canada Platform.</li>
+  <li>The Sign In Canada Platform then associates Bob’s GCKey identifier with Alice’s
+  user profile.</li>
+</ol>
+
+<p>In order to safeguard against this, the Sign In Canada Platform checks the
+<code class="language-plaintext highlighter-rouge">SessionIndex</code> of both SAML Assertions, and makes sure that they match before
+accepting the collected identifier.</p>
+
+<h3 id="saml-pairwise-identifiers-issued-by-an-identity-provider-idp-are-supposed-to-be-specific-to-a-saml-service-provider-sp-how-is-sign-in-canada-allowed-to-obtain-the-identifiers-generated-for-another-saml-sp">SAML Pairwise identifiers issued by an identity provider (IDP) are supposed to be specific to a SAML service provider (SP). How is Sign In Canada allowed to obtain the identifiers generated for another SAML SP?</h3>
+
+<p>The SAML specifications allow for the existence of <em>Affiliations</em>: groups of one
+or more SPs that share the same pairwise identifier for a given user. When a
+relying party moves from the GCCF to Sign In Canada, a new SAML Affiliation is
+defined, via SAML metadata, that allows the Sign In Canada Platform to obtain
+the pairwise identifiers that were originally created for the RP.</p>
+
+</main>
+
+
+<footer role="contentinfo" id="wb-info">
+  <nav role="navigation" class="container wb-navcurr">
+    <h2 class="wb-inv">About government</h2>
+    <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+      <li><a href="mailto:SignIn-AuthentiCanada@tbs-sct.gc.ca">Contact us</a></li>
+      <li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
+      <li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
+      <li><a href="https://www.canada.ca/en/news.html">News</a></li>
+      <li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
+      <li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
+      <li><a href="http://pm.gc.ca/eng">Prime Minister</a></li>
+      <li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
+      <li><a href="http://open.canada.ca/en/">Open government</a></li>
+    </ul>
+  </nav>
+  <div class="brand">
+    <div class="container">
+      <div class="row">
+        <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+          <h2 class="wb-inv">About this site</h2>
+          <ul>
+            <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+            <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+            <li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
+            <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+            <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+          </ul>
+        </nav>
+        <div class="col-xs-6 visible-sm visible-xs tofpg">
+          <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 text-right">
+          <object type="image/svg+xml" tabindex="-1" role="img" data="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/wmms-blk.svg" aria-label="Symbol of the Government of Canada"></object>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/theme.min.js"></script>
+
+</body>
+
+</html>
