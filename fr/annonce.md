@@ -6,6 +6,23 @@ lang: fr
 ---
 # Annonces
 
+## 14 février 2024
+### Mise à jour d'Authenti-Canada
+
+Ce message a pour but d’informer nos clients de nos projets pour 2024, qui comprennent l’abandon de Authenti-Canada v1 pour une solution d’identifiant du gouvernement du Canada. 
+
+Le 31 juillet 2023, le service Authenti-Canada est entré dans une phase de maintien, ce qui signifie que nous avons mis fin au développement actif et à la mise en œuvre de nouvelles fonctionnalités pour ce service, y compris aux rustines d’application et aux mises à jour. Veuillez prendre note qu’il est possible que les rustines de sécurité des systèmes d’exploitation soient fournies dans le cas des vulnérabilités critiques. 
+
+Les clients actuels d’Authenti-Canada migreront vers la nouvelle solution d’ICGA une fois qu’elle aura été acquise, testée et déployée. Nous fournirons des détails supplémentaires sur la progression de l’acquisition de la solution d’ICGA et sur les plans de migration lorsque des informations plus précises seront disponibles. Le contrat de logiciel sous forme de service (SaaS) pour la solution d’ICGA devrait être attribué au printemps 2024.  
+
+L’équipe des justificatifs numériques du SCT recommande à tous les nouveaux clients qui ont besoin de services et de soutien organisationnels en matière d’authentification d’utiliser le service de groupeurs de la fédération émettrice des justificatifs du gouvernement du Canada (FJGC) de Services partagés Canada (SPC). Cette approche sera maintenue jusqu’à ce que la solution organisationnelle d’ICGA soit entièrement mise en œuvre. Pour obtenir de plus amples renseignements sur le service de groupeurs de la FJGC, veuillez communiquer avec [l’équipe de gestion des justificatifs externes (GJE) de SPC](mailto:ecm-gje@ssc-spc.gc.ca). 
+
+En raison de la perte de consultants essentiels et du processus d’acquisition pour la solution d’ICGA, la capacité de l’équipe de soutien d’Authenti-Canada à traiter les demandes de service et les incidents a été réduite. Par conséquent, des retards et des temps de traitement prolongés sont à prévoir. 
+
+Compte tenu de cette réduction du niveau de service, notre équipe cherche activement à transférer autant d’économies que possible aux clients existants dans le cadre du renouvellement des protocoles d’entente (PE) pour l’exercice financier de 2024-2025. 
+
+Si vous avez des questions ou des préoccupations, ou si vous souhaitez obtenir de plus amples renseignements sur la solution d’ICGA, n’hésitez pas à communiquer avec l’équipe par l’entremise de la [boîte aux lettres d’Authenti-Canada](mailto:SignIn-AuthentiCanada@tbs-sct.gc.ca). 
+
 ## 8 août 2023
 ### Impact de l’AMFaaS 3.0 SPC sur Authenti-Canada
 
