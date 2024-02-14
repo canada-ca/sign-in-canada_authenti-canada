@@ -7,11 +7,11 @@ lang: fr
 # Annonces
 
 ## 14 février 2024
-### Authenti-Canada planifie pour 2024
+### Mise à jour d'Authenti-Canada
 
 Ce message a pour but d’informer nos clients de nos projets pour 2024, qui comprennent l’abandon de Authenti-Canada v1 pour une solution d’identifiant du gouvernement du Canada. 
 
-Le 31 juillet 2023, le service Authenti-Canada est entré dans une phase de maintien, ce qui signifie que nous avons mis fin au développement actif et à la mise en œuvre de nouvelles fonctionnalités pour ce service, y compris aux rustines d’application et aux mises à jour. Veuillez prendre note qu’il est possible que les rustines de sécurité des systèmes d’exploitation soient fournies dans le cas des vulnérabilités critiques, à la discrétion du fournisseur. 
+Le 31 juillet 2023, le service Authenti-Canada est entré dans une phase de maintien, ce qui signifie que nous avons mis fin au développement actif et à la mise en œuvre de nouvelles fonctionnalités pour ce service, y compris aux rustines d’application et aux mises à jour. Veuillez prendre note qu’il est possible que les rustines de sécurité des systèmes d’exploitation soient fournies dans le cas des vulnérabilités critiques. 
 
 Les clients actuels d’Authenti-Canada migreront vers la nouvelle solution d’ICGA une fois qu’elle aura été acquise, testée et déployée. Nous fournirons des détails supplémentaires sur la progression de l’acquisition de la solution d’ICGA et sur les plans de migration lorsque des informations plus précises seront disponibles. Le contrat de logiciel sous forme de service (SaaS) pour la solution d’ICGA devrait être attribué au printemps 2024.  
 
