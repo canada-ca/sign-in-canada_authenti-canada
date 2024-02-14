@@ -8,11 +8,11 @@ lang: en
 # Announcements
 
 ## February 14, 2024
-### Sign In Canada plans for 2024
+### Update on Sign in Canada
 
 This message is to update our customers on our plans for 2024, which includes transitioning from SIC v1 to GC Sign In. 
 
-On July 31, 2023, the Sign in Canada (SIC) service entered a maintenance phase which means that we have stopped active development and implementation of new features, including application patches and updates. Please note that operating system security patches may be provided for critical vulnerabilities, at the discretion of the vendor. This decision was made because work is underway to procure and implement an enterprise-wide Government of Canada Customer Identity and Access Management (CIAM) solution.  
+On July 31, 2023, the Sign in Canada (SIC) service entered a maintenance phase which means that we have stopped active development and implementation of new features, including application patches and updates. Please note that operating system security patches may be provided for critical vulnerabilities. This decision was made because work is underway to procure and implement an enterprise-wide Government of Canada Customer Identity and Access Management (CIAM) solution.  
 
 Existing SIC customers will migrate to the new CIAM solution following its procurement, testing and deployment. We will provide additional details on the CIAM procurement status and migration plans when more specific information becomes available. The CIAM Software as a Service (SaaS) contract is expected to be awarded in Spring 2024.  
 
