@@ -7,6 +7,23 @@ lang: en
 
 # Announcements
 
+## February 14, 2024
+### Update on Sign in Canada
+
+This message is to update our customers on our plans for 2024, which includes transitioning from SIC v1 to GC Sign In. 
+
+On July 31, 2023, the Sign in Canada (SIC) service entered a maintenance phase which means that we have stopped active development and implementation of new features, including application patches and updates. Please note that operating system security patches may be provided for critical vulnerabilities. This decision was made because work is underway to procure and implement an enterprise-wide Government of Canada Customer Identity and Access Management (CIAM) solution.  
+
+Existing SIC customers will migrate to the new CIAM solution following its procurement, testing and deployment. We will provide additional details on the CIAM procurement status and migration plans when more specific information becomes available. The CIAM Software as a Service (SaaS) contract is expected to be awarded in Spring 2024.  
+
+The TBS Digital Credentials team recommends that any new customers who require enterprise authentication services and support use the Shared Services Canada (SSC) Government of Canada Credential Federation (GCCF) consolidator service. This will be the approach until the enterprise CIAM solution is fully implemented.  For more information about the GCCF consolidator service, please contact the [SSC External Credential Management (ECM)](mailto:ecm-gje@ssc-spc.gc.ca) team. 
+
+As the SIC support team has lost key consulting resources and is concurrently engaged in the CIAM procurement, the team's ability to handle service requests and incidents has been reduced. Consequently, delays and extended turnaround times are likely. 
+
+In recognition of this reduced level of service, our team is actively looking at how to transfer as many cost savings as possible to existing clients as we look to renew Memorandums of Understanding (MOUs) for the 2024-2025 fiscal year. 
+
+If you have any questions, concerns, or require further details about the CIAM, please don't hesitate to reach out to the team via the [Sign In Canada](mailto:SignIn-AuthentiCanada@tbs-sct.gc.ca) mailbox.
+
 ## August 8, 2023
 ### Impact of SSC MFAaaS 3.0 on Sign In Canada Clients
 
