@@ -1,37 +1,60 @@
-name: Build and Deploy to Github Pages
+name: Build and merge into gh-pages branch
 
 on:
   push:
     branches:
-      - main  # Here source code branch is `master`, it could be other branch
+      - main
 
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      # Use GitHub Actions' cache to cache dependencies on servers
-      - uses: actions/cache@v3
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
+          ruby-version: 3.0
 
-      # Use GitHub Deploy Action to build and deploy to Github
-      # For latest version: `jeffreytse/jekyll-deploy-action@master`
-      - uses: jeffreytse/jekyll-deploy-action@v0.5.1
-        with:
-          provider: 'github'         # Default is github
-          token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
-          ssh_private_key: ''        # It's your SSH private key (SSH approach)
-          repository: ''             # Default is current repository
-          branch: 'gh-pages'         # Default is gh-pages for github provider
-          jekyll_src: './'           # Default is root directory
-          jekyll_cfg: '_config.yml'  # Default is _config.yml
-          jekyll_baseurl: ''         # Default is according to _config.yml
-          bundler_ver: ''            # Default is compatible bundler version (~>2.4.0)
-          cname: ''                  # Default is to not use a cname
-          actor: ''                  # Default is the GITHUB_ACTOR
-          pre_build_commands: ''     # Installing additional dependencies (Arch Linux)
+      - name: Add Ruby Gems to PATH
+        run: echo "/github/home/.gem/ruby/3.0.0/bin" >> $GITHUB_PATH
+
+      - name: Install Bundler
+        run: gem install bundler -v 2.5.6
+
+      - name: Bundle Install
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Build Jekyll site
+        run: |
+          bundle exec jekyll build
+          ls -lah
+          echo "Listing _site directory after build:"
+          ls -lah _site
+
+      - name: Deploy to gh-pages
+        run: |
+            git config --global user.name 'github-actions'
+            git config --global user.email 'github-actions@github.com'
+            git checkout --orphan gh-pages
+            git reset --hard
+            git clean -fdx
+            # Ensure we're in the right directory
+            pwd
+            ls -lah
+            # Copy the contents of the _site directory
+            if [ -d "_site" ]; then
+              cp -r _site/* .
+              touch .nojekyll
+              git add -A
+              git commit -m "Deploy updates"
+              git push -fu origin gh-pages
+            else
+              echo "Error: _site directory not found."
+              exit 1
+            fi
+        env:
+          JEKYLL_ENV: production
+          working-directory: ${{ github.workspace }}
+        
