@@ -1,9 +1,9 @@
-name: Deploy to GitHub Pages
+name: Build and merge into gh-pages branch
 
 on:
   push:
     branches:
-      - main  # This should be the branch containing your Jekyll site source
+      - main
 
 jobs:
   build-and-deploy:
