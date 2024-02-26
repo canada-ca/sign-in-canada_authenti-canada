@@ -16,9 +16,6 @@ jobs:
           - 8080:8080
 
     steps:
-      - name: Add gem executables to PATH
-        run: echo "::add-path::/github/home/.gem/ruby/2.7.0/bin"
-
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
