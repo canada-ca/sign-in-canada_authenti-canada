@@ -29,6 +29,13 @@ jobs:
       - name: Build Jekyll site
         run: bundle exec jekyll build
 
+      # Debugging: List output of _site directory
+      - name: List output of _site directory
+        run: |
+          ls -lah
+          echo "Listing _site directory:"
+          ls -lah _site
+
       - name: Deploy to gh-pages
         run: |
           git config --global user.name 'github-actions'
@@ -37,7 +44,7 @@ jobs:
           git reset --hard
           git clean -fdx
           if [ -d "_site" ]; then
-            mv _site/* .
+            cp -r _site/* .
             touch .nojekyll
             git add -A
             git commit -m "Deploy updates"
