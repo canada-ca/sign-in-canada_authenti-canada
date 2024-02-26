@@ -16,7 +16,7 @@ jobs:
           - 8080:8080
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -40,14 +40,14 @@ jobs:
       - name: Verify Ruby Version
         run: ruby -v
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v3
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      - uses: jeffreytse/jekyll-deploy-action@master
+      - uses: jeffreytse/jekyll-deploy-action@v0.5.1
         with:
           provider: 'github'
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -56,6 +56,6 @@ jobs:
           jekyll_src: './'
           jekyll_cfg: '_config.yml'
           jekyll_baseurl: ''
-          bundler_ver: '~>2.4.0'
+          bundler_ver: ''
           actor: ''
           pre_build_commands: ''
