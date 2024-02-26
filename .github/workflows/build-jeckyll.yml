@@ -21,7 +21,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0 # Ensures Ruby version is compatible with Bundler 2.5.6
+          ruby-version: 3.2 # Ensures Ruby version is compatible with Bundler 2.5.6
 
       - name: Add Ruby Gems to PATH
         run: echo "/github/home/.gem/ruby/3.0.0/bin" >> $GITHUB_PATH
