@@ -34,22 +34,27 @@ jobs:
           ls -lah _site
 
       - name: Deploy to gh-pages
-        if: success()
         run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-          git checkout --orphan gh-pages
-          git reset --hard
-          git clean -fdx
-          if [ -d "_site" ]; then
-            cp -r _site/* .
-            touch .nojekyll
-            git add -A
-            git commit -m "Deploy updates"
-            git push -fu origin gh-pages
-          else
-            echo "Error: _site directory not found."
-            exit 1
-          fi
+            git config --global user.name 'github-actions'
+            git config --global user.email 'github-actions@github.com'
+            git checkout --orphan gh-pages
+            git reset --hard
+            git clean -fdx
+            # Ensure we're in the right directory
+            pwd
+            ls -lah
+            # Copy the contents of the _site directory
+            if [ -d "_site" ]; then
+              cp -r _site/* .
+              touch .nojekyll
+              git add -A
+              git commit -m "Deploy updates"
+              git push -fu origin gh-pages
+            else
+              echo "Error: _site directory not found."
+              exit 1
+            fi
         env:
           JEKYLL_ENV: production
+          working-directory: ${{ github.workspace }}
+        
