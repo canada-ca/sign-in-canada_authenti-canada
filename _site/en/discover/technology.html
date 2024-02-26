@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+  <title>Technology and Architecture</title>
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <!-- Meta data -->
+  <meta name="description" content="Sign In Canada.">
+  <!-- Meta data-->
+  <!--[if gte IE 9 | !IE ]><!-->
+  <link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/css/theme.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/style.css">
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+  <link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/css/ie8-theme.min.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/ie8-wet-boew.min.js"></script>
+	<![endif]-->
+  <!--[if lte IE 9]> <![endif]-->
+  <noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/css/noscript.min.css"></noscript>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage" class="page-discover-technology">
+<ul id="wb-tphp">
+  <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
+  <li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to "About this site"</a></li>
+</ul>
+
+<header>
+  <div id="wb-bnr" class="container">
+    <section id="wb-lng" class="visible-md visible-lg text-right">
+      <h2 class="wb-inv">Language selection</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-inline margin-bottom-none">
+            <li><a lang="fr" hreflang="fr" href="/fr/decouvrir/technology.html">Français</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="row">
+      <div class="brand col-xs-8 col-sm-9 col-md-6">
+        <a href="https://www.canada.ca/en.html">
+          <img src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/sig-blk-en.svg" alt="Government of Canada / Gouvernement du Canada">
+          <span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span>
+        </a>
+      </div>
+
+      <section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
+        <h2>Menus</h2>
+        <ul class="list-inline text-right chvrn">
+          <li><a href="#mb-pnl" title="Menus" aria-controls="mb-pnl" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Menus</span></span></a></li>
+        </ul>
+        <div id="mb-pnl"></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="gcweb-menu" typeof="SiteNavigationElement">
+    <div class="container nvbar">
+      <h2 class="wb-inv">Menu</h2>
+      <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+      <ul role="menu" aria-orientation="vertical">
+        <li role="presentation"><a role="menuitem" href="/en/discover/index.html">Discover</a></li>
+        <li role="presentation"><a role="menuitem" href="/en/evaluate/index.html">Evaluate</a></li>
+        <li role="presentation"><a role="menuitem" href="/en/join/index.html">Join</a></li>
+        <li role="presentation"><a role="menuitem" href="/en/contribute/index.html">Contribute</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="wb-bc" property="breadcrumb">
+    <h2>You are here:</h2>
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="/en/index.html">Sign In Canada</a></li>
+<li><a href="/en/discover/index.html">Discover</a></li>
+          <li><a href="/en/discover/technology.html">Technology and Architecture</a></li>
+</ol>
+    </div>
+  </nav>
+</header>
+
+<main property="mainContentOfPage" class="container">
+
+<h1 id="technology-and-architecture">Technology and Architecture</h1>
+
+<h2 id="technology">Technology</h2>
+
+<p>The Sign In Canada platform is built on <a href="https://gluu.org">Gluu Server</a>, an open-source identity &amp; access management (IAM) platform.</p>
+
+<p>The platform also leverages several cloud services:</p>
+
+<ul>
+  <li>IaaS: Azure Virtual Machines, Azure Virtual Networks, Azure Traffic Manager</li>
+  <li>PaaS/SaaS: Azure Storage, Azure Key Vault, Azure Functions, Azure Monitor (Application Insights, Log Analytics), Azure DevOps, Azure Dev/Test Labs, GitHub</li>
+</ul>
+
+<h2 id="architecture">Architecture</h2>
+
+<p><img src="/en/discover/images/Overview.svg" alt="Overview"></p>
+
+<h2 id="components">Components</h2>
+
+<h3 id="acceptance-framework">Acceptance Framework</h3>
+
+<p>Product: Gluu Passport</p>
+
+<p>Gluu Passport is a <a href="https://nodejs.org/en/about/">Node.JS</a> web application based
+on the <a href="https://expressjs.com/">Express</a> web application framework and the
+<a href="http://www.passportjs.org/">Passport.JS</a> authentication middleware.</p>
+
+<p>As the name implies, This is the “Acceptance” component of the Acceptance
+Platform. It integrates with credential providers and trusted identity providers
+to accept assurances of credential and identity on behalf of GC relying
+parties.</p>
+
+<p>Sign in Canada uses a version of Gluu Passport that has been customized to
+support some unique functionality that supports the coexistence with, and
+transition from, the older GCCF credential services, in particular:</p>
+
+<ul>
+  <li>It has been customized to support both the preservation and run-time migration
+of user’s existing PAIs from the Credential Service Provider (CSP) to the Acceptance Platform, so that the
+transition has no impact on end users’ enrolment with existing relying parties.</li>
+  <li>It has customized to support session coordination between the Acceptance
+Platform and the CSPs.</li>
+</ul>
+
+<p>Version: 5.3</p>
+
+<p>Website: https://www.gluu.org/</p>
+
+<p>Source code: https://github.com/sign-in-canada/gluu-passport/</p>
+
+<h3 id="openid-provider">OpenID Provider</h3>
+
+<p>Product: oxAuth</p>
+
+<p>oxAuth is an open source <a href="https://openid.net/connect/">OpenID Connect</a> Provider
+(OP) and <a href="https://kantarainitiative.org/confluence/display/uma/Home">UMA</a>
+Authorization Server (AS).</p>
+
+<p>oxAuth is the core component of the Acceptance Platform, responsible for the
+user interface and business logic. As an <a href="https://openid.net/connect/">OpenID
+Connect</a> Provider, it also provides the application
+programming interface used by GC relying parties that integrate using <a href="https://openid.net/connect/">OpenID
+Connect</a>.</p>
+
+<p>Version: 4.4.0</p>
+
+<p>Website: https://www.gluu.org/</p>
+
+<p>Source code: https://github.com/GluuFederation/oxAuth/</p>
+
+<h3 id="saml-identity-provider">SAML Identity Provider</h3>
+
+<p>Product: Shibboleth IDP</p>
+
+<p>Shibboleth is a <a href="https://wiki.oasis-open.org/security/FrontPage">SAML</a> Identity
+Provider (IDP) that provides the application programming interface used by GC
+relying parties that integrate using <a href="https://wiki.oasis-open.org/security/FrontPage">SAML</a>.</p>
+
+<p>Version: 4.4.0</p>
+
+<p>Website: https://www.shibboleth.net/products/identity-provider/</p>
+
+<p>Source code: https://wiki.shibboleth.net/confluence/display/DEV/Source+Code+Access/</p>
+
+<h3 id="nosql-database">NoSQL Database</h3>
+
+<p>Product: Couchbase Enterprise Server</p>
+
+<p>Couchbase Server is an open-source, distributed, multi-model NoSQL
+document-oriented database software package that is optimized for interactive
+applications.</p>
+
+<p>The Sign In Canada platform uses Couchbase to store user profiles and relying
+party configurations, as well as for high-performance distributed session
+caching.</p>
+
+<p>Version: 6.6.5</p>
+
+<p>Website: https://www.couchbase.com/</p>
+
+</main>
+
+
+<footer role="contentinfo" id="wb-info">
+  <nav role="navigation" class="container wb-navcurr">
+    <h2 class="wb-inv">About government</h2>
+    <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+      <li><a href="mailto:SignIn-AuthentiCanada@tbs-sct.gc.ca">Contact us</a></li>
+      <li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
+      <li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
+      <li><a href="https://www.canada.ca/en/news.html">News</a></li>
+      <li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
+      <li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
+      <li><a href="http://pm.gc.ca/eng">Prime Minister</a></li>
+      <li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
+      <li><a href="http://open.canada.ca/en/">Open government</a></li>
+    </ul>
+  </nav>
+  <div class="brand">
+    <div class="container">
+      <div class="row">
+        <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+          <h2 class="wb-inv">About this site</h2>
+          <ul>
+            <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+            <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+            <li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
+            <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+            <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+          </ul>
+        </nav>
+        <div class="col-xs-6 visible-sm visible-xs tofpg">
+          <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 text-right">
+          <object type="image/svg+xml" tabindex="-1" role="img" data="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/wmms-blk.svg" aria-label="Symbol of the Government of Canada"></object>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/theme.min.js"></script>
+
+</body>
+
+</html>

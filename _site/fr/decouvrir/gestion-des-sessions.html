@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr" dir="ltr">
+  
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		  wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+  <title>Gestion des séances</title>
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <!-- Meta data -->
+  <meta name="description" content="Authenti-Canada.">
+  <!-- Meta data-->
+  <!--[if gte IE 9 | !IE ]><!-->
+  <link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/css/theme.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/style.css">
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+  <link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/css/ie8-theme.min.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/ie8-wet-boew.min.js"></script>
+	<![endif]-->
+  <!--[if lte IE 9]> <![endif]-->
+  <noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/css/noscript.min.css"></noscript>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage" class="page-discover-session">
+<ul id="wb-tphp">
+  <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Passer au contenu principal</a></li>
+  <li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Passer à « À propos de ce site »</a></li>
+</ul>
+
+<header>
+  <div id="wb-bnr" class="container">
+    <section id="wb-lng" class="visible-md visible-lg text-right">
+      <h2 class="wb-inv">Sélection de la langue</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-inline margin-bottom-none">
+            <li><a lang="en" hreflang="en" href="/en/discover/session-management.html">English</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="row">
+      <div class="brand col-xs-8 col-sm-9 col-md-6">
+        <a href="https://www.canada.ca/fr.html">
+          <img src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/sig-blk-fr.svg" alt="Government of Canada / Gouvernement du Canada">
+          <span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span>
+        </a>
+      </div>
+
+      <section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
+        <h2>Menus</h2>
+        <ul class="list-inline text-right chvrn">
+          <li><a href="#mb-pnl" title="Menus" aria-controls="mb-pnl" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Menus</span></span></a></li>
+        </ul>
+        <div id="mb-pnl"></div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="gcweb-menu" typeof="SiteNavigationElement">
+    <div class="container nvbar">
+      <h2 class="wb-inv">Menu</h2>
+      <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+      <ul role="menu" aria-orientation="vertical">
+        <li role="presentation"><a role="menuitem" href="/fr/decouvrir/index.html">Découvrir</a></li>
+        <li role="presentation"><a role="menuitem" href="/fr/evaluer/index.html">Évaluer</a></li>
+        <li role="presentation"><a role="menuitem" href="/fr/rejoindre/index.html">Rejoindre</a></li>
+        <li role="presentation"><a role="menuitem" href="/fr/contribuer/index.html">Contribuer</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="wb-bc" property="breadcrumb">
+    <h2>Vous êtes ici:</h2>
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="/fr/index.html">Authenti-Canada</a></li>
+<li><a href="/fr/decouvrir/index.html">Découvrir</a></li>
+          <li><a href="/fr/decouvrir/gestion-des-sessions.html">Gestion des sessions</a></li>
+</ol>
+    </div>
+  </nav>
+</header>
+
+<main property="mainContentOfPage" class="container">
+
+<h1 id="gestion-des-séances">Gestion des séances</h1>
+
+<p>La plateforme Authenti-Canada fonctionne comme une autorité de gestion de
+session qui coordonne de façon centralisée les sessions des utilisateurs dans
+plusieurs applications de parties de confiance (PC). La plateforme comporte deux
+caractéristiques clés qui la soutiennent : authentification unique et
+déconnexion unique.</p>
+
+<h2 id="authentification-unique">Authentification unique</h2>
+
+<p>Une fois qu’un utilisateur a utilisé avec succès un justificatif quelconque ou
+un service d’identité numérique de confiance pour s’authentifier auprès d’une
+PC, Authenti-Canada peut lui permettre de s’authentifier en silence auprès
+d’autres PC, sous réserve d’une période d’attente d’authentification unique. La
+plateforme y parvient en créant sa propre session avec l’utilisateur lors de sa
+première connexion, puis en ne les invitant pas à se réauthentifier lorsqu’ils
+se connectent à d’autres PC pendant un délai d’inactivité spécifiée.</p>
+
+<p>La fenêtre d’attente de l’authentification unique démarre chaque fois qu’un
+utilisateur saisit son mot de passe correct à un fournisseur de justificatif
+d’identité (FJI) et se termine après une période spécifiée. Par défaut, il
+s’agit de 20 minutes, mais les parties qui se connectent au Canada peuvent
+modifier ce délai si elles le souhaitent. Il est toutefois important de noter
+que la fenêtre d’authentification unique des services d’authentifiant CléGC et
+le service de courtier de justificatifs d’identité, qui est également de 20
+minutes, ne peut pas être modifié, elle ne peut être désactivée (appelée
+authentification forcée). Dans toute situation où le délai d’attente « codé en
+dur » pourrait entrer en conflit avec le délai d’attente préféré d’une partie de
+confiance, la plateforme Authenti-Canada synchronisera automatiquement les deux
+et résoudra le conflit.</p>
+
+<p><em>Notez que pour que l’authentification unique fonctionne, l’utilisateur doit
+utiliser les mêmes informations d’identification ou la même identité numérique
+de confiance pour accéder à tous les services gouvernementaux numériques. À
+l’heure actuelle, cela n’est pas possible puisque tous les services du
+gouvernement du Canada n’acceptent pas les mêmes justificatifs. Par exemple,
+l’accès aux services fiscaux en ligne fournis par l’Agenge du revenu du Canada
+n’est actuellement pas possible à l’aide d’un justificatif d’identité de CléGC.
+Par conséquent, les utilisateurs qui ont choisi d’utiliser un justificatif de
+CléGC ne peuvent pas s’inscrire à <a href="https://www.canada.ca/fr/agence-revenu/services/services-electroniques/services-electroniques-particuliers/dossier-particuliers.html">Mon dossier pour les particuliers de
+l’ARC</a>.</em></p>
+
+<h2 id="déconnexion-unique">Déconnexion unique</h2>
+
+<p>Lorsqu’un utilisateur a visité plusieurs sites Web (applications de partie de
+confiance) au cours de la même session, la plateforme Authenti-Canada a la
+capacité de coordonner de manière centralisée une déconnexion unique. Avec une
+déconnexion unique, l’utilisateur n’a qu’à cliquer sur un bouton de déconnexion
+sur le site qu’il visite actuellement, et Authenti-Canada les déconnectera
+ensuite de tous les autres sites qu’il a visités pendant sa session.</p>
+
+<p>La propagation de la déconnexion sur tous ces sites peut utiliser le mécanisme
+de déconnexion <a href="https://openid.net/specs/openid-connect-frontchannel-1_0.html">OpenID Connect
+Front-Channel</a>,
+le mécanisme de déconnexion <a href="https://openid.net/specs/openid-connect-backchannel-1_0.html">OpenID Connect
+Back-Channel</a> ou
+le profil de déconnexion SAML à l’aide de
+<a href="https://www.oasis-open.org/committees/download.php/56779/sstc-saml-bindings-errata-2.0-wd-06.pdf">liaisons</a>
+de canal frontal (HTTP-Redirect) ou de canal secondaire (SOAP). La plateforme
+Authenti-Canada appuie tous ces éléments.</p>
+
+<p>Les protocoles OpenID Connect (OIDC) et SAML suivent la même séquence d’événements de base :</p>
+
+<ol>
+  <li>Comme un utilisateur visite plusieurs sites Web (applications) au cours de la
+même session, la plateforme Authenti-Canada permet de suivre les sites qu’il
+a visités.</li>
+  <li>Lorsque l’utilisateur clique sur un bouton de déconnexion sur l’un des sites
+qu’il visite, l’application Web de ce site envoie une demande de déconnexion
+à la plateforme Authenti-Canada.</li>
+  <li>Authenti-Canada envoie ensuite une demande de déconnexion à tous les autres
+sites que l’utilisateur a visités, afin qu’il puisse déconnecter
+l’utilisateur.</li>
+</ol>
+
+<h2 id="transition-et-coexistence">Transition et coexistence</h2>
+
+<p>Il y aura une période de transition prolongée à mesure que les applications PC
+se connecteront à Authenti-Canada et se déconnecteront progressivement un à un
+de la fédération des justificatifs du gouvernement du Canada (FJGC) CléGC et
+Services de courtier de justificatifs d’identité. Pendant cette période de
+transition, la plateforme Authenti-Canada servira d’autorité de gestion de
+session pour les applications qui y sont connectées, tandis que les services
+CléGC et services de courtier de justificatifs d’identité serviront d’autorité
+de gestion de session pour les applications qui y sont connectées.</p>
+
+<p>Cela crée une obligation pour Authenti-Canada de coordonner une déconnexion
+unique avec CléGC et les services de courtier de justificatifs d’identité
+(SCJI), ainsi qu’avec ses propres PC. La plateforme y parvient en appuyant le
+profil de déconnexion unique SAML dans le cadre de son intégration, en tant que
+fournisseur de justificatifs d’identité proxy SAML, avec CléGC et services de
+courtier de justificatif d’identité. La plateforme Authenti-Canada est en mesure
+de coordonner une déconnexion unique avec la fédération des justificatifs du
+gouvernement du Canada (FJGC) dans les deux sens. C’est-à-dire, peu importe si
+l’utilisateur se déconnecte d’abord d’Authenti-Canada ou s’il se déconnecte
+d’abord de la FJGC.</p>
+
+<h3 id="scénario-1--un-utilisateur-se-déconnecte-dabord-dauthenti-canada">Scénario 1 : Un utilisateur se déconnecte d’abord d’Authenti-Canada</h3>
+
+<p>L’exemple suivant illustre comment une déconnexion unique est réalisée dans le
+cas où l’utilisateur clique sur un bouton de déconnexion sur un site de la
+partie de confiance qui est connecté à Authenti-Canada.</p>
+
+<p><img class="plantuml" src="http://plantuml:8080/svg/~h407374617274756d6c0a736b696e706172616d2073657175656e63654d657373616765416c69676e20646972656374696f6e0a736b696e706172616d20726573706f6e73654d65737361676542656c6f774172726f7720747275650a736b696e706172616d207469746c65426f72646572526f756e64436f726e65722031350a736b696e706172616d207469746c65426f72646572546869636b6e65737320320a736b696e706172616d207469746c65426f72646572436f6c6f72207265640a736b696e706172616d207469746c654261636b67726f756e64436f6c6f7220417175612d4361646574426c75650a7469746c652044c3a9636f6e6e6578696f6e20696e697469c3a9652070617220756e6520706172746965207574696c69736174726963652064652041757468656e74692d43616e6164610a4163746f72204e6176696761746575722061732042726f777365720a5061727469636970616e74202250617274696520646520636f6e6669616e6365222061732052500a626f78202241757468656e74692d43616e616461220a5061727469636970616e742022466f75726e697373657572204f70656e494422206173204f500a5061727469636970616e74202243616472652064276163636570746174696f6e222061732050617373706f72740a656e6420626f780a5061727469636970616e74202253414d4c20466f75726e6973736575725c6e64276964656e746974c3a92053414d4c2028464a492922206173204944500a5061727469636970616e74202241757472652873292050525c6e642741757468656e74692d43616e61646122206173204f746865725f5349430a5061727469636970616e74202241757472652873292050525c6e647520464a474322206173204f746865725f474343460a42726f77736572202d3e205250203a2053652064c3a9636f6e6e65637465720a5250202d3e205250203a206c6f63616c2053652064c3a9636f6e6e65637465720a5250202d2d3e2042726f77736572203a205265646972656374696f6e2076657273206c6520706f696e74206465207465726d696e6169736f6e20656e645f73657373696f6e0a42726f77736572202d3e204f50203a2044656d616e64652064652064c3a9636f6e6e6578696f6e204f49444320617520706f696e74206465207465726d696e6169736f6e20656e645f73657373696f6e0a67726f7570205061720a2020204f50202d3e3e204f746865725f534943203a2044656d616e64652873292064652064c3a9636f6e6e6578696f6e2064752063616e616c206465207265746f7572204f4944430a2020204f746865725f534943202d3e204f746865725f534943203a206c6f63616c2053652064c3a9636f6e6e65637465720a2020204f50203c3c2d2d204f746865725f534943203a2072c3a9706f6e7365732064652064c3a9636f6e6e6578696f6e0a656e640a42726f77736572203c2d2d204f50203a20506167652064652070726f7061676174696f6e2064652064c3a9636f6e6e6578696f6e206176656320696672616d65730a67726f7570205061720a20202042726f77736572202d3e3e204f746865725f534943203a2044656d616e64652873292064652064c3a9636f6e6e6578696f6e2064752063616e616c2066726f6e74616c204f4944430a2020204f746865725f534943202d3e204f746865725f534943203a206c6f63616c2053652064c3a9636f6e6e65637465720a20202042726f77736572203c3c2d2d204f746865725f534943203a2052c3a9706f6e736528732920485454500a20202042726f77736572202d3e3e2050617373706f7274203a2044656d616e64652064652064c3a9636f6e6e6578696f6e0a20202042726f77736572203c3c2d2d2050617373706f7274203a2044656d616e64652064652064c3a9636f6e6e6578696f6e2053414d4c0a20202042726f77736572202d3e3e20494450203a2044656d616e64652064652064c3a9636f6e6e6578696f6e2053414d4c740a2020206c6f6f700a202020202020494450202d3e204f746865725f47434346203a2044656d616e64652064652064c3a9636f6e6e6578696f6e2053414d4c0a2020202020204f746865725f47434346202d3e204f746865725f47434346203a206c6f63616c2053652064c3a9636f6e6e65637465720a2020202020204f746865725f47434346202d2d3e20494450203a2052c3a9706f6e73652064652064c3a9636f6e6e6578696f6e2053414d4c0a202020656e640a2020206e6f7465207269676874206f6620494450203a2044c3a9636f6e6e6578696f6e20647520464a4743207465726d696ec3a9650a20202042726f77736572203c3c2d2d20494450203a2052c3a9706f6e73652064652064c3a9636f6e6e6578696f6e2053414d4c0a656e640a616c7420756e65206572726575722073276573742070726f64756974650a20202042726f77736572202d3e204f50203a2043686172676572206c6120706167652064276176657274697373656d656e742064652064c3a9636f6e6e6578696f6e0a20202042726f77736572203c2d2d205250203a20506167652064276176657274697373656d656e742064652064c3a9636f6e6e6578696f6e0a656c736520617563756e6520657272657572206e276573742073757276656e75650a20202042726f77736572202d3e205250203a2043686172676572206c6120706167652064652064c3a9636f6e6e6578696f6e207465726d696ec3a9650a20202042726f77736572203c2d2d205250203a20506167652064652064c3a9636f6e6e6578696f6e207465726d696ec3a9650a656e640a6e6f7465207269676874206f662042726f777365720a20202041757468656e74692d43616e6164610a20202064c3a9636f6e6e6578696f6e207465726d696ec3a9650a656e64206e6f74650a40656e64756d6c"></p>
+
+<p>Le scénario commence lorsqu’un utilisateur clique sur un bouton de déconnexion
+sur le site de la partie de confiance qu’il utilise. Lorsque cela se produit :</p>
+
+<ol>
+  <li>L’application de la partie de confiance déconnecte l’utilisateur localement
+d’abord, puis redirige le navigateur vers le point de terminaison OpenID
+Connect de session des plateformes d’acceptation.</li>
+  <li>Si des parties de confiance qui participent à la session appuient la
+déconnexion en mode canal arrière de Connexion OpenID, la plateforme
+d’acceptation envoie d’abord un jeton de déconnexion à tous, à travers un
+POST HTTP à leurs URI de déconnexion en mode canal arrière enregistré pour
+déclencher les actions de déconnexion de ces PC. S’il y a plusieurs parties
+de confiance, ces demandes sont toutes envoyées simultanément, en parallèle.</li>
+  <li>Une fois la déconnexion canal arrière terminée, la plateforme d’acceptation
+retourne une page de propagation de déconnexion
+<a href="https://html.spec.whatwg.org/multipage/">HTML</a> au navigateur. Cette page
+contient un certain nombre d’éléments
+<a href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element">iframe</a>.
+L’attribut src (source) de tous les éléments, sauf un, pointe vers l’URI de
+déconnexion du canal avant de l’un des sites de partie de confiance
+d’Authenti-Canada où l’utilisateur s’est connecté pendant sa session en
+cours. Dans le diagramme, ces autres sites sont désignés comme « autres PC de
+l’OIDC ». L’attribut <code class="language-plaintext highlighter-rouge">src</code> de l’<em>iframe</em> final pointe vers un point terminal URI
+du Cadre d’acceptation de la plateforme d’acceptation.</li>
+  <li>Dès réception de la page de propagation, le navigateur commence à charger en
+parallèle l’intégralité de la valeur des <em>_iframe_s, en envoyant de manière
+asynchrone une requête HTTP GET à l’URI <code class="language-plaintext highlighter-rouge">src</code> de chaque _iframe</em>.</li>
+  <li>Lorsque les autres parties de confiance reçoivent ces demandes, elles
+déconnectent l’utilisateur localement, puis retournent une réponse HTTP au
+navigateur.</li>
+  <li>Lorsque le cadre d’acceptation de la plateforme d’acceptation reçoit sa
+demande, il crée un message SAML de demande de déconnexion, puis redirige le
+navigateur avec ce message (dans le cadre <em>iframe</em>) vers l’ancien PSC (CléGC ou
+FJI) avec lequel l’utilisateur a choisi de se connecter.</li>
+  <li>Le FSI déconnecte ensuite l’utilisateur de ses informations d’identification.
+Si l’utilisateur a visité des sites qui sont encore reliés directement au FSI
+(au lieu d’Authenti-Canada), il propagera également la déconnexion à tous ces
+sites, progressivement, une à une.</li>
+  <li>Le FSI redirige ensuite le navigateur (dans l’<em>iframe</em>) vers le Cadre
+d’acceptation de la plateforme d’acceptation avec un message SAML
+<code class="language-plaintext highlighter-rouge">LogoutResponse</code>. Le Cadre d’acceptation traite ce message, puis envoie une
+réponse HTTP au navigateur.</li>
+  <li>La page de propagation de déconnexion comporte un gestionnaire d’événements
+d’erreur global qui sera déclenché si un type d’erreur se produit alors que
+tous les <em>iframes</em> propagent la déconnexion vers divers sites de manière
+asynchrone.</li>
+  <li>Si l’une des <em>iframes</em> échoue ou s’interrompt, si la réponse de déconnexion
+SAML du FSI indique une erreur, alors le gestionnaire onerrorevent redirige
+le navigateur vers une page d’erreur, avertissant l’utilisateur qu’il ne
+peut pas être complètement déconnecté et lui recommandant de fermer son
+navigateur.</li>
+  <li>Si toutes les <em>iframes</em> propagent avec succès la déconnexion vers leur site
+cible, le navigateur est redirigé vers la page d’accueil de déconnexion du
+site où l’utilisateur a initialement cliqué sur « Déconnexion » (l’URI
+post_déconnexion_redirect_uri de la partie de confiance).</li>
+</ol>
+
+<h3 id="scénario-2--un-utilisateur-se-déconnecte-dabord-du-fjgc">Scénario 2 : Un utilisateur se déconnecte d’abord du FJGC</h3>
+
+<p>L’exemple suivant illustre comment une déconnexion unique est réalisée dans le
+cas où l’utilisateur clique sur un bouton de déconnexion sur un site de la
+partie de confiance qui est toujours connecté à l’un des services de
+justificatif d’identification de la FJGC (CléGC ou service de courtier de
+justificatif d’identité).</p>
+
+<p><img class="plantuml" src="http://plantuml:8080/svg/~h407374617274756d6c0a736b696e706172616d2073657175656e63654d657373616765416c69676e20646972656374696f6e0a736b696e706172616d20726573706f6e73654d65737361676542656c6f774172726f7720747275650a736b696e706172616d207469746c65426f72646572526f756e64436f726e65722031350a736b696e706172616d207469746c65426f72646572546869636b6e65737320320a736b696e706172616d207469746c65426f72646572436f6c6f72207265640a736b696e706172616d207469746c654261636b67726f756e64436f6c6f7220417175612d4361646574426c75650a7469746c652044c3a9636f6e6e6578696f6e20696e697469c3a9652070617220756e652070617274696520646520636f6e6669616e636520464a47430a4163746f72204e6176696761746575722061732042726f777365720a5061727469636970616e74202250617274696520646520636f6e6669616e63652053414d4c222061732052500a5061727469636970616e74202253414d4c20466f75726e6973736575725c6e64276964656e746974c3a92053414d4c2028464a492922206173204944500a5061727469636970616e74202241757472652873292050525c6e647520464a474322206173204f746865725f474343460a626f78202241757468656e74692d43616e616461220a5061727469636970616e74202243616472652064276163636570746174696f6e222061732050617373706f72740a5061727469636970616e742022466f75726e697373657572204f70656e494422206173204f500a656e6420626f780a5061727469636970616e74202241757472652873292050525c6e642741757468656e74692d43616e61646122206173204f746865725f5349430a42726f77736572202d3e205250203a2053652064c3a9636f6e6e65637465720a5250202d3e205250203a206c6f63616c2053652064c3a9636f6e6e65637465720a42726f77736572203c2d2d205250203a205265646972656374696f6e20485454505c6e617665632064656d616e64652064652064c3a9636f6e6e6578696f6e2053414d4c0a42726f77736572202d3e20494450203a2044656d616e64652064652064c3a9636f6e6e6578696f6e2053414d4c0a6c6f6f700a202020494450202d3e204f746865725f47434346203a2044656d616e64652064652064c3a9636f6e6e6578696f6e2053414d4c0a2020204f746865725f47434346202d3e204f746865725f47434346203a206c6f63616c2053652064c3a9636f6e6e65637465720a2020204f746865725f47434346202d2d3e20494450203a2053414d4c2052c3a9706f6e73652064652064c3a9636f6e6e6578696f6e0a656e640a6e6f7465207269676874206f6620494450203a2044c3a9636f6e6e6578696f6e20464a4743207465726d696ec3a9650a42726f77736572203c2d2d2049445020203a205265646972656374696f6e204854545020766572732041757468656e74692d43616e6164610a42726f77736572202d3e2050617373706f7274203a2044656d616e64652064652064c3a9636f6e6e6578696f6e2053414d4c0a42726f77736572203c2d2d2050617373706f7274203a205265646972656374696f6e20485454502076657273206c6520706f696e74206465207465726d696e6169736f6e20656e645f73657373696f6e0a42726f77736572202d3e204f50203a2044656d616e64652064652064c3a9636f6e6e6578696f6e204f49444320617520706f696e74206465207465726d696e6169736f6e20656e645f73657373696f6e0a67726f7570205061720a2020204f50202d3e3e204f746865725f534943203a2064656d616e64652873292064652064c3a9636f6e6e6578696f6e0a2020204f746865725f534943202d3e204f746865725f534943203a206c6f63616c2053652064c3a9636f6e6e65637465720a2020204f50203c3c2d2d204f746865725f534943203a2072c3a9706f6e73652873292064652064c3a9636f6e6e6578696f6e0a656e640a42726f77736572203c2d2d204f50203a20506167652064652070726f7061676174696f6e2064652064c3a9636f6e6e6578696f6e206176656320696672616d65730a67726f7570205061720a20202042726f77736572202d3e3e204f746865725f534943203a2044656d616e64652873292064652064c3a9636f6e6e6578696f6e2064752063616e616c2066726f6e74616c204f4944430a2020204f746865725f534943202d3e204f746865725f534943203a206c6f63616c2053652064c3a9636f6e6e65637465720a20202042726f77736572203c3c2d2d204f746865725f534943203a2052c3a9706f6e736528732920485454500a656e640a42726f77736572202d3e2050617373706f7274203a2052c3a973756c7461742064652064c3a9636f6e6e6578696f6e202853756363c3a873202f20c38963686563290a42726f77736572203c2d2d2050617373706f7274203a2052c3a9706f6e73652064652064c3a9636f6e6e6578696f6e2053414d4c0a6e6f7465207269676874206f662042726f777365720a20202041757468656e74692d43616e6164610a20202044c3a9636f6e6e6578696f6e207465726d696ec3a9650a656e64206e6f74650a42726f77736572202d3e20494450203a2052c3a9706f6e73652064652064c3a9636f6e6e6578696f6e2053414d4c0a616c7420c3a9636865632064652064c3a9636f6e6e6578696f6e0a20202042726f77736572203c2d2d20494450203a2052c3a9706f6e73652064652064c3a9636f6e6e6578696f6e2053414d4c206176656320636f6465202244c3a9636f6e6e6578696f6e207061727469656c6c65220a20202042726f77736572202d3e205250203a2052c3a9706f6e73652064652064c3a9636f6e6e6578696f6e2053414d4c0a20202042726f77736572203c2d2d205250203a20506167652064276176657274697373656d656e742064652064c3a9636f6e6e6578696f6e0a656c73652064c3a9636f6e6e6578696f6e2072c3a975737369650a20202042726f77736572203c2d2d20494450203a2052c3a9706f6e73652064652064c3a9636f6e6e6578696f6e2053414d4c206176656320636f6465202273756363c3a873220a20202042726f77736572202d3e205250203a2052c3a9706f6e73652064652064c3a9636f6e6e6578696f6e2053414d4c0a20202042726f77736572203c2d2d205250203a20506167652064652064c3a9636f6e6e6578696f6e207465726d696ec3a9650a656e640a40656e64756d6c"></p>
+
+<p>Le scénario commence lorsqu’un utilisateur clique sur un bouton de déconnexion
+sur le site de la partie de confiance qu’il utilise. Lorsque cela se produit :</p>
+
+<ol>
+  <li>L’application de la partie de confiance déconnecte l’utilisateur localement
+d’abord, puis redirige le navigateur vers le point terminal de déconnexion
+unique SAML du FSI avec un message SAML <code class="language-plaintext highlighter-rouge">LogoutRequest</code>.</li>
+  <li>Si l’utilisateur a visité d’autres sites qui sont toujours connectés
+directement au FSI (au lieu de l’Authenti-Canada), il propagera d’abord la
+déconnexion de tous ces sites à l’aide de la déconnexion SAML dans le canal
+arrière (SOAP). Cela se fait un à un, pendant que l’utilisateur attend,
+ensuite il sera alors <em>complètement déconnecté de la FJGC</em>.</li>
+  <li>Pour déconnecter l’utilisateur de l’Authenti-Canada, le FSI de la FJGC
+redirige ensuite le navigateur vers le Cadre d’acceptation de
+l’Authenti-Canada avec un message SAML <code class="language-plaintext highlighter-rouge">LogoutRequest</code>.</li>
+  <li>Le cadre d’acceptation crée ensuite une demande de déconnexion OpenID Connect
+et redirige le navigateur vers le point terminal de session du fournisseur
+d’OpenID de la plateforme d’acceptation.</li>
+  <li>Si des parties de confiance qui participer à la session de la plateforme
+d’acceptation prennent en charge la déconnexion, la plateforme d’acceptation
+envoie d’abord un jeton de déconnexion à tous, via un POST HTTP à son URI de
+déconnexion en mode canal arrière enregistré. Cela déclenche les actions de
+déconnexion de chacun de ces PC. S’il y a plusieurs parties de confiance, ces
+demandes sont toutes envoyées simultanément, en parallèle.</li>
+  <li>Une fois l’ouverture de session dans le canal arrière terminée, la plateforme
+d’acceptation retourne une page de propagation de déconnexion
+<a href="https://html.spec.whatwg.org/multipage/">HTML</a>. Cette page contient un
+certain nombre d’éléments
+<a href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element">iframe</a>.
+L’attribut <code class="language-plaintext highlighter-rouge">src</code> (source) de chaque élément iframe pointe vers l’URI de
+déconnexion du canal avant de l’un des sites de la partie de confiance où
+l’utilisateur s’est connecté pendant sa session en cours. Dans le diagramme,
+ces autres sites sont désignés comme « autres PC de l’OIDC ». L’attribut src
+de l’iframe final pointe vers un point terminal URI du Cadre d’acceptation de
+la plateforme d’acceptation.</li>
+  <li>Dès réception de la page de propagation, le navigateur commence à charger en
+parallèle l’intégralité de la valeur de _iframe_s, en envoyant de manière
+asynchrone une requête HTTP GET à l’URI src de chaque iframe.</li>
+  <li>Lorsque les autres parties de confiance reçoivent ces demandes, elles
+déconnectent l’utilisateur localement, puis retournent une réponse HTTP au
+navigateur.</li>
+  <li>La page de propagation de déconnexion comporte un gestionnaire d’événements
+d’erreur global qui sera déclenché si un type d’erreur se produit alors que
+tous les _iframe_s propagent la déconnexion vers divers sites de manière
+asynchrone.</li>
+  <li>Si l’une des iframes échoue ou s’interrompt, le gestionnaire onerrorevent
+redirige le navigateur vers le Cadre d’acceptation avec une requête HTTP
+indiquant un problème de déconnexion.
+    <ol>
+      <li>Le Cadre d’acceptation redirigera ensuite le navigateur vers le FSI avec
+  un message SAML LogoutResponse portant un code de statut urn : oasis :
+  names : tc : SAML : 2,0 : status : Responder.</li>
+      <li>La FSI redirigera ensuite le navigateur vers sa propre PC avec un message
+  LogoutResponse portant un code de statut de haut niveau
+  <code class="language-plaintext highlighter-rouge">urn:oasis:names:tc:SAML:2.0:status:Success</code> et un code de statut de
+  second niveau <code class="language-plaintext highlighter-rouge">urn:oasis:names:tc:SAML:2.0:status:PartialLogout</code>.</li>
+      <li>Cela entraînera l’affichage de la page d’erreur PC du SAML, avertissant
+  l’utilisateur qu’il n’est peut-être pas complètement déconnecté et lui
+  recommandant de fermer son navigateur.</li>
+    </ol>
+  </li>
+  <li>Si toutes les <em>iframes</em> propagent correctement la déconnexion vers leur site
+cible, le code JavaScript redirige le navigateur vers le Cadre d’acceptation
+avec une demande HTTP indiquant une déconnexion réussie.
+    <ol>
+      <li>Le Cadre d’acceptation redirigera ensuite le navigateur vers le FSI
+avec un message SAML <code class="language-plaintext highlighter-rouge">LogoutResponse</code> portant un code de statut
+<code class="language-plaintext highlighter-rouge">urn:oasis:names:tc:SAML:2.0:status:Success</code>.</li>
+      <li>Le FJI redirigera ensuite le navigateur vers sa propre PC avec un message
+<code class="language-plaintext highlighter-rouge">LogoutResponse</code> portant un code de statut de haut niveau
+<code class="language-plaintext highlighter-rouge">urn:oasis:names:tc:SAML:2.0:status:Success</code> et aucun code de statut de
+niveau supérieur.</li>
+      <li>Cela entraînera l’affichage de la page de déconnexion ou d’accueil
+habituelle de SAML PC.</li>
+    </ol>
+  </li>
+</ol>
+
+</main>
+
+
+<footer role="contentinfo" id="wb-info">
+  <nav role="navigation" class="container wb-navcurr">
+    <h2 class="wb-inv">Au sujet du gouvernement</h2>
+    <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+      <li><a href="mailto:SignIn-AuthentiCanada@tbs-sct.gc.ca">Contactez-nous</a></li>
+      <li><a href="https://www.canada.ca/fr/gouvernement/min.html">Ministères et organismes</a></li>
+      <li><a href="https://www.canada.ca/fr/gouvernement/fonctionpublique.html">Fonction publique et force militaire</a></li>
+      <li><a href="https://www.canada.ca/fr/nouvelles.html">Nouvelles</a></li>
+      <li><a href="https://www.canada.ca/fr/gouvernement/systeme/lois.html">Traités, lois et règlements</a></li>
+      <li><a href="https://www.canada.ca/fr/transparence/rapports.html">Rapports à l'échelle du gouvernement</a></li>
+      <li><a href="http://pm.gc.ca/fra">Premier ministre</a></li>
+      <li><a href="https://www.canada.ca/fr/gouvernement/systeme.html">Comment le gouvernement fonctionne</a></li>
+      <li><a href="http://ouvert.canada.ca/">Gouvernement ouvert</a></li>
+    </ul>
+  </nav>
+  <div class="brand">
+    <div class="container">
+      <div class="row">
+        <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+          <h2 class="wb-inv">À propos du site</h2>
+          <ul>
+            <li><a href="https://www.canada.ca/fr/sociaux.html">Médias sociaux</a></li>
+            <li><a href="https://www.canada.ca/fr/mobile.html">Applications mobiles</a></li>
+            <li><a href="https://www1.canada.ca/fr/nouveausite.html">À propos de Canada.ca</a></li>
+            <li><a href="https://www.canada.ca/fr/transparence/avis.html">Avis</a></li>
+            <li><a href="https://www.canada.ca/fr/transparence/confidentialite.html">Confidentialité</a></li>
+          </ul>
+        </nav>
+        <div class="col-xs-6 visible-sm visible-xs tofpg">
+          <a href="#wb-cont">Haut de la page <span class="glyphicon glyphicon-chevron-up"></span></a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 text-right">
+          <object type="image/svg+xml" tabindex="-1" role="img" data="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/assets/wmms-blk.svg" aria-label="Symbole du gouvernement du Canada"></object>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
+<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/theme.min.js"></script>
+
+</body>
+
+</html>
