@@ -16,27 +16,24 @@ jobs:
           - 8080:8080
 
     steps:
-      - name: Remove bundle cache
-        run: rm -rf vendor/bundle
-
-      - name: Remove Bundler cache
-        run: |
-          bundle config --delete bin
-          bundle config --delete path
-          rm -rf vendor/bundle
-      
-      - name: Install Bundler 2.5.6
-        run: gem install bundler -v 2.5.6
-
-      - name: Bundle install
-        run: bundle install --jobs 4 --retry 3
-
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.0
 
       - uses: actions/checkout@v4
+
+      - name: Remove bundle cache
+        run: rm -rf vendor/bundle
+
+      - name: Install Bundler 2.5.6
+        run: gem install bundler -v 2.5.6
+
+      - name: Bundle install
+        run: |
+          bundle config --delete bin
+          bundle config --delete path
+          bundle install --jobs 4 --retry 3
 
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v4
@@ -56,6 +53,6 @@ jobs:
           jekyll_src: './'           # Default is root directory
           jekyll_cfg: '_config.yml'  # Default is _config.yml
           jekyll_baseurl: ''         # Default is according to _config.yml
-          bundler_ver: '2.2.33'         # Default is latest bundler version
+          bundler_ver: '2.2.33'      # Default is latest bundler version
           actor: ''                  # Default is the GITHUB_ACTOR
           pre_build_commands: ''     # Installing additional dependencies (Arch Linux)
