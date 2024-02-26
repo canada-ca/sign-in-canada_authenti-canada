@@ -26,7 +26,7 @@ jobs:
       - name: Bundle Install
         run: bundle install --jobs 4 --retry 3
 
-      - name: Build Jekyll site
+      - name: Build Jekyll site and verify _site directory
         run: |
           bundle exec jekyll build
           ls -lah
@@ -35,26 +35,38 @@ jobs:
 
       - name: Deploy to gh-pages
         run: |
-            git config --global user.name 'github-actions'
-            git config --global user.email 'github-actions@github.com'
-            git checkout --orphan gh-pages
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          
+          # Debug: Show current directory and its contents
+          echo "Current directory:"
+          pwd
+          ls -la
+
+          # Ensure the _site directory exists
+          if [ -d "_site" ]; then
+            # Create a new or clean existing gh-pages branch
+            git checkout --orphan gh-pages-temp
             git reset --hard
             git clean -fdx
-            # Ensure we're in the right directory
-            pwd
-            ls -lah
-            # Copy the contents of the _site directory
-            if [ -d "_site" ]; then
-              cp -r _site/* .
-              touch .nojekyll
-              git add -A
-              git commit -m "Deploy updates"
-              git push -fu origin gh-pages
-            else
-              echo "Error: _site directory not found."
-              exit 1
-            fi
+            git fetch origin gh-pages
+            git checkout origin/gh-pages || git checkout --orphan gh-pages
+            git branch -D gh-pages-temp
+            
+            # Copy _site content to root
+            rsync -av --exclude='.git*' --delete _site/ .
+            
+            # Debug: Show what's going to be committed
+            ls -la
+            
+            # Commit and push changes
+            touch .nojekyll
+            git add -A
+            git commit -m "Deploy updates"
+            git push -fu origin gh-pages
+          else
+            echo "Error: _site directory not found."
+            exit 1
+          fi
         env:
           JEKYLL_ENV: production
-          working-directory: ${{ github.workspace }}
-        
