@@ -1,4 +1,4 @@
-name: Build and merge into gh-pages branch
+name: Build and merge into gh-pages branch 2
 
 on:
   push:
