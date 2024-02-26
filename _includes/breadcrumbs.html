@@ -1,0 +1,38 @@
+<nav id="wb-bc" property="breadcrumb">
+    <h2>{{ site.data.i18n.general.head.youarehere[page.lang] }}:</h2>
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.home.link[page.lang] }}">{{ site.data.i18n.general.nav.home[page.lang] }}</a></li>
+  
+        {%- if page.ref == 'discover' -%}
+          <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.discover.link[page.lang] }}">{{ site.data.i18n.general.nav.discover[page.lang] }}</a></li>
+        {%- elsif page.ref == 'discover-cate' -%}
+          <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.discover.link[page.lang] }}">{{ site.data.i18n.general.nav.discover[page.lang] }}</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.discover-cate.link[page.lang] }}">{{ site.data.i18n.general.nav.discover-cate[page.lang] }}</a></li>
+        {%- elsif page.ref == 'discover-auto-collection' -%}
+          <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.discover.link[page.lang] }}">{{ site.data.i18n.general.nav.discover[page.lang] }}</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.discover-auto-collection.link[page.lang] }}">{{ site.data.i18n.general.nav.discover-auto-collection[page.lang] }}</a></li>
+        {%- elsif page.ref == 'discover-prod' -%}
+          <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.discover.link[page.lang] }}">{{ site.data.i18n.general.nav.discover[page.lang] }}</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.discover-prod.link[page.lang] }}">{{ site.data.i18n.general.nav.discover-prod[page.lang] }}</a></li>
+        {%- elsif page.ref == 'discover-service' -%}
+          <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.discover.link[page.lang] }}">{{ site.data.i18n.general.nav.discover[page.lang] }}</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.discover-service.link[page.lang] }}">{{ site.data.i18n.general.nav.discover-service[page.lang] }}</a></li>
+        {%- elsif page.ref == 'discover-session' -%}
+          <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.discover.link[page.lang] }}">{{ site.data.i18n.general.nav.discover[page.lang] }}</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.discover-session.link[page.lang] }}">{{ site.data.i18n.general.nav.discover-session[page.lang] }}</a></li>
+        {%- elsif page.ref == 'discover-technology' -%}
+          <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.discover.link[page.lang] }}">{{ site.data.i18n.general.nav.discover[page.lang] }}</a></li>
+          <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.discover-technology.link[page.lang] }}">{{ site.data.i18n.general.nav.discover-technology[page.lang] }}</a></li>         
+        {%- elsif page.ref == 'evaluate' -%}
+          <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.evaluate.link[page.lang] }}">{{ site.data.i18n.general.nav.evaluate[page.lang] }}</a></li>
+        {%- elsif page.ref == 'join' -%}
+          <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.join.link[page.lang] }}">{{ site.data.i18n.general.nav.join[page.lang] }}</a></li>
+        {%- elsif page.ref == 'contribute' -%}
+          <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.contribute.link[page.lang] }}">{{ site.data.i18n.general.nav.contribute[page.lang] }}</a></li>
+          {%- elsif page.ref == 'maintenance' -%}
+          <li><a href="{{ site.baseurl }}{{ site.data.i18n.general.nav.maintenance.link[page.lang] }}">{{ site.data.i18n.general.nav.maintenance[page.lang] }}</a></li>
+        {%- endif -%}
+      </ol>
+    </div>
+  </nav>

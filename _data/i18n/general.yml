@@ -1,0 +1,179 @@
+---
+head:
+  title:
+    en: &title_en Sign In Canada
+    fr: &title_fr Authenti-Canada
+  description:
+    en: Sign In Canada.
+    fr: Authenti-Canada.
+  home:
+    en: Home
+    fr: Accueil
+  skipToMain:
+    en: Skip to main content
+    fr: Passer au contenu principal
+  skipToAbout:
+    en: Skip to "About this site"
+    fr: Passer à « À propos de ce site »
+  languageSelection:
+    en: Language selection
+    fr: Sélection de la langue
+  searchAndMenus:
+    en: Menus
+    fr: Menus
+  youarehere:
+    en: You are here
+    fr: Vous êtes ici
+  draft:
+    en: DRAFT
+    fr: VERSION PRÉLIMINAIRE
+  draftText:
+    en: This is the latest working copy of this guidance
+    fr: Ceci est une copie de travail de ces normes
+  here:
+    en: here
+    fr: ici
+  contribute:
+    en: Contribute
+    fr: Contribuer
+  contributeText:
+    en: Contribute your ideas
+    fr: Faites part de vos idées
+
+nav:
+  home:
+    en: *title_en
+    fr: *title_fr
+    link:
+      en: /en/index.html
+      fr: /fr/index.html
+  Canada:
+    en: Government of Canada
+    fr: Gouvernement du Canada
+    link:
+      en: https://www.canada.ca/en.html
+      fr: https://www.canada.ca/fr.html
+  discover:
+    en: Discover
+    fr: Découvrir
+    link:
+      en: /en/discover/index.html
+      fr: /fr/decouvrir/index.html
+  discover-cate:
+    en: Client Acceptance Test Environment
+    fr: Environnement d’essai pour l’acceptation des clients
+    link:
+      en: /en/discover/cate.html
+      fr: /fr/decouvrir/cate.html
+  discover-auto-collection:
+    en: Pairwise Identifier Auto-Collection
+    fr: Collecte automatique d'identifiants par paires
+    link:
+      en: /en/discover/auto-collection.html
+      fr: /fr/decouvrir/auto-collection.html    
+  discover-prod:
+    en: Production Environment
+    fr: Environnement de production
+    link:
+      en: /en/discover/prod.html
+      fr: /fr/decouvrir/prod.html
+  discover-service:
+    en: Service Management and Support
+    fr: Gestion des services et soutien
+    link:
+      en: /en/discover/service.html
+      fr: /fr/decouvrir/service.html 
+  discover-session:
+    en: Session Management
+    fr: Gestion des sessions
+    link:
+      en: /en/discover/session-management.html
+      fr: /fr/decouvrir/gestion-des-sessions.html   
+  discover-technology:
+    en: Technology and Architecture
+    fr: Technologie et architecture
+    link:
+      en: /en/discover/technology.html
+      fr: /fr/decouvrir/technology.html  
+  evaluate:
+    en: Evaluate
+    fr: Évaluer
+    link:
+      en: /en/evaluate/index.html
+      fr: /fr/evaluer/index.html
+  join:
+    en: Join
+    fr: Rejoindre
+    link:
+      en: /en/join/index.html
+      fr: /fr/rejoindre/index.html
+  contribute:
+    en: Contribute
+    fr: Contribuer
+    link:
+      en: /en/contribute/index.html
+      fr: /fr/contribuer/index.html
+  maintenance:
+    en: Planned Maintenance
+    fr: Maintenance planifiée à venir
+    link:
+      en: /en/maintenance.html
+      fr: /fr/entretien.html
+  privacy:
+    en: Privacy notice for Sign in Canada users
+    fr: Avis de confidentialité pour les utilisateurs d'Authenti-Canada
+    link:
+      en: /en/privacy/
+      fr: /fr/confidentialite/
+  help:
+    en: Sign in support
+    fr: Soutien de connexion
+    link:
+      en: /en/help/
+      fr: /fr/aide/
+  announcement:
+    en: Announcement
+    fr: Annonce
+    link:
+      en: /en/announcement.html
+      fr: /fr/annonce.html
+
+footer:
+  AboutGovernment:
+    en: About government
+    fr: Au sujet du gouvernement
+  AboutSite:
+    en: About this site
+    fr: À propos du site
+  Nav:
+    Canada:
+      en:
+        link: https://www.canada.ca/en.html
+        title: Canada.ca
+      fr:
+        link: https://www.canada.ca/fr.html
+        title: Canada.ca
+    Terms:
+      en:
+        link: https://www.canada.ca/en/transparency/terms.html
+        title: Terms and conditions
+      fr:
+        link: https://www.canada.ca/fr/transparence/avis.html
+        title: Avis
+    Privacy:
+      en:
+        link: https://www.canada.ca/en/transparency/privacy.html
+        title: Privacy
+      fr:
+        link: https://www.canada.ca/fr/transparence/confidentialite.html
+        title: Confidentialité
+  TopOfPage:
+    en: Top of Page
+    fr: Haut de la page
+  Logo:
+    en: Symbol of the Government of Canada
+    fr: Symbole du gouvernement du Canada
+
+language:
+  en: English
+  fr: Français

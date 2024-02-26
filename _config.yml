@@ -1,0 +1,70 @@
+# Site settings
+url: "https://connect.canada.ca" # the base hostname & protocol for your site
+github_username: canada-ca
+
+wet_cdts_hosturl: "https://www.canada.ca/etc/designs/canada/cdts/gcweb"
+wet_cdts_version: "v4_0_31"
+jquery_version: "2.2.4"
+
+# Build settings
+markdown: kramdown
+include: [
+  "en",
+  "fr",
+  "index.html"
+]
+exclude: [
+  "README.md",
+  "CONTRIBUTING.md",
+  "LICENSE.md",
+  "*.json",
+  "link-check.js",
+  "Gemfile",
+  "Gemfile.lock"
+]
+
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-relative-links
+  - jekyll-spaceship
+
+jekyll-spaceship:
+  plantuml-processor:
+    mode: pre-fetch
+    src: http://plantuml:8080/svg/
+
+defaults:
+  - 
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      type: "pages"
+  - 
+    scope:
+      path: "en/*"
+    values:
+      lang: "en"
+      layout: "default"
+  - 
+    scope:
+      path: "fr/*"
+    values:
+      lang: "fr"
+      layout: "default"
+  - 
+    scope:
+      path: "fr/index.html"
+    values:
+      lang: "fr"
+      ref: "home"
+      layout: "default"
+  - 
+    scope:
+        path: "en/index.html"
+    values:
+        lang: "en"
+        ref: "home"
+        layout: "default"
+
+optional_front_matter:
+  remove_originals: true

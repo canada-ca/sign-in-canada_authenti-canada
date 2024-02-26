@@ -1,0 +1,59 @@
+</main>
+
+{% if page.lang == 'fr' %}
+
+<footer id="wb-info" role="contentinfo" style="margin-top: auto;">
+  <div class="brand">
+    <div class="container">
+      <div class="row">
+      <nav class="col-md-9 col-lg-10 ftr-urlt-lnk" style="padding-bottom:1em;" title="Bas de page" aria-label="Bas de page">
+        <h3 class="wb-inv">À propos du site</h3>
+        <ul class="body">
+          <li><a href="https://connect.canada.ca/fr/aide/index.html" target="_blank" rel="noopener noreferrer">Aide</a></li>
+          <li><a href="https://connect.canada.ca/fr/confidentialite/index.html" target="_blank" rel="noopener noreferrer">Confidentialité</a></li>
+        </ul>
+      </nav>
+      <div class="col-xs-6 visible-sm visible-xs tofpg">
+        <a href="#wb-cont">Haut de la page <span class="glyphicon glyphicon-chevron-up"></span></a>
+      </div>
+      <div class="col-xs-6 col-md-3 col-lg-2 mrgn-tp-md text-right">
+        <object type="image/svg+xml" tabindex="-1" role="img" data="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/assets/wmms-blk.svg" aria-label="Symbol of the Government of Canada"></object>
+      </div>
+    </div>
+  </div>
+  </div>
+</footer>
+
+{% else %}
+
+<footer id="wb-info" role="contentinfo" style="margin-top: auto;">
+  <div class="brand">
+    <div class="container">
+      <div class="row">
+      <nav class="col-md-9 col-lg-10 ftr-urlt-lnk" style="padding-bottom:1em;" title="Footer" aria-label="Footer">
+        <h3 class="wb-inv">About this site</h3>
+        <ul class="body">
+          <li><a href="https://connect.canada.ca/en/help/index.html" target="_blank" rel="noopener noreferrer">Help</a></li>
+            <li><a href="https://connect.canada.ca/en/privacy/index.html" target="_blank" rel="noopener noreferrer">Privacy</a></li>
+        </ul>
+      </nav>
+      <div class="col-xs-6 visible-sm visible-xs tofpg">
+        <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+      </div>
+      <div class="col-xs-6 col-md-3 col-lg-2 mrgn-tp-md  text-right">
+        <object type="image/svg+xml" tabindex="-1" role="img" data="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/assets/wmms-blk.svg" aria-label="Symbol of the Government of Canada"></object>
+      </div>
+    </div>
+  </div>
+  </div>
+</footer>
+{% endif %}
+
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
+<script src="{{ site.wet_cdts_hosturl }}/{{ site.wet_cdts_version }}/js/theme.min.js"></script>

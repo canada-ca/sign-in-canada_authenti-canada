@@ -1,0 +1,60 @@
+name: Build and merge into gh-pages branch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0
+
+      - name: Add Ruby Gems to PATH
+        run: echo "/github/home/.gem/ruby/3.0.0/bin" >> $GITHUB_PATH
+
+      - name: Install Bundler
+        run: gem install bundler -v 2.5.6
+
+      - name: Bundle Install
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Build Jekyll site
+        run: |
+          bundle exec jekyll build
+          ls -lah
+          echo "Listing _site directory after build:"
+          ls -lah _site
+
+      - name: Deploy to gh-pages
+        run: |
+            git config --global user.name 'github-actions'
+            git config --global user.email 'github-actions@github.com'
+            git checkout --orphan gh-pages
+            git reset --hard
+            git clean -fdx
+            # Ensure we're in the right directory
+            pwd
+            ls -lah
+            # Copy the contents of the _site directory
+            if [ -d "_site" ]; then
+              cp -r _site/* .
+              touch .nojekyll
+              git add -A
+              git commit -m "Deploy updates"
+              git push -fu origin gh-pages
+            else
+              echo "Error: _site directory not found."
+              exit 1
+            fi
+        env:
+          JEKYLL_ENV: production
+          working-directory: ${{ github.workspace }}
+        
