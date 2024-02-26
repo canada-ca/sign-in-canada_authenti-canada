@@ -1,72 +1,34 @@
-name: Build and merge into gh-pages branch
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main
+      - main  # This should be the branch containing your Jekyll site source
 
 jobs:
-  build_and_deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+    - name: Checkout Source
+      uses: actions/checkout@v2
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.0
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.0'  # Specify the Ruby version you need for your Jekyll site
 
-      - name: Add Ruby Gems to PATH
-        run: echo "/github/home/.gem/ruby/3.0.0/bin" >> $GITHUB_PATH
+    - name: Install Dependencies
+      run: |
+        gem install bundler
+        bundle install
 
-      - name: Install Bundler
-        run: gem install bundler -v 2.5.6
+    - name: Build Site
+      run: |
+        bundle exec jekyll build -d build
 
-      - name: Bundle Install
-        run: bundle install --jobs 4 --retry 3
-
-      - name: Build Jekyll site and verify _site directory
-        run: |
-          bundle exec jekyll build
-          ls -lah
-          echo "Listing _site directory after build:"
-          ls -lah _site
-
-      - name: Deploy to gh-pages
-        run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-          
-          # Debug: Show current directory and its contents
-          echo "Current directory:"
-          pwd
-          ls -la
-
-          # Ensure the _site directory exists
-          if [ -d "_site" ]; then
-            # Create a new or clean existing gh-pages branch
-            git checkout --orphan gh-pages-temp
-            git reset --hard
-            git clean -fdx
-            git fetch origin gh-pages
-            git checkout origin/gh-pages || git checkout --orphan gh-pages
-            git branch -D gh-pages-temp
-            
-            # Copy _site content to root
-            rsync -av --exclude='.git*' --delete _site/ .
-            
-            # Debug: Show what's going to be committed
-            ls -la
-            
-            # Commit and push changes
-            touch .nojekyll
-            git add -A
-            git commit -m "Deploy updates"
-            git push -fu origin gh-pages
-          else
-            echo "Error: _site directory not found."
-            exit 1
-          fi
-        env:
-          JEKYLL_ENV: production
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      with:
+        branch: gh-pages  # The branch the action should deploy to.
+        folder: build     # The folder the action should deploy.
