@@ -16,12 +16,15 @@ jobs:
           - 8080:8080
 
     steps:
+      - uses: actions/checkout@v4
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.0 # Ensures Ruby version is compatible with Bundler 2.5.6
 
-      - uses: actions/checkout@v4
+      - name: Add Ruby Gems to PATH
+        run: echo "/github/home/.gem/ruby/3.0.0/bin" >> $GITHUB_PATH
 
       - name: Remove bundle cache
         run: rm -rf vendor/bundle
@@ -31,10 +34,9 @@ jobs:
 
       - name: Bundle install
         run: |
-          bundle config --delete bin
-          bundle config --delete path
+          bundle config set --local path 'vendor/bundle'
           bundle install --jobs 4 --retry 3
-      
+
       - name: Verify Ruby Version
         run: ruby -v
 
@@ -54,6 +56,6 @@ jobs:
           jekyll_src: './'
           jekyll_cfg: '_config.yml'
           jekyll_baseurl: ''
-          bundler_ver: '2.5.6'  # Updated to required Bundler version
+          bundler_ver: '2.5.6' # Ensure Jekyll deploy uses correct Bundler version
           actor: ''
           pre_build_commands: ''
