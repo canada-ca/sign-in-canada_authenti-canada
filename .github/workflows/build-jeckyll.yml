@@ -19,6 +19,18 @@ jobs:
       - name: Remove bundle cache
         run: rm -rf vendor/bundle
 
+      - name: Remove Bundler cache
+        run: |
+          bundle config --delete bin
+          bundle config --delete path
+          rm -rf vendor/bundle
+      
+      - name: Install Bundler 2.5.6
+        run: gem install bundler -v 2.5.6
+
+      - name: Bundle install
+        run: bundle install --jobs 4 --retry 3
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
