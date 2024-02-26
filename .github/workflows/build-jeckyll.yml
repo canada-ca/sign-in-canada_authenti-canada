@@ -9,53 +9,37 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
 
-    services:
-      plantuml:
-        image: plantuml/plantuml-server:jetty
-        ports:
-          - 8080:8080
-
     steps:
       - uses: actions/checkout@v4
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2 # Ensures Ruby version is compatible with Bundler 2.5.6
+          ruby-version: 3.0
 
       - name: Add Ruby Gems to PATH
         run: echo "/github/home/.gem/ruby/3.0.0/bin" >> $GITHUB_PATH
 
-      - name: Remove bundle cache
-        run: rm -rf vendor/bundle
+      - name: Install Bundler
+        run: gem install bundler -v 2.5.6
 
-      - name: Install Bundler 2.5.6
-        run: gem install bundler -v 2.5.6 # Explicitly install required Bundler version
+      - name: Bundle Install
+        run: bundle install --jobs 4 --retry 3
 
-      - name: Bundle install
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Deploy to gh-pages
         run: |
-          bundle config set --local path 'vendor/bundle'
-          bundle install --jobs 4 --retry 3
-
-      - name: Verify Ruby Version
-        run: ruby -v
-
-      - uses: actions/cache@v4
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-
-      - uses: jeffreytse/jekyll-deploy-action@v0.3.0
-        with:
-          provider: 'github'
-          token: ${{ secrets.GITHUB_TOKEN }}
-          repository: ''
-          branch: 'gh-pages'
-          jekyll_src: './'
-          jekyll_cfg: '_config.yml'
-          jekyll_baseurl: ''
-          bundler_ver: ''
-          actor: ''
-          pre_build_commands: ''
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git checkout --orphan gh-pages
+          git reset --hard
+          git clean -fdx
+          mv _site/* .
+          touch .nojekyll
+          git add -A
+          git commit -m "Deploy updates"
+          git push -fu origin gh-pages
+        env:
+          JEKYLL_ENV: production
