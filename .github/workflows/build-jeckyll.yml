@@ -19,7 +19,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0
+          ruby-version: 3.0 # Ensures Ruby version is compatible with Bundler 2.5.6
 
       - uses: actions/checkout@v4
 
@@ -27,7 +27,7 @@ jobs:
         run: rm -rf vendor/bundle
 
       - name: Install Bundler 2.5.6
-        run: gem install bundler -v 2.5.6
+        run: gem install bundler -v 2.5.6 # Explicitly install required Bundler version
 
       - name: Bundle install
         run: |
@@ -35,7 +35,6 @@ jobs:
           bundle config --delete path
           bundle install --jobs 4 --retry 3
 
-      # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v4
         with:
           path: vendor/bundle
@@ -43,16 +42,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      # Use GitHub Deploy Action to build and deploy to Github
       - uses: jeffreytse/jekyll-deploy-action@v0.5.1
         with:
           provider: 'github'
-          token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
-          repository: ''             # Default is current repository
-          branch: 'gh-pages'         # Default is gh-pages for github provider
-          jekyll_src: './'           # Default is root directory
-          jekyll_cfg: '_config.yml'  # Default is _config.yml
-          jekyll_baseurl: ''         # Default is according to _config.yml
-          bundler_ver: '2.2.33'      # Default is latest bundler version
-          actor: ''                  # Default is the GITHUB_ACTOR
-          pre_build_commands: ''     # Installing additional dependencies (Arch Linux)
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ''
+          branch: 'gh-pages'
+          jekyll_src: './'
+          jekyll_cfg: '_config.yml'
+          jekyll_baseurl: ''
+          bundler_ver: '2.5.6'  # Updated to required Bundler version
+          actor: ''
+          pre_build_commands: ''
