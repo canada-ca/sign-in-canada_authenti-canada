@@ -27,8 +27,12 @@ jobs:
       run: |
         bundle exec jekyll build -d build
 
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      # If you're changing the branch from main,
+      # also change the `main` in `refs/heads/main`
+      # below accordingly.
+      if: github.ref == 'refs/heads/main'
       with:
-        branch: gh-pages  # The branch the action should deploy to.
-        folder: build     # The folder the action should deploy.
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
