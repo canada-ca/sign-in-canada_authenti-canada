@@ -16,6 +16,14 @@ jobs:
           - 8080:8080
 
     steps:
+      - name: Add gem executables to PATH
+        run: echo "::add-path::/github/home/.gem/ruby/2.7.0/bin"
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0
+
       - uses: actions/checkout@v4
 
       # Use GitHub Actions' cache to cache dependencies on servers
