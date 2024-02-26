@@ -36,10 +36,15 @@ jobs:
           git checkout --orphan gh-pages
           git reset --hard
           git clean -fdx
-          mv _site/* .
-          touch .nojekyll
-          git add -A
-          git commit -m "Deploy updates"
-          git push -fu origin gh-pages
+          if [ -d "_site" ]; then
+            mv _site/* .
+            touch .nojekyll
+            git add -A
+            git commit -m "Deploy updates"
+            git push -fu origin gh-pages
+          else
+            echo "Error: _site directory not found."
+            exit 1
+          fi
         env:
           JEKYLL_ENV: production
