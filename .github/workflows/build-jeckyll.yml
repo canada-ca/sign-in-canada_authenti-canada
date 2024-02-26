@@ -47,7 +47,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      - uses: jeffreytse/jekyll-deploy-action@v0.3.1
+      - uses: jeffreytse/jekyll-deploy-action@master
         with:
           provider: 'github'
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -56,6 +56,6 @@ jobs:
           jekyll_src: './'
           jekyll_cfg: '_config.yml'
           jekyll_baseurl: ''
-          bundler_ver: '>=0'
+          bundler_ver: '~>2.4.0'
           actor: ''
           pre_build_commands: ''
