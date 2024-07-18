@@ -14,4 +14,4 @@ lang: en
 
 ### Description
 
-The TBS Infrastructure and Sign In Canada teams will be performing maintenance which may result in Sign In Canada service instability and an inconsistent user experience for a period of 10 minutes during this timeframe.
+The TBS Infrastructure and Sign In Canada teams will be performing maintenance which may result in Sign In Canada service instability and an inconsistent user experience for a period of 10 minutes.
