@@ -6,7 +6,7 @@ lang: en
 ---
 # Upcoming Planned Maintenance
 
-## Saturday January 25, 2025 9:00PM ET
+## Thursday February 13, 2025 8:00 PM - 11:00 PM ET
 
 ### Environments Affected
 
@@ -14,4 +14,4 @@ lang: en
 
 ### Description
 
-The Sign in Canada support team will be performing maintenance which may result in Sign In Canada service instability and an inconsistent user experience for a period of 1 hour.
+The TBS Infrastructure team will be performing maintenance which will result in intermittent Sign In Canada service outages.
