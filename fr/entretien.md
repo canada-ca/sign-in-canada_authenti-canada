@@ -6,7 +6,7 @@ lang: fr
 ---
 # Entretien prévu à venir
 
-## jeudi 13 février 2025 20h00 - 23h00 HE
+## lundi 24 mars 2025 16h00 HE
 
 ### Environnements concernés
 
@@ -14,4 +14,4 @@ lang: fr
 
 ### La description
 
-L’équipe de l’infrastructure du SCT effectuera l’entretien, ce qui entraînera des interruptions intermittentes d'Authenti-Canada
+L’équipe d'Authenti-Canada procédera à des correctifs de sécurité qui entraîneront une très brève interruption (quelques secondes), mais qui devrait être transparente pour les utilisateurs finaux.
