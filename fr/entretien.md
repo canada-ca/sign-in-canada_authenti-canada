@@ -6,12 +6,13 @@ lang: fr
 ---
 # Entretien prévu à venir
 
-## lundi 24 mars 2025 16h00 HE
+## mercredi 9 juillet 2025 22h00 HE
 
 ### Environnements concernés
 
 * Production
+* EEAC
 
 ### La description
 
-L’équipe d'Authenti-Canada procédera à des correctifs de sécurité qui entraîneront une très brève interruption (quelques secondes), mais qui devrait être transparente pour les utilisateurs finaux.
+L'équipe d'Authenti-Canada effectuera des travaux d'entretien qui entraîneront une interruption de service d'une heure.
