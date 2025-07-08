@@ -6,12 +6,13 @@ lang: en
 ---
 # Upcoming Planned Maintenance
 
-## Monday March 24, 2025 4:00 PM ET
+## Wednesday July 9, 2025 10:00 PM ET
 
 ### Environments Affected
 
 * Production
+* CATE
 
 ### Description
 
-The Sign In Canada team will be performing security patching which will result in a very brief outage (a few seconds) but should be transparent to end users.
+The Sign In Canada team will be performing maintenance which will result in a one hour service outage.
